@@ -33,7 +33,7 @@ const TokenomicsCarousel: React.FC<CarouselProps> = ({
           <CarouselItem key={item.id} className="lg:basis-1/4 xl:basis-1/5">
             <button
               onClick={() => onClick(item.text)}
-              className={`min-w-[182px] rounded-3xl px-6 py-2 text-sm transition-all duration-300 ${activeText === item.text ? "bg-lime font-semibold text-black" : "border border-[#172134] bg-transparent text-white"}`}
+              className={`min-w-[182px] rounded-3xl px-6 py-2 text-sm transition-all duration-300 ${activeText === item.text ? "bg-lime font-semibold text-black" : " bg-[#40FFD1]/5 text-white"}`}
             >
               {item.text}
             </button>

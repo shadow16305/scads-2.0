@@ -47,7 +47,7 @@ const Wallets = () => {
   const setActiveText = tokenomicsCtx.setActiveItem;
 
   return (
-    <section className="mt-32 flex flex-col items-center gap-y-8 bg-[#091224] py-9">
+    <section className="mt-32 flex flex-col items-center gap-y-8 bg-[#2E454F]/10 py-9">
       <SectionHeader title="Wallets" />
       <div className="flex max-w-[1036px] flex-col flex-wrap gap-8 lg:flex-row">
         {cardItems.map((item, index) => (

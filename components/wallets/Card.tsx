@@ -11,7 +11,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ number, title, description, onClick }) => {
   return (
     <div className="relative flex h-[260px] w-[324px] flex-col gap-y-2 rounded-3xl border border-[#101F3E] pl-5 pt-4">
-      <div className="flex h-[56px] w-[56px] items-center justify-center rounded-full bg-lime/20">
+      <div className="z-10 flex h-[56px] w-[56px] items-center justify-center rounded-full bg-lime/20">
         <span className="text-2xl font-medium text-lime">{number}</span>
       </div>
       <h3 className="z-10 text-xl font-semibold text-lime">{title}</h3>
@@ -31,7 +31,7 @@ const Card: React.FC<CardProps> = ({ number, title, description, onClick }) => {
         </Link>
       </div>
       <Image
-        src="/images/grid.svg"
+        src="/images/grid.png"
         alt="grid"
         width={300}
         height={240}

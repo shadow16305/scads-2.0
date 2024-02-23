@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionHeader from "../ui/SectionHeader";
+import SectionHeader from "./ui/SectionHeader";
 
 const treasuryItems = [
   {
@@ -33,7 +33,7 @@ const Treasury = () => {
   return (
     <section className="mt-32 flex flex-col items-center gap-y-8">
       <SectionHeader title="Treasury balance" />
-      <div className="relative flex w-full justify-between rounded-3xl bg-[#091224] px-20 py-9">
+      <div className="relative flex w-full justify-between rounded-3xl bg-[#2E454F]/10 px-20 py-9">
         {treasuryItems.map((item) => (
           <div
             className="z-10 flex flex-col items-center gap-y-2"

@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="bg-[#060E1E] font-['Quicksand',sans-serif]">
+      <body className="bg-[#050A12] font-['Quicksand',sans-serif]">
         <TokenomicsContextProvider>
           <MainNavigation />
           {children}

@@ -16,7 +16,7 @@ const DocumentsDropdown = () => {
         <FaChevronDown size={12} />
         <span className="absolute bottom-0 left-0 h-0.5 w-0 rounded-3xl bg-lime transition-all group-hover:w-full" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="mt-2 w-56 rounded-xl border-none bg-[#091224] py-2">
+      <DropdownMenuContent className="mt-2 w-56 rounded-xl border-none bg-[#2E454F]/10 py-2">
         <DropdownMenuGroup className="text-lime">
           <DropdownMenuItem className="rounded-2xl hover:bg-lime hover:text-black">
             <Link href="/roadmap">Roadmap</Link>

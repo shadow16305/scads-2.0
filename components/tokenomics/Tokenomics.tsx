@@ -19,10 +19,10 @@ const Tokenomics = () => {
 
   return (
     <section
-      className="mt-32 scroll-mt-32 rounded-2xl border border-[#172134] bg-[#0C1527]"
+      className="mt-32 scroll-mt-32 rounded-2xl border border-[#40FFD1]/10 bg-[#0B1018]"
       id="tokenomics"
     >
-      <div className="flex w-full justify-center rounded-t-2xl border border-[#172134] bg-[#0F192C] py-4">
+      <div className="flex w-full justify-center rounded-t-2xl border border-[#40FFD1]/10 bg-[#133930]/10 py-4">
         <SectionHeader title="Tokenomics" />
       </div>
       <TokenomicsCarousel

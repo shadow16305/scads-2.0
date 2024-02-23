@@ -9,10 +9,16 @@ const TextBlock = () => {
 
   return (
     <section className="relative mt-32 flex flex-col items-center gap-y-4 text-center">
-      <h2 className="z-10 text-center text-4xl font-medium text-white lg:max-w-[647px]">
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4 }}
+        className="z-10 text-center text-4xl font-medium text-white lg:max-w-[647px]"
+      >
         Empowering DeFi with <span className="text-lime">SCADS</span> A New Era
         in Stability and Security
-      </h2>
+      </motion.h2>
       <p className="z-10 text-white opacity-70 lg:max-w-[647px]">
         In the past four years, the DeFi sector has witnessed explosive growth,
         accumulating a staggering market cap of 48 billion USD. However, this

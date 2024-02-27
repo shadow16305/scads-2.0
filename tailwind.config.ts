@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       colors: {
-        lime: "#40FFD1",
+        lime: "#C9F67F",
       },
       keyframes: {
         "accordion-down": {

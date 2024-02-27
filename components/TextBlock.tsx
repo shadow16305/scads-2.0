@@ -1,25 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+import { ThemeContext } from "@/contexts/theme-context";
+import clsx from "clsx";
 
 const TextBlock = () => {
   const [textIsVisible, setTextIsVisible] = useState(false);
+  const themeCtx = useContext(ThemeContext);
+
+  const textClass = clsx(themeCtx.isLight ? "text-black" : "text-white");
 
   return (
-    <section className="relative mt-32 flex flex-col items-center gap-y-4 text-center">
+    <section
+      className={`relative mt-32 flex flex-col items-center gap-y-4 text-center ${textClass}`}
+    >
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.4 }}
-        className="z-10 text-center text-4xl font-medium text-white lg:max-w-[647px]"
+        className="z-10 max-w-[372px] text-center text-2xl font-medium lg:max-w-[647px] lg:text-4xl"
       >
-        Empowering DeFi with <span className="text-lime">SCADS</span> A New Era
-        in Stability and Security
+        Empowering DeFi with{" "}
+        <span className={clsx(!themeCtx.isLight && "text-lime")}>SCADS</span> A
+        New Era in Stability and Security
       </motion.h2>
-      <p className="z-10 text-white opacity-70 lg:max-w-[647px]">
+      <p className="z-10 max-w-[364px] opacity-70 lg:max-w-[647px]">
         In the past four years, the DeFi sector has witnessed explosive growth,
         accumulating a staggering market cap of 48 billion USD. However, this
         surge has been tainted by significant financial losses for investors,
@@ -34,7 +41,7 @@ const TextBlock = () => {
             exit={{ opacity: 0 }}
             className="z-10 flex origin-top flex-col items-center gap-y-4"
           >
-            <p className="text-white opacity-70 lg:max-w-[647px]">
+            <p className="max-w-[364px] opacity-70 lg:max-w-[647px]">
               To counter these vulnerabilities, there's an urgent call for an
               algorithmic solution. Such a solution would play a pivotal role in
               discerning patterns and establishing robust safeguards within the
@@ -42,7 +49,7 @@ const TextBlock = () => {
               mitigating risks and preventing fraudulent activities in DeFi is
               palpable.
             </p>
-            <p className="text-white opacity-70 lg:max-w-[647px]">
+            <p className="max-w-[364px] opacity-70 lg:max-w-[647px]">
               Enter SCADS – a groundbreaking PROOF OF HOLD (POH) stablecoin that
               is poised to redefine the digital currency landscape. Unlike
               traditional stablecoins, SCADS steers clear of direct pegging to
@@ -52,7 +59,7 @@ const TextBlock = () => {
               their own wallets, while the algorithm operates perpetually
               debt-free.
             </p>
-            <p className="text-white opacity-70 lg:max-w-[647px]">
+            <p className="max-w-[364px] opacity-70 lg:max-w-[647px]">
               The ingenious PROOF OF HOLDING mechanism empowers users to
               effortlessly generate passive income by simply holding SCADS in
               their personal wallet. No staking or involvement in liquidity
@@ -66,17 +73,10 @@ const TextBlock = () => {
       </AnimatePresence>
       <button
         onClick={() => setTextIsVisible(!textIsVisible)}
-        className="font-bold text-lime"
+        className={clsx("z-10 font-bold", !themeCtx.isLight && "text-lime")}
       >
         {textIsVisible ? "Show less" : "Show more"}
       </button>
-      <Image
-        src="/images/planet-slice.png"
-        alt="planet"
-        width={431}
-        height={271}
-        className="absolute -bottom-32 right-0 z-0"
-      />
     </section>
   );
 };

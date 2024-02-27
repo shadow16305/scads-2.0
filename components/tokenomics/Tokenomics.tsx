@@ -6,12 +6,15 @@ import TokenomicsCarousel from "./TokenomicsCarousel";
 import TokenomicsContent from "./TokenomicsContent";
 import { AnimatePresence, motion } from "framer-motion";
 import { TokenomicsContext } from "@/contexts/tokenomics-context";
-import { tokenomicsButtons, tokenomicsContent } from "@/utils/utils";
+import { tokenomicsButtons, tokenomicsContent } from "@/constants/constants";
+import { ThemeContext } from "@/contexts/theme-context";
+import clsx from "clsx";
 
 const Tokenomics = () => {
   const tokenomicsCtx = useContext(TokenomicsContext);
   const activeText = tokenomicsCtx.activeItem;
   const setActiveText = tokenomicsCtx.setActiveItem;
+  const themeCtx = useContext(ThemeContext);
 
   const activeContent = tokenomicsContent.find(
     (content) => content.id === activeText,
@@ -19,10 +22,20 @@ const Tokenomics = () => {
 
   return (
     <section
-      className="mt-32 scroll-mt-32 rounded-2xl border border-[#40FFD1]/10 bg-[#0B1018]"
+      className={clsx(
+        "mt-32 scroll-mt-32 rounded-2xl border px-4 lg:px-0",
+        themeCtx.isLight
+          ? "bg-transparent shadow-md"
+          : "border-[#40FFD1]/10 bg-[#0B1018]",
+      )}
       id="tokenomics"
     >
-      <div className="flex w-full justify-center rounded-t-2xl border border-[#40FFD1]/10 bg-[#133930]/10 py-4">
+      <div
+        className={clsx(
+          "flex w-full justify-center rounded-t-2xl border py-4",
+          themeCtx.isLight ? "" : "border-[#40FFD1]/10 bg-[#133930]/10",
+        )}
+      >
         <SectionHeader title="Tokenomics" />
       </div>
       <TokenomicsCarousel

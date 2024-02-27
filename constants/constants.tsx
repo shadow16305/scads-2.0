@@ -1,3 +1,10 @@
+import { FaRegClock } from "react-icons/fa";
+import { IoSpeedometerOutline } from "react-icons/io5";
+import { BsHeartPulse } from "react-icons/bs";
+import { GrStorage } from "react-icons/gr";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { MdOutlineDataObject } from "react-icons/md";
+
 export const tokenomicsButtons = [
   {
     id: "tb1",
@@ -147,5 +154,72 @@ export const tokenomicsContent = [
     id: "PROOF OF HOLD",
     paragraph:
       "SCADS introduces an innovative concept called Proof of Hold (POH) to ensure safety, security, and minimize investment risks. This approach involves users simply purchasing the stable coin and holding it. By doing so, they automatically mint TWINE, the linear token. To facilitate this process, the algorithm incorporates a mapping feature called 'isHolder' to monitor addresses that qualify as holders. The 'ProofOfHolding' function enables an address to include itself in this list, allowing for seamless participation in the Proof of Hold mechanism. This inventive approach provides a secure and risk-reduced investment experience for users.",
+  },
+];
+
+export const statItems = [
+  {
+    id: "s1",
+    name: "Adaptive minting speed",
+    placeholder: "0.0000006",
+    icon: <IoSpeedometerOutline />,
+  },
+  {
+    id: "s2",
+    name: "Funds in Pulse",
+    placeholder: "8079.49",
+    icon: <BsHeartPulse />,
+  },
+  {
+    id: "s3",
+    name: "Next Pulse",
+    placeholder: "05:26:15",
+    icon: <FaRegClock />,
+  },
+  {
+    id: "s4",
+    name: "Minted TWINE",
+    placeholder: "1650851.99",
+    icon: <GrStorage />,
+  },
+  {
+    id: "s5",
+    name: "TWINE price increase",
+    placeholder: "0.17",
+    icon: <FaArrowTrendUp />,
+  },
+  {
+    id: "s6",
+    name: "SCADS Held",
+    placeholder: "26513.82",
+    icon: <MdOutlineDataObject />,
+  },
+];
+
+export const treasuryItems = [
+  {
+    id: "ti1",
+    name: "Total balance",
+    amount: "$34781.63",
+  },
+  {
+    id: "ti2",
+    name: "SCADS balance",
+    amount: "$536",
+  },
+  {
+    id: "ti3",
+    name: "TWINE balance",
+    amount: "$145017",
+  },
+  {
+    id: "ti4",
+    name: "USDT balance",
+    amount: "$10304",
+  },
+  {
+    id: "ti5",
+    name: "USDC balance",
+    amount: "$0",
   },
 ];

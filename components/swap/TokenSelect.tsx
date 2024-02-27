@@ -29,12 +29,14 @@ const tokens = [
 
 interface TokenSelectProps {
   selectClassName: string;
-  setToken: (token: string) => void;
+  tokenClassName: string;
+  setToken?: (token: string) => void;
   token: string;
 }
 
 const TokenSelect: React.FC<TokenSelectProps> = ({
   selectClassName,
+  tokenClassName,
   setToken,
   token,
 }) => {
@@ -58,9 +60,9 @@ const TokenSelect: React.FC<TokenSelectProps> = ({
                 fill
               />
             </div>
-            <span className="text-white">{token}</span>
+            <span className={tokenClassName}>{token}</span>
           </div>
-          <FaChevronDown size={16} className="text-white" />
+          <FaChevronDown size={16} className={tokenClassName} />
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="rounded-2xl border-none bg-[#050A12] text-white">
@@ -70,7 +72,7 @@ const TokenSelect: React.FC<TokenSelectProps> = ({
           <DropdownMenuItem
             key={token.name}
             className="group relative hover:text-black"
-            onClick={() => setToken(token.name)}
+            onClick={() => setToken!(token.name)}
           >
             <span className="z-10">{token.name}</span>
             <span className="absolute left-0 top-0 h-full w-0 rounded-r-2xl bg-lime transition-all duration-300 group-hover:w-full" />

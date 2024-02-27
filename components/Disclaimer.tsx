@@ -1,8 +1,28 @@
+"use client";
+
+import { ThemeContext } from "@/contexts/theme-context";
+import clsx from "clsx";
+import { useContext } from "react";
+
 const Disclaimer = () => {
+  const themeCtx = useContext(ThemeContext);
+
   return (
     <>
-      <h4 className="mt-32 text-center text-lime">Disclaimer</h4>
-      <p className="mt-2 w-full text-center text-xs text-white opacity-70">
+      <h4
+        className={clsx(
+          "mt-32 text-center",
+          themeCtx.isLight ? "text-black" : "text-lime",
+        )}
+      >
+        Disclaimer
+      </h4>
+      <p
+        className={clsx(
+          "mt-2 w-full px-8 text-center text-xs lg:px-0",
+          themeCtx.isLight ? "text-black" : "text-white opacity-70",
+        )}
+      >
         While the SCADS algorithm guarantees the stability of SCADS as a stable
         coin and assures that TWINE is a linear token with a constant growth
         rate for each minted TWINE, it is important to note that SCADS cannot be

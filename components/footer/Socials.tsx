@@ -1,4 +1,6 @@
-import Link from "next/link";
+import { ThemeContext } from "@/contexts/theme-context";
+import clsx from "clsx";
+import { useContext } from "react";
 import { FaMediumM } from "react-icons/fa";
 import { FaXTwitter, FaTelegram, FaGithub, FaDiscord } from "react-icons/fa6";
 
@@ -29,8 +31,15 @@ const socialLinks = [
 ];
 
 const Socials = () => {
+  const themeCtx = useContext(ThemeContext);
+
   return (
-    <div className="flex flex-col gap-y-3 text-white">
+    <div
+      className={clsx(
+        "mt-6 flex flex-col items-center gap-y-3  lg:mt-0 lg:items-start",
+        themeCtx.isLight ? "text-black" : "text-white",
+      )}
+    >
       <span className="font-semibold">Socials</span>
       <div className="flex items-center gap-x-4">
         {socialLinks.map((link) => (

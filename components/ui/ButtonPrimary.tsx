@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { useContext } from "react";
 
 interface ButtonProps {
-  onClick: () => void;
+  onClick?: () => void;
   text: string;
 }
 

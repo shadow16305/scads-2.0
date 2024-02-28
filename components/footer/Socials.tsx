@@ -45,6 +45,8 @@ const Socials = () => {
         {socialLinks.map((link) => (
           <a
             href={link.path}
+            target="_blank"
+            rel="noreferrer"
             key={link.id}
             className="h-7 w-7 transition-colors hover:text-lime"
           >

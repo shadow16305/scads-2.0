@@ -6,6 +6,8 @@ import { useContext } from "react";
 import { ThemeContext } from "@/contexts/theme-context";
 import clsx from "clsx";
 import { AiOutlineDash } from "react-icons/ai";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Treasury = () => {
   const themeCtx = useContext(ThemeContext);
@@ -17,20 +19,46 @@ const Treasury = () => {
         {treasuryItems.map((item) => (
           <div className="flex items-center gap-x-20" key={item.id}>
             <div className="z-10 flex flex-col items-center gap-y-2">
-              <p
+              <motion.p
+                initial={{ y: -30, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
                 className={clsx(
                   themeCtx.isLight ? "font-semibold text-black" : "text-lime",
                 )}
               >
                 {item.name}
-              </p>
-              <p
-                className={clsx(
-                  themeCtx.isLight ? "text-black" : "text-white opacity-70",
+              </motion.p>
+              <div className="flex items-center gap-x-0.5">
+                {item.id === "ti2" && (
+                  <Image
+                    src="/images/currency/SCADS.svg"
+                    alt="Scads"
+                    width={7}
+                    height={16}
+                    className={clsx(themeCtx.isLight ? "invert" : "opacity-70")}
+                  />
                 )}
-              >
-                {item.amount}
-              </p>
+                {item.id === "ti3" && (
+                  <Image
+                    src="/images/currency/TWINE.svg"
+                    alt="Scads"
+                    width={7}
+                    height={16}
+                    className={clsx(themeCtx.isLight ? "invert" : "opacity-70")}
+                  />
+                )}
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  className={clsx(
+                    themeCtx.isLight ? "text-black" : "text-white opacity-70",
+                  )}
+                >
+                  {item.amount}
+                </motion.p>
+              </div>
             </div>
             {item.id !== "ti5" && (
               <AiOutlineDash className="hidden text-lime lg:block" size={28} />

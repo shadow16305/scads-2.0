@@ -205,12 +205,12 @@ export const treasuryItems = [
   {
     id: "ti2",
     name: "SCADS balance",
-    amount: "$536",
+    amount: "536",
   },
   {
     id: "ti3",
     name: "TWINE balance",
-    amount: "$145017",
+    amount: "145017",
   },
   {
     id: "ti4",
@@ -221,5 +221,29 @@ export const treasuryItems = [
     id: "ti5",
     name: "USDC balance",
     amount: "$0",
+  },
+];
+
+export const blogSectionItems = [
+  {
+    id: "bi1",
+    imgSrc: "/images/blogs/blog-1.jpg",
+    text: `Use The world's first self-sufficient monetary system based on innovative Proof Of Hold protocol, providing safety of Holding scads in own user's wallets, without the risk of staking or commitment of funds to any platform. 
+The Assets are stored in user's WEB3 wallets. Users can always sell them or keep them for the long term, thereby generating passive income, by minting TWINE, the price of which linearly in accordance to number of TWINE minted
+The prospect of growth of TWINES at the current price of 0.17 cents will ensure its value up to 10 thousand US dollars in the next 2-3 years! due it exclusivity use case, and scarcity. 
+Invest into your safe crypto future!`,
+  },
+  {
+    id: "bi2",
+    imgSrc: "/images/blogs/blog-2.jpg",
+    text: `When TWINE market supply reach's 5.5m it will gain exclusivity to buy SCADS at that point the demand will grow exponentially and very fast.  Smart investor's will catch up to buy SCADS and mint twine as fast as possible, don't miss the chance to build your bag's fast.
+It's a good time to buy Scads to get Twines 🚀`,
+  },
+  {
+    id: "bi3",
+    imgSrc: "/images/blogs/blog-3.jpg",
+    text: `When you use a a credit card, or any current crypto off boarding card, we all pay 3.5 % per each transaction. In Q4 2024. 
+SCADS  will release its own Blockchain layer 0, along with payment system and settlement solution. USER'S will pay only GAS fees, eliminating all extra charges and reducing the cost of retail.
+Help us build it for you and own it  same as SCADS . IDO launch will be announced in February 2024. Make sure to participate in building the new future of money.`,
   },
 ];

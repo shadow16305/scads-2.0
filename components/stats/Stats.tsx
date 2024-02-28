@@ -14,9 +14,7 @@ const Stats = () => {
     <div
       className={clsx(
         "mx-auto mt-32 flex flex-col gap-y-8 rounded-3xl bg-[#050A12] p-8 lg:w-full lg:max-w-[1100px] xl:max-w-[1240px] 2xl:max-w-[1340px]",
-        themeCtx.isLight
-          ? "bg-[#F4F3F2] shadow-md"
-          : "bg-[#050A12] shadow-sm shadow-lime",
+        themeCtx.isLight ? "bg-[#F4F3F2] shadow-md" : "bg-[#050A12]",
       )}
     >
       <GeneralStats />

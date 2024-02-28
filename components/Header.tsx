@@ -5,6 +5,7 @@ import Stats from "./stats/Stats";
 import { useContext } from "react";
 import { ThemeContext } from "@/contexts/theme-context";
 import clsx from "clsx";
+import { IoEllipse } from "react-icons/io5";
 
 const Header = () => {
   const themeCtx = useContext(ThemeContext);
@@ -16,7 +17,7 @@ const Header = () => {
           "absolute left-0 top-0 z-0 w-screen lg:h-3/4",
           themeCtx.isLight
             ? "bg-gradient-to-b from-[#F4F3F2] to-lime"
-            : "bg-gradient-to-b from-[#050A12] to-lime/10",
+            : "bg-none",
         )}
       />
       <div className="relative z-10">
@@ -27,7 +28,7 @@ const Header = () => {
               themeCtx.isLight ? "text-black" : "text-white",
             )}
           >
-            <h1 className="text-center text-4xl font-medium leading-snug md:max-w-[700px] lg:text-[44px] xl:text-[56px]">
+            <h1 className="text-center text-4xl font-bold leading-tight md:max-w-[750px] lg:text-[44px] xl:text-[56px]">
               Save and grow your capital with{" "}
               <span className={clsx(!themeCtx.isLight && "text-lime")}>
                 money you own
@@ -45,6 +46,18 @@ const Header = () => {
         </div>
         <Stats />
       </div>
+      {!themeCtx.isLight && (
+        <IoEllipse
+          className="absolute -left-96 top-0 -z-10 -translate-y-1/2 text-lime blur-[300px]"
+          size={600}
+        />
+      )}
+      {!themeCtx.isLight && (
+        <IoEllipse
+          className="absolute -right-96 top-1/2 -z-10 -translate-y-1/2 text-lime blur-[300px]"
+          size={600}
+        />
+      )}
     </section>
   );
 };

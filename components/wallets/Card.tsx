@@ -47,8 +47,8 @@ const Card: React.FC<CardProps> = ({
       </h3>
       <p
         className={clsx(
-          "z-10 max-w-[264px] opacity-70",
-          themeCtx.isLight ? "text-black" : "text-white",
+          "z-10 max-w-[264px]",
+          themeCtx.isLight ? "text-black" : "text-white opacity-70",
         )}
       >
         {description}
@@ -70,7 +70,7 @@ const Card: React.FC<CardProps> = ({
       <Image
         src="/images/grid.png"
         alt="grid"
-        width={300}
+        width={200}
         height={240}
         className={clsx(
           "absolute right-0 top-0 z-0 rounded-3xl",

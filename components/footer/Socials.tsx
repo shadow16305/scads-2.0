@@ -8,7 +8,7 @@ const socialLinks = [
   {
     id: "X",
     icon: <FaXTwitter size={28} />,
-    path: "https://twitter.com/Scads_io",
+    path: "https://twitter.com/ScadsSwap",
   },
   {
     id: "Telegram",

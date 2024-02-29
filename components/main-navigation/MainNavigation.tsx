@@ -12,6 +12,7 @@ import { Switch } from "../ui/switch";
 import { ThemeContext } from "@/contexts/theme-context";
 import clsx from "clsx";
 import ButtonPrimary from "../ui/ButtonPrimary";
+import ThemeToggler from "./ThemeToggler";
 
 const MainNavigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -75,9 +76,9 @@ const MainNavigation = () => {
           </div>
         </div>
         <div className="flex items-center gap-x-6">
-          <Switch
-            className="bg-[#40FFD1]/10 data-[state=checked]:bg-[#0B1018]"
-            onClick={themeCtx.toggleTheme}
+          <ThemeToggler
+            isOn={themeCtx.isLight}
+            setIsOn={themeCtx.toggleTheme}
           />
           <ButtonPrimary text="Connect wallet" onClick={() => {}} />
         </div>

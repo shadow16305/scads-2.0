@@ -10,7 +10,7 @@ const GeneralStats = () => {
   const themeCtx = useContext(ThemeContext);
 
   return (
-    <div className="z-20 flex flex-col items-center gap-y-4 lg:flex-row lg:items-start lg:justify-between">
+    <div className="z-20 flex flex-col items-center gap-y-4 px-8 pt-8 lg:flex-row lg:items-start lg:justify-between">
       {statItems.map((item) => (
         <div
           key={item.id}
@@ -43,7 +43,7 @@ const GeneralStats = () => {
             </motion.p>
             <motion.p
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: themeCtx.isLight ? 1 : 0.7 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               className={clsx(
                 "text-end lg:text-start",

@@ -62,7 +62,7 @@ const FormInputs: React.FC<FormInputsProps> = ({
       <div
         className={clsx(
           "h-full w-[1px]",
-          isLight ? "bg-black" : "bg-[#40FFD1]/10",
+          isLight ? "bg-[#050A12]" : "bg-[#40FFD1]/10",
         )}
       />
       {panel === "SCADS" && (

@@ -34,7 +34,7 @@ const Tokenomics = () => {
         className={clsx(
           "flex w-full justify-center rounded-t-2xl border py-4",
           themeCtx.isLight
-            ? "bg-[#0B1018]/10"
+            ? "bg-[#0B1018]/5"
             : "border-[#40FFD1]/10 bg-[#133930]/10",
         )}
       >

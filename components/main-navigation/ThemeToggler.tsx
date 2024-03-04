@@ -15,7 +15,7 @@ const ThemeToggler: React.FC<ThemeTogglerProps> = ({ isOn, setIsOn }) => {
     <div
       className={clsx(
         "z-50 box-border flex h-8 w-16 cursor-pointer items-center rounded-3xl px-1 py-2 transition-all duration-300",
-        isOn ? "justify-end bg-black" : "justify-start bg-lime/10",
+        isOn ? "justify-end bg-[#050A12]" : "justify-start bg-lime/10",
       )}
       data-darkmode={isOn}
       onClick={setIsOn}

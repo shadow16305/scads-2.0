@@ -48,7 +48,7 @@ const Socials = () => {
             target="_blank"
             rel="noreferrer"
             key={link.id}
-            className="h-7 w-7 transition-colors hover:text-lime"
+            className="h-7 w-7 transition-all hover:-translate-y-1 hover:text-lime"
           >
             {link.icon}
           </a>

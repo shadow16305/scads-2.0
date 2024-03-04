@@ -24,23 +24,32 @@ const Header = () => {
         <div className="mx-auto flex justify-center pt-40 lg:max-w-[1100px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
           <div
             className={clsx(
-              "flex max-w-[347px] flex-col items-center gap-y-10 lg:max-w-none",
+              "flex max-w-[347px] flex-col items-center gap-y-8 lg:max-w-none",
               themeCtx.isLight ? "text-black" : "text-white",
             )}
           >
-            <h1 className="text-center text-4xl font-bold leading-tight md:max-w-[750px] lg:text-[44px] xl:text-[56px]">
-              Save and grow your capital with{" "}
+            <h1 className="text-center text-4xl font-bold leading-tight md:max-w-[860px] lg:text-[44px]">
+              Ditch the Bankchains, Own Your Finance{" "}
               <span className={clsx(!themeCtx.isLight && "text-lime")}>
-                money you own
+                SCADS - The Crypto DNA
               </span>
             </h1>
-            <p className="text-center lg:max-w-[550px] xl:max-w-[700px]">
-              Truly decentralized, non-governed money created for you. The only
-              asset that brings stability and confidence, can’t be hacked or
-              dumped. Mint TWINE that grows in time. Brings stability and
-              confidence to Crypto holders, traders, investors and institutional
-              organizations.
-            </p>
+            <div>
+              <p className="text-center lg:max-w-[550px] xl:max-w-[700px]">
+                The World's First Non-Fiat Stablecoin Powered by{" "}
+                <span
+                  className={clsx(
+                    "font-semibold",
+                    !themeCtx.isLight && "text-lime",
+                  )}
+                >
+                  Proof of Holding
+                </span>
+              </p>
+              <p className="text-center lg:max-w-[550px] xl:max-w-[700px]">
+                Mint TWINE simply by owning SCADS!
+              </p>
+            </div>
             <SwapModal navigation={false} />
           </div>
         </div>
@@ -54,7 +63,7 @@ const Header = () => {
       )}
       {!themeCtx.isLight && (
         <IoEllipse
-          className="absolute -right-96 top-1/2 -z-10 -translate-y-1/2 text-lime blur-[300px]"
+          className="absolute -right-96 top-0 -z-10 -translate-y-1/2 text-lime blur-[300px]"
           size={600}
         />
       )}

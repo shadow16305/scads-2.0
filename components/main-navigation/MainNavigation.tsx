@@ -13,6 +13,7 @@ import { ThemeContext } from "@/contexts/theme-context";
 import clsx from "clsx";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import ThemeToggler from "./ThemeToggler";
+import AddressDropdown from "./AddressDropdown";
 
 const MainNavigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -76,6 +77,7 @@ const MainNavigation = () => {
           </div>
         </div>
         <div className="flex items-center gap-x-6">
+          <AddressDropdown isLight={themeCtx.isLight} />
           <ThemeToggler
             isOn={themeCtx.isLight}
             setIsOn={themeCtx.toggleTheme}

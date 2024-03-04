@@ -26,7 +26,7 @@ const ButtonPrimary: React.FC<ButtonProps> = ({ onClick, text }) => {
       <div
         className={clsx(
           "absolute left-0 top-0 h-full w-full scale-[1.03] rounded-3xl transition-all duration-300 group-hover:scale-0 group-hover:opacity-0",
-          themeCtx.isLight ? "bg-black" : "bg-lime",
+          themeCtx.isLight ? "bg-[#050A12]" : "bg-lime",
         )}
       />
     </button>

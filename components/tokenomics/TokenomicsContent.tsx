@@ -25,7 +25,7 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
     <div
       className={clsx(
         "my-6 flex flex-col items-center gap-y-2",
-        themeCtx.isLight ? "text-black" : "text-white",
+        themeCtx.isLight ? "text-black" : "text-white opacity-70",
       )}
     >
       <p className="max-w-[340px] lg:max-w-[900px] xl:max-w-[1031px]">

@@ -54,7 +54,7 @@ const Wallets = () => {
     <section
       className={clsx(
         "mt-32 flex flex-col items-center gap-y-8 py-9",
-        themeCtx.isLight ? "bg-[#0B1018]/10" : "bg-[#2E454F]/10",
+        themeCtx.isLight ? "bg-[#0B1018]/5" : "bg-[#2E454F]/10",
       )}
     >
       <SectionHeader title="Wallets" />

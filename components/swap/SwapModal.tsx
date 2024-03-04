@@ -22,7 +22,7 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
   const scadsButtonClasses = clsx(
     panel === "SCADS"
       ? themeCtx.isLight
-        ? "bg-black text-white"
+        ? "bg-[#050A12] text-white"
         : "bg-lime text-black"
       : themeCtx.isLight
         ? "text-black shadow-md"
@@ -31,7 +31,7 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
   const twineButtonClasses = clsx(
     panel === "TWINE"
       ? themeCtx.isLight
-        ? "bg-black text-white"
+        ? "bg-[#050A12] text-white"
         : "bg-lime text-black"
       : themeCtx.isLight
         ? "text-black shadow-md"

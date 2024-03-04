@@ -247,3 +247,10 @@ SCADS  will release its own Blockchain layer 0, along with payment system and se
 Help us build it for you and own it  same as SCADS . IDO launch will be announced in February 2024. Make sure to participate in building the new future of money.`,
   },
 ];
+
+export const addresses = [
+  { address: "Scads: 0x6D036B813C63c2c2D84De16369F2b532a37A5E97" },
+  { address: "Twine: 0xa86C718a38515699773a1FEB9c3A891A2BE982A1" },
+  { address: "USDT: 0x55d398326f99059ff775485246999027b3197955" },
+  { address: "USDC: 0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d" },
+];

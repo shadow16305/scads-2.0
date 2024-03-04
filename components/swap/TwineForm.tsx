@@ -31,7 +31,9 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
       <div className="flex items-center justify-center space-x-2 text-white">
         <Switch
           id="airplane-mode"
-          className={clsx(themeCtx.isLight ? "bg-black" : "bg-[#40FFD1]/10")}
+          className={clsx(
+            themeCtx.isLight ? "bg-[#050A12]" : "bg-[#40FFD1]/10",
+          )}
         />
         <Label htmlFor="airplane-mode" className={textClasses}>
           Auto-compound

@@ -11,3 +11,14 @@
     margin: 0;
   }
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: #02f9a5;
+}
+
+::selection {
+  color: black;
+  background: #02f9a5;
+}

@@ -13,9 +13,21 @@ const Treasury = () => {
   const themeCtx = useContext(ThemeContext);
 
   return (
-    <section className="mt-16 flex flex-col items-center gap-y-8">
-      <SectionHeader title="Treasury balance" />
-      <div className="relative flex flex-col gap-y-20 rounded-3xl lg:w-full lg:flex-row lg:justify-between">
+    <section
+      className={clsx(
+        "relative flex flex-col items-center gap-y-8 rounded-b-3xl px-8 pb-8",
+        themeCtx.isLight ? "bg-[#0B1018]/5" : "bg-[#2E454F]/10",
+      )}
+    >
+      <div
+        className={clsx(
+          "absolute -top-12 left-1/2 -translate-x-1/2 rounded-t-3xl px-2 pt-2",
+          themeCtx.isLight ? "bg-[#0B1018]/5" : "bg-[#2E454F]/10",
+        )}
+      >
+        <SectionHeader title="Treasury balance" />
+      </div>
+      <div className="relative mt-6 flex flex-col gap-y-20 rounded-3xl lg:w-full lg:flex-row lg:justify-between">
         {treasuryItems.map((item) => (
           <div className="flex items-center gap-x-20" key={item.id}>
             <div className="z-10 flex flex-col items-center gap-y-2">
@@ -24,6 +36,7 @@ const Treasury = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 className={clsx(
+                  "text-sm",
                   themeCtx.isLight ? "font-semibold text-black" : "text-lime",
                 )}
               >
@@ -61,7 +74,7 @@ const Treasury = () => {
               </div>
             </div>
             {item.id !== "ti5" && (
-              <AiOutlineDash className="hidden text-lime lg:block" size={28} />
+              <AiOutlineDash className="hidden text-lime lg:block" size={32} />
             )}
           </div>
         ))}

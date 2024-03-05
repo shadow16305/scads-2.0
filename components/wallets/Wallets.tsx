@@ -73,6 +73,7 @@ const Wallets = () => {
                 title={item.name}
                 description={item.paragraph}
                 onClick={() => setActiveText(item.name)}
+                isLight={themeCtx.isLight}
                 className={clsx(
                   themeCtx.isLight
                     ? index === 1 || index === 3 || index === 5

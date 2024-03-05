@@ -1,10 +1,6 @@
-"use client";
-
-import { ThemeContext } from "@/contexts/theme-context";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
-import { useContext } from "react";
 
 interface CardProps {
   number: number;
@@ -14,6 +10,7 @@ interface CardProps {
   className: string;
   numberClass: string;
   shortcutClass: string;
+  isLight: boolean;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -23,10 +20,9 @@ const Card: React.FC<CardProps> = ({
   onClick,
   className,
   numberClass,
-  shortcutClass
+  shortcutClass,
+  isLight,
 }) => {
-  const themeCtx = useContext(ThemeContext);
-
   return (
     <div
       className={`${clsx("relative flex h-[260px] w-[324px] flex-col gap-y-2 rounded-xl border border-[#40FFD1]/10 pl-5 pt-4", className)}`}
@@ -42,7 +38,7 @@ const Card: React.FC<CardProps> = ({
       <h3
         className={clsx(
           "z-10 text-xl font-semibold",
-          themeCtx.isLight ? "text-black" : "text-lime",
+          isLight ? "text-black" : "text-lime",
         )}
       >
         {title}
@@ -50,7 +46,7 @@ const Card: React.FC<CardProps> = ({
       <p
         className={clsx(
           "z-10 max-w-[264px]",
-          themeCtx.isLight ? "text-black" : "text-white opacity-70",
+          isLight ? "text-black" : "text-white opacity-70",
         )}
       >
         {description}
@@ -59,7 +55,10 @@ const Card: React.FC<CardProps> = ({
         <Link
           href="#tokenomics"
           onClick={onClick}
-          className={clsx("rounded-full p-2 transition-all duration-300 hover:scale-110", shortcutClass)}
+          className={clsx(
+            "rounded-full p-2 transition-all duration-300 hover:scale-110",
+            shortcutClass,
+          )}
         >
           <Image
             src="/images/vuesax/link-to.svg"
@@ -76,7 +75,7 @@ const Card: React.FC<CardProps> = ({
         height={240}
         className={clsx(
           "absolute right-0 top-0 z-0 rounded-3xl",
-          themeCtx.isLight && "hidden",
+          isLight && "hidden",
         )}
       />
     </div>

@@ -28,7 +28,7 @@ const Footer = () => {
           SCADS © Copyright {currentYear}. All rights reserved. ™
         </p>
       </div>
-      <Socials />
+      <Socials isLight={themeCtx.isLight} />
     </footer>
   );
 };

@@ -17,7 +17,7 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
   const opacityClasses = clsx(themeCtx.isLight ? "opacity-100" : "oapcity-70");
 
   return (
-    <form className="mt-2 flex flex-col gap-y-6">
+    <form className="mt-2 flex flex-col gap-y-4 lg:gap-y-6">
       <FormInputs
         isLight={themeCtx.isLight}
         inputValue={inputValue}
@@ -41,14 +41,14 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
       </div>
       <div
         className={clsx(
-          "flex flex-col items-center gap-y-4 text-sm",
+          "flex flex-col items-center gap-y-2 text-sm",
           textClasses,
         )}
       >
         <p>
           <span className={opacityClasses}>SCADS owned:</span> 0.00
         </p>
-        <div className="flex w-full flex-col gap-y-2">
+        <div className="w-full space-y-2">
           <p className="flex justify-between">
             <span className={opacityClasses}>Time invested:</span> 62 Days 19
             Hours 20 Minutes

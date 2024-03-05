@@ -1,19 +1,23 @@
 "use client";
 
+import { forwardRef, useContext } from "react";
 import { ThemeContext } from "@/contexts/theme-context";
 import clsx from "clsx";
-import { useContext } from "react";
 
 interface ButtonProps {
   onClick?: () => void;
   text: string;
 }
 
-const ButtonPrimary: React.FC<ButtonProps> = ({ onClick, text }) => {
+const ButtonPrimary: React.FC<ButtonProps> = forwardRef<
+  HTMLButtonElement,
+  ButtonProps
+>(({ onClick, text }, ref) => {
   const themeCtx = useContext(ThemeContext);
 
   return (
     <button
+      ref={ref}
       onClick={onClick}
       className={clsx(
         "group relative rounded-[50px] border-2 px-10 py-3 font-bold transition-colors",
@@ -31,6 +35,6 @@ const ButtonPrimary: React.FC<ButtonProps> = ({ onClick, text }) => {
       />
     </button>
   );
-};
+});
 
 export default ButtonPrimary;

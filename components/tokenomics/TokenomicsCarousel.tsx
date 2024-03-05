@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Carousel,
   CarouselContent,
@@ -7,9 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { ThemeContext } from "@/contexts/theme-context";
 import clsx from "clsx";
-import { useContext } from "react";
 
 interface CarouselProps {
   items: {
@@ -18,14 +14,19 @@ interface CarouselProps {
   }[];
   onClick: (item: string) => void;
   activeText: string;
+  isLight: boolean;
 }
 
 const TokenomicsCarousel: React.FC<CarouselProps> = ({
   items,
   onClick,
   activeText,
+  isLight,
 }) => {
-  const themeCtx = useContext(ThemeContext);
+  const arrowClasses = clsx(
+    "z-10 border-none bg-transparent shadow-none ring-0",
+    isLight ? "text-black" : "text-white",
+  );
 
   return (
     <Carousel
@@ -33,7 +34,7 @@ const TokenomicsCarousel: React.FC<CarouselProps> = ({
         align: "start",
         skipSnaps: true,
       }}
-      className="mx-auto mt-6 w-full max-w-[300px] lg:max-w-[900px] xl:max-w-[1031px]"
+      className="relative mx-auto mt-6 w-full max-w-[260px] lg:max-w-[900px] xl:max-w-[1031px]"
     >
       <CarouselContent>
         {items.map((item) => (
@@ -41,7 +42,7 @@ const TokenomicsCarousel: React.FC<CarouselProps> = ({
             key={item.id}
             className={clsx(
               "basis-auto lg:basis-1/4 xl:basis-1/5",
-              themeCtx.isLight ? "text-black" : "text-white",
+              isLight ? "text-black" : "text-white",
             )}
           >
             <button
@@ -50,7 +51,7 @@ const TokenomicsCarousel: React.FC<CarouselProps> = ({
                 "text-nowrap rounded-3xl px-6 py-2 text-sm transition-all duration-300 lg:min-w-[182px]",
                 activeText === item.text
                   ? "bg-lime font-semibold text-black"
-                  : themeCtx.isLight
+                  : isLight
                     ? "bg-lime/40"
                     : "bg-[#40FFD1]/5 text-white",
               )}
@@ -60,8 +61,20 @@ const TokenomicsCarousel: React.FC<CarouselProps> = ({
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className={arrowClasses} />
+      <CarouselNext className={arrowClasses} />
+      <div
+        className={clsx(
+          "absolute -right-4 top-0 h-full w-8 bg-gradient-to-r from-transparent lg:hidden",
+          isLight ? "via-[#F4F3F2] to-[#F4F3F2]" : "via-[#0B1018] to-[#0B1018]",
+        )}
+      />
+      <div
+        className={clsx(
+          "absolute -left-4 top-0 h-full w-8 bg-gradient-to-l from-transparent lg:hidden",
+          isLight ? "via-[#F4F3F2] to-[#F4F3F2]" : "via-[#0B1018] to-[#0B1018]",
+        )}
+      />
     </Carousel>
   );
 };

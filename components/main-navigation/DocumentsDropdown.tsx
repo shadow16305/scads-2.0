@@ -23,7 +23,7 @@ const documents = [
   },
 ];
 
-const DocumentsDropdown = () => {
+const DocumentsDropdown: React.FC<{ close?: () => void }> = ({ close }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="group relative flex items-center gap-x-1 focus:outline-none focus:ring-0">
@@ -35,13 +35,17 @@ const DocumentsDropdown = () => {
         <DropdownMenuGroup className="text-lime">
           {documents.map((document) => (
             <DropdownMenuItem
-              className="group relative rounded-2xl hover:text-black"
               key={document.name}
+              className="group relative p-0 py-1 text-base"
             >
-              <Link href={document.path} className="z-10">
-                {document.name}
+              <Link
+                href={document.path}
+                onClick={close}
+                className="z-10 w-full rounded-2xl pl-2 transition hover:text-black"
+              >
+                <span className="relative z-10">{document.name}</span>
+                <span className="absolute left-0 top-0 h-full w-0 bg-lime transition-all duration-300 group-hover:w-full" />
               </Link>
-              <span className="absolute left-0 top-0 h-full w-0 bg-lime transition-all duration-300 group-hover:w-full" />
             </DropdownMenuItem>
           ))}
         </DropdownMenuGroup>

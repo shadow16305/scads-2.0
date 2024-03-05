@@ -24,7 +24,7 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
   return (
     <div
       className={clsx(
-        "my-6 flex flex-col items-center gap-y-2",
+        "my-6 flex flex-col items-center gap-y-2 px-2 text-sm md:px-0 md:text-base",
         themeCtx.isLight ? "text-black" : "text-white opacity-70",
       )}
     >
@@ -32,7 +32,7 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
         {paragraph}
       </p>
       {list && (
-        <ul className="flex max-w-[340px] flex-col gap-y-2 lg:max-w-[900px] xl:max-w-[1031px]">
+        <ul className="flex max-w-[340px] list-disc flex-col gap-y-2 pl-4 lg:max-w-[900px] xl:max-w-[1031px]">
           {list.map((item, index) => (
             <li key={index}>
               {item.list_one && <p>{item.list_one}</p>}

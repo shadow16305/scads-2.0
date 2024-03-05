@@ -13,6 +13,7 @@ interface CardProps {
   onClick: () => void;
   className: string;
   numberClass: string;
+  shortcutClass: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -22,6 +23,7 @@ const Card: React.FC<CardProps> = ({
   onClick,
   className,
   numberClass,
+  shortcutClass
 }) => {
   const themeCtx = useContext(ThemeContext);
 
@@ -57,7 +59,7 @@ const Card: React.FC<CardProps> = ({
         <Link
           href="#tokenomics"
           onClick={onClick}
-          className="rounded-full bg-lime p-2 transition-all duration-300 hover:scale-110"
+          className={clsx("rounded-full p-2 transition-all duration-300 hover:scale-110", shortcutClass)}
         >
           <Image
             src="/images/vuesax/link-to.svg"

@@ -1,12 +1,21 @@
+import clsx from "clsx";
 import { Dispatch, SetStateAction } from "react";
 
 interface HamburgerProps {
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
+  isLight: boolean;
 }
 
-const Hamburger: React.FC<HamburgerProps> = ({ isOpen, setIsOpen }) => {
-  const genericHamburgerLine = `h-1 w-6 my-1 bg-white transition ease transform duration-300`;
+const Hamburger: React.FC<HamburgerProps> = ({
+  isOpen,
+  setIsOpen,
+  isLight,
+}) => {
+  const genericHamburgerLine = clsx(
+    "h-1 w-6 my-1 transition ease transform duration-300",
+    isLight ? "bg-black" : "bg-white",
+  );
 
   return (
     <button

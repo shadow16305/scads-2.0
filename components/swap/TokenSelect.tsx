@@ -50,7 +50,7 @@ const TokenSelect: React.FC<TokenSelectProps> = ({
     <DropdownMenu>
       <DropdownMenuTrigger>
         <div
-          className={`flex w-[140px] items-center justify-between rounded-3xl border border-[#132545] px-3 py-2 ${selectClassName}`}
+          className={`flex w-[120px] items-center justify-between rounded-3xl border px-3 py-2 lg:w-[140px] ${selectClassName}`}
         >
           <div className="flex items-center gap-x-2">
             <div className={`relative ${tokenIconClassNames}`}>

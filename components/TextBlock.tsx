@@ -13,7 +13,7 @@ const TextBlock = () => {
 
   return (
     <section
-      className={`relative mt-32 flex flex-col items-center gap-y-4 ${textClass}`}
+      className={`relative mt-32 flex flex-col items-center gap-y-4 px-4 md:px-0 ${textClass}`}
     >
       <motion.h2
         initial={{ opacity: 0, y: -20 }}

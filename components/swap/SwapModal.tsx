@@ -52,7 +52,7 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
       </DialogTrigger>
       <DialogContent
         className={clsx(
-          "border-none",
+          "max-w-[360px] rounded-3xl border-none md:max-w-lg",
           themeCtx.isLight ? "bg-[#F4F3F2]" : "bg-[#0A1018]",
         )}
       >

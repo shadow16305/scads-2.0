@@ -24,11 +24,11 @@ const Header = () => {
         <div className="mx-auto flex justify-center pt-40 lg:max-w-[1100px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
           <div
             className={clsx(
-              "flex max-w-[347px] flex-col items-center gap-y-8 lg:max-w-none",
+              "flex flex-col items-center gap-y-8 lg:max-w-none",
               themeCtx.isLight ? "text-black" : "text-white",
             )}
           >
-            <h1 className="text-center text-4xl font-bold leading-tight md:max-w-[860px] lg:text-[44px]">
+            <h1 className="max-w-[310px] text-center text-2xl font-bold leading-tight md:max-w-[860px] lg:text-[44px]">
               Ditch the Bankchains, Own Your Finance{" "}
               <span className={clsx(!themeCtx.isLight && "text-lime")}>
                 SCADS - The Crypto DNA
@@ -57,13 +57,13 @@ const Header = () => {
       </div>
       {!themeCtx.isLight && (
         <IoEllipse
-          className="absolute -left-96 top-0 -z-10 -translate-y-1/2 text-lime blur-[300px]"
+          className="absolute -left-96 top-0 -z-10 hidden -translate-y-1/2 text-lime blur-[300px] lg:block"
           size={600}
         />
       )}
       {!themeCtx.isLight && (
         <IoEllipse
-          className="absolute -right-96 top-0 -z-10 -translate-y-1/2 text-lime blur-[300px]"
+          className="absolute -right-96 top-0 -z-10 hidden -translate-y-1/2 text-lime blur-[300px] lg:block"
           size={600}
         />
       )}

@@ -23,7 +23,7 @@ const Tokenomics = () => {
   return (
     <section
       className={clsx(
-        "mt-32 scroll-mt-32 rounded-2xl border px-4 lg:px-0",
+        "mx-auto mt-32 max-w-fit scroll-mt-32 rounded-2xl border lg:max-w-none",
         themeCtx.isLight
           ? "bg-transparent shadow-md"
           : "border-[#40FFD1]/10 bg-[#0B1018]",
@@ -44,6 +44,7 @@ const Tokenomics = () => {
         onClick={(item) => setActiveText(item)}
         items={tokenomicsButtons}
         activeText={activeText}
+        isLight={themeCtx.isLight}
       />
       <AnimatePresence mode="wait">
         {activeContent && (

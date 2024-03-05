@@ -25,7 +25,7 @@ const AddressDropdown: React.FC<{ isLight: boolean }> = ({ isLight }) => {
           height={24}
         />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="mt-2 rounded-xl border-none bg-[#0B1018]">
+      <DropdownMenuContent className="mr-2 mt-2 max-w-[340px] rounded-xl border-none bg-[#0B1018] lg:mr-0 lg:max-w-none">
         <DropdownMenuGroup className="flex flex-col space-y-2 px-2 pt-3 text-white">
           {addresses.map((item) => (
             <p className="text-sm" key={item.address}>

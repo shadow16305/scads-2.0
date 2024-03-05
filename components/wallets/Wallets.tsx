@@ -87,6 +87,13 @@ const Wallets = () => {
                       : "bg-lime"
                     : "bg-lime/20 text-lime",
                 )}
+                shortcutClass={clsx(
+                  themeCtx.isLight
+                    ? index === 0 || index === 2 || index === 4
+                      ? "bg-lime"
+                      : "bg-[#F4F3F2]"
+                    : "bg-lime",
+                )}
               />
             </motion.div>
           ))}

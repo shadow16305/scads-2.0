@@ -22,6 +22,7 @@ const Roadmap = () => {
       <div className="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:-translate-x-px before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent md:before:mx-auto md:before:translate-x-0">
         {roadmapContent.map((item) => (
           <RoadmapItem
+            key={item.id}
             isLight={themeCtx.isLight}
             date={item.date}
             l1={item.l1}

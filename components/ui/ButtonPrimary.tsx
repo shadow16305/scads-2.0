@@ -37,4 +37,6 @@ const ButtonPrimary: React.FC<ButtonProps> = forwardRef<
   );
 });
 
+ButtonPrimary.displayName = "ButtonPrimary";
+
 export default ButtonPrimary;

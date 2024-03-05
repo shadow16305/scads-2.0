@@ -40,7 +40,6 @@ const Disclaimer = () => {
         users to 'Do Your Own Research' (DYOR) before engaging in any
         transactions or investments within the SCADS ecosystem.
       </p>
-      ;
     </>
   );
 };

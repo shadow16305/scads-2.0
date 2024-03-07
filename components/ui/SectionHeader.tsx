@@ -10,7 +10,7 @@ const SectionHeader: React.FC<{ title: string }> = ({ title }) => {
   return (
     <h4
       className={clsx(
-        "rounded-3xl  px-4 py-2 text-lime",
+        "rounded-3xl px-4 py-2 text-sm text-lime md:text-base",
         themeCtx.isLight ? "bg-[#0B1018]" : "bg-lime/20",
       )}
     >

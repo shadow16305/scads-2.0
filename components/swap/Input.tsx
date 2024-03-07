@@ -33,7 +33,9 @@ const Input: React.FC<InputProps> = ({
   };
 
   return (
-    <div className={`flex flex-col justify-between lg:h-[200px] ${className}`}>
+    <div
+      className={`flex flex-col justify-between lg:h-[140px] 2xl:h-[200px] ${className}`}
+    >
       <div className="flex flex-col gap-y-1">
         {panel === "SCADS" ? (
           <TokenSelect

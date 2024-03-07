@@ -56,7 +56,7 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
           themeCtx.isLight ? "bg-[#F4F3F2]" : "bg-[#0A1018]",
         )}
       >
-        <DialogHeader className="flex flex-col gap-y-2">
+        <DialogHeader className="space-y-2">
           <DialogTitle
             className={clsx(
               "text-2xl font-semibold",

@@ -17,7 +17,7 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
   const opacityClasses = clsx(themeCtx.isLight ? "opacity-100" : "oapcity-70");
 
   return (
-    <form className="mt-2 flex flex-col gap-y-4 lg:gap-y-6">
+    <form className="mt-2 flex flex-col gap-y-4 2xl:gap-y-6">
       <FormInputs
         isLight={themeCtx.isLight}
         inputValue={inputValue}

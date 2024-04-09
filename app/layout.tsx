@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MainNavigation from "@/components/main-navigation/MainNavigation";
-import Footer from "@/components/footer/Footer";
+import MainNavigation from "@/components/main-navigation/main-navigation";
+import Footer from "@/components/footer/footer";
 import Providers from "./providers";
 
 export const metadata: Metadata = {
@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="overflow-x-hidden bg-[#050A12] font-['Quicksand',sans-serif]">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body className="overflow-x-hidden bg-[#F4F3F2] font-['Quicksand',sans-serif] dark:bg-[#050A12]">
         <Providers>
           <MainNavigation />
           {children}

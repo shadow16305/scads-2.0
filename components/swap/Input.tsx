@@ -1,6 +1,6 @@
 import Image from "next/image";
-import TokenSelect from "./TokenSelect";
-import clsx from "clsx";
+import TokenSelect from "./token-select";
+import { cn } from "@/lib/utils";
 
 interface InputProps {
   className: string;
@@ -12,7 +12,6 @@ interface InputProps {
   setValue: (value: number) => void;
   value: number;
   panel: string;
-  isLight: boolean;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -25,7 +24,6 @@ const Input: React.FC<InputProps> = ({
   setValue,
   value,
   panel,
-  isLight,
 }) => {
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = event.target.value;
@@ -54,10 +52,9 @@ const Input: React.FC<InputProps> = ({
                   src={`/images/currency/${token}.svg`}
                   alt="currency placeholder"
                   fill
-                  className={clsx(
-                    isLight &&
-                      (token === "SCADS" || token === "TWINE") &&
-                      "invert",
+                  className={cn(
+                    (token === "SCADS" || token === "TWINE") &&
+                      "invert dark:invert-0",
                   )}
                 />
               </div>

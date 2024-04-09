@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import { FaMediumM } from "react-icons/fa";
 import { FaXTwitter, FaTelegram, FaGithub, FaDiscord } from "react-icons/fa6";
 
@@ -28,15 +27,9 @@ const socialLinks = [
   },
 ];
 
-const Socials:React.FC<{isLight: boolean}> = ({isLight}) => {
-
+const Socials = () => {
   return (
-    <div
-      className={clsx(
-        "mt-6 flex flex-col items-center gap-y-3  lg:mt-0 lg:items-start",
-        isLight ? "text-black" : "text-white",
-      )}
-    >
+    <div className="mt-6 flex flex-col items-center gap-y-3  text-black dark:text-white lg:mt-0 lg:items-start">
       <span className="font-semibold">Socials</span>
       <div className="flex items-center gap-x-4">
         {socialLinks.map((link) => (
@@ -45,7 +38,7 @@ const Socials:React.FC<{isLight: boolean}> = ({isLight}) => {
             target="_blank"
             rel="noreferrer"
             key={link.id}
-            className="h-7 w-7 transition-all hover:-translate-y-1 hover:text-lime"
+            className="h-7 w-7 transition-all hover:-translate-y-1 hover:scale-105 hover:text-lime"
           >
             {link.icon}
           </a>

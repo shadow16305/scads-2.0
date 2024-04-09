@@ -1,7 +1,7 @@
 "use client";
 
 import { TokenomicsContext } from "@/contexts/tokenomics-context";
-import SectionHeader from "../../../../components/ui/section-header";
+import SectionHeader from "@/components/ui/section-header";
 import Card from "./card";
 import { motion, AnimatePresence } from "framer-motion";
 import { useContext } from "react";

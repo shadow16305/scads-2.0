@@ -1,4 +1,4 @@
-import SwapModal from "../../../components/swap/swap-modal";
+import SwapModal from "@/components/swap/swap-modal";
 import Stats from "./stats/stats";
 import { IoEllipse } from "react-icons/io5";
 

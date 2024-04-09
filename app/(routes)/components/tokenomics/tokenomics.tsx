@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext } from "react";
-import SectionHeader from "../../../../components/ui/section-header";
+import SectionHeader from "@/components/ui/section-header";
 import TokenomicsCarousel from "./tokenomics-carousel";
 import TokenomicsContent from "./tokenomics-content";
 import { AnimatePresence, motion } from "framer-motion";

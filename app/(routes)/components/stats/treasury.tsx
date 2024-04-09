@@ -1,7 +1,7 @@
 "use client";
 
 import { treasuryItems } from "@/constants/content";
-import SectionHeader from "../../../../components/ui/section-header";
+import SectionHeader from "@/components/ui/section-header";
 import { AiOutlineDash } from "react-icons/ai";
 import Image from "next/image";
 import { motion } from "framer-motion";

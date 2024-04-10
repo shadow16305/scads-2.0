@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 const Providers = ({ children }: { children: ReactNode }) => {
   return (
-    <ThemeProvider attribute="class" enableSystem>
+    <ThemeProvider attribute="class" defaultTheme="dark">
       <ToasterProvider />
       <TokenomicsContextProvider>{children}</TokenomicsContextProvider>
     </ThemeProvider>

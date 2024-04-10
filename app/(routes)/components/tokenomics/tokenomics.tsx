@@ -1,12 +1,12 @@
 "use client";
 
 import { useContext } from "react";
-import SectionHeader from "@/components/ui/section-header";
 import TokenomicsCarousel from "./tokenomics-carousel";
 import TokenomicsContent from "./tokenomics-content";
 import { AnimatePresence, motion } from "framer-motion";
 import { TokenomicsContext } from "@/contexts/tokenomics-context";
 import { tokenomicsButtons, tokenomicsContent } from "@/constants/content";
+import { Separator } from "@/components/ui/separator";
 
 const Tokenomics = () => {
   const tokenomicsCtx = useContext(TokenomicsContext);
@@ -19,12 +19,23 @@ const Tokenomics = () => {
 
   return (
     <section
-      className="mx-auto mt-32 max-w-fit scroll-mt-32 rounded-2xl border bg-transparent shadow-md dark:border-[#40FFD1]/10 dark:bg-[#0B1018] lg:max-w-none"
+      className="mx-auto mt-56 max-w-fit scroll-mt-32 rounded-2xl bg-transparent lg:max-w-none"
       id="tokenomics"
     >
-      <div className="flex w-full justify-center rounded-t-2xl border bg-[#0B1018]/5 py-4 dark:border-[#40FFD1]/10 dark:bg-[#133930]/10">
-        <SectionHeader title="Tokenomics" />
-      </div>
+      <motion.h2
+        initial={{ opacity: 0.5, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        viewport={{ once: true }}
+        className="mt-8 bg-gradient-to-br from-black to-neutral-700 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent dark:from-white dark:to-neutral-500"
+      >
+        Tokenomics
+      </motion.h2>
+      <Separator className="dark:bg-custom-color/20" />
       <TokenomicsCarousel
         onClick={(item) => setActiveText(item)}
         items={tokenomicsButtons}

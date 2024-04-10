@@ -1,7 +1,7 @@
 const Disclaimer = () => {
   return (
     <>
-      <h4 className="mt-32 text-center text-black dark:text-lime">
+      <h4 className="dark:text-custom-color mt-32 text-center text-black">
         Disclaimer
       </h4>
       <p className="mt-2 w-full px-8 text-center text-xs text-black opacity-70 dark:text-white lg:px-0">

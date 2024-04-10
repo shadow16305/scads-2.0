@@ -426,3 +426,35 @@ export const wallets = [
     icon: "/images/wallet-connect.svg",
   },
 ];
+
+export const cardItems = [
+  {
+    title: "SCADS",
+    description:
+      "Decentralized, stable digital currency for secure global transactions, not pegged based on (POH).",
+  },
+  {
+    title: "TWINE",
+    description:
+      "Linearly growing digital asset for minted by holding SCADS long-term, secured and trusted investment.",
+  },
+  {
+    title: "SEIGNORAGE",
+    description: "The system self cost of minting.",
+  },
+  {
+    title: "PULSE",
+    description:
+      "Self-sustained investment protocol & network effect within SCADS ecosystem.",
+  },
+  {
+    id: "ci5",
+    title: "TREASURY",
+    description: "Financial backbone of SCADS, managing assets and liquidity.",
+  },
+  {
+    title: "LIQUIDITY WALLET",
+    description:
+      "Is a depository to supply liquidity to the market as makers and liquidity providers.",
+  },
+];

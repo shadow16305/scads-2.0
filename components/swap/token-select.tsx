@@ -75,7 +75,7 @@ const TokenSelect: React.FC<TokenSelectProps> = ({
             onClick={() => setToken!(token.name)}
           >
             <span className="z-10">{token.name}</span>
-            <span className="absolute left-0 top-0 h-full w-0 rounded-r-2xl bg-lime transition-all duration-300 group-hover:w-full" />
+            <span className="bg-custom-color absolute left-0 top-0 h-full w-0 rounded-r-2xl transition-all duration-300 group-hover:w-full" />
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

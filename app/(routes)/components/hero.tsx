@@ -5,20 +5,17 @@ import { IoEllipse } from "react-icons/io5";
 const Header = () => {
   return (
     <section className="relative">
-      <div className="absolute left-0 top-0 z-0 w-screen bg-gradient-to-b from-[#F4F3F2] to-lime dark:bg-none lg:h-3/4" />
+      <div className="to-custom-color absolute left-0 top-0 z-0 w-screen bg-gradient-to-b from-[#F4F3F2] dark:bg-none lg:h-3/4" />
       <div className="relative z-10">
         <div className="mx-auto flex justify-center pt-40 lg:max-w-[1100px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
           <div className="flex flex-col items-center gap-y-8 text-black dark:text-white lg:max-w-none">
-            <h1 className="max-w-[310px] text-center text-2xl font-bold leading-tight md:max-w-[860px] lg:text-[44px]">
-              Ditch the Bankchains, Own Your Finance{" "}
-              <span className="dark:text-lime">SCADS - The Crypto DNA</span>
+            <h1 className="max-w-[310px] bg-gradient-to-br from-black to-neutral-700 bg-clip-text text-center text-2xl font-bold leading-tight text-transparent dark:from-white dark:to-neutral-500 md:max-w-[860px] lg:text-[44px]">
+              Ditch the Bankchains, Own Your Finance SCADS - The Crypto DNA
             </h1>
-            <div>
+            <div className="dark:text-neutral-300">
               <p className="text-center lg:max-w-[550px] xl:max-w-[700px]">
-                The World's First Non-Fiat Stablecoin Powered by{" "}
-                <span className="font-semibold dark:text-lime">
-                  Proof of Holding
-                </span>
+                The World's First Non-Fiat Stablecoin Powered by Proof of
+                Holding
               </p>
               <p className="text-center lg:max-w-[550px] xl:max-w-[700px]">
                 Mint TWINE simply by owning SCADS!
@@ -30,11 +27,7 @@ const Header = () => {
         <Stats />
       </div>
       <IoEllipse
-        className="absolute -left-96 top-0 -z-10 hidden -translate-y-1/2 text-lime blur-[300px] dark:block lg:block"
-        size={600}
-      />
-      <IoEllipse
-        className="absolute -right-96 top-0 -z-10 hidden -translate-y-1/2 text-lime blur-[300px] dark:block lg:block"
+        className="text-custom-color absolute -top-40 left-1/2 -z-10 hidden -translate-x-1/2 -translate-y-1/2 blur-[300px] dark:block lg:block"
         size={600}
       />
     </section>

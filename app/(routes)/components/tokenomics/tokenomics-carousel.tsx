@@ -43,8 +43,8 @@ const TokenomicsCarousel: React.FC<CarouselProps> = ({
               className={cn(
                 "text-nowrap rounded-3xl px-6 py-2 text-sm transition-all duration-300 lg:min-w-[182px]",
                 activeText === item.text
-                  ? "bg-lime font-semibold text-black"
-                  : "bg-lime/40 dark:bg-[#40FFD1]/5 dark:text-white",
+                  ? "bg-custom-color font-semibold text-black"
+                  : "bg-custom-color/40 dark:bg-[#40FFD1]/5 dark:text-white",
               )}
             >
               {item.text}

@@ -18,8 +18,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--sf-pro)"],
+      },
       colors: {
-        lime: "#02F9A5",
+        "custom-color": "#7A87FF",
       },
       keyframes: {
         "accordion-down": {

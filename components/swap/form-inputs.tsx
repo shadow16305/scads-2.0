@@ -24,7 +24,7 @@ const FormInputs: React.FC<FormInputsProps> = ({
   secondToken,
 }) => {
   return (
-    <div className="relative flex h-full justify-between rounded-3xl border border-black bg-transparent px-4 dark:border-[#40FFD1]/10 dark:bg-[#0A1018] lg:w-[460px]">
+    <div className="relative flex h-full justify-between rounded-3xl border border-black bg-transparent px-4 dark:border-white/10 lg:w-[460px]">
       <Input
         className={clsx(
           "items-start pb-1 pt-4 text-black placeholder:text-black dark:text-white dark:placeholder:text-white",
@@ -42,7 +42,7 @@ const FormInputs: React.FC<FormInputsProps> = ({
       {panel === "SCADS" && (
         <button
           type="button"
-          className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#40FFD1]/10 bg-[#0A1018] p-1 text-white transition hover:text-lime"
+          className="hover:text-custom-color absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#40FFD1]/10 bg-[#0A1018] p-1 text-white transition"
           onClick={handleSwap}
         >
           <AiOutlineSwap size={24} />

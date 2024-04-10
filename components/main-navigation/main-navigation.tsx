@@ -40,56 +40,62 @@ const MainNavigation = () => {
   }, [isOpen]);
 
   const navClasses = clsx(
-    "fixed lg:left-1/2 top-0 z-50 flex w-full max-w-sm lg:-translate-x-1/2 items-center justify-between rounded-[50px] border-b border-transparent px-4 py-4 transition-all lg:max-w-[1100px] xl:max-w-[1240px] 2xl:max-w-[1340px]",
-    scrolled ? "bg-[#F4F3F2] shadow-md dark:bg-[#0B1018]" : "bg-transparent",
-    scrolled && "top-2",
+    "fixed top-0 z-50 flex w-screen items-center justify-between transition-all",
+    scrolled
+      ? "bg-[#F4F3F2]/10 shadow-md dark:bg-[#0B1018]/10 backdrop-blur-lg"
+      : "bg-transparent",
   );
 
   return (
     <nav className={navClasses}>
-      <div className="flex min-w-full items-center justify-between gap-x-12 px-4 lg:min-w-0 lg:justify-normal lg:px-0">
-        <Link href="/" className="z-50 invert dark:invert-0">
-          <Image src="/images/logo.png" alt="logo" width={140} height={40} />
-        </Link>
-        <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className="hidden gap-x-8 text-black dark:text-white lg:flex">
-          <SwapModal navigation />
-          <Link href="/how-to" className="group relative">
-            How to
-            <span className="absolute bottom-0 left-0 h-0.5 w-0 rounded-3xl bg-lime transition-all group-hover:w-full" />
+      <div className="mx-auto flex w-full justify-between py-4 lg:max-w-[1100px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
+        <div className="flex min-w-full items-center justify-between gap-x-12 px-4 lg:min-w-0  lg:justify-normal lg:px-0">
+          <Link
+            href="/"
+            className="z-50 text-xl font-bold text-black dark:text-white dark:invert-0"
+          >
+            SCADS
           </Link>
-          <DocumentsDropdown />
+          <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
+          <div className="hidden gap-x-8 text-black dark:text-white lg:flex">
+            <SwapModal navigation />
+            <Link href="/how-to" className="group relative">
+              How to
+              <span className="bg-custom-color absolute bottom-0 left-0 h-0.5 w-0 rounded-3xl transition-all group-hover:w-full" />
+            </Link>
+            <DocumentsDropdown />
+          </div>
         </div>
+        <div className="hidden items-center gap-x-6 lg:flex">
+          <AddressDropdown />
+          <ThemeToggler />
+          <WalletModal navigation />
+        </div>
+        <AnimatePresence mode="wait">
+          {isOpen && (
+            <>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.4 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setIsOpen(!isOpen)}
+                className="fixed left-0 top-0 z-30 h-screen w-screen bg-black opacity-40"
+              />
+              <motion.div
+                initial={{ height: 0 }}
+                animate={{ height: "auto" }}
+                exit={{ height: 0 }}
+                transition={{ duration: 0.4 }}
+                className={clsx(
+                  "fixed left-1/2 top-0 z-40 w-11/12 -translate-x-1/2 overflow-hidden rounded-b-3xl bg-[#E9E8E7] dark:bg-[#0B1018]",
+                )}
+              >
+                <MobileMenu close={() => setIsOpen(!isOpen)} />
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
       </div>
-      <div className="hidden items-center gap-x-6 lg:flex">
-        <AddressDropdown />
-        <ThemeToggler />
-        <WalletModal />
-      </div>
-      <AnimatePresence mode="wait">
-        {isOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.4 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsOpen(!isOpen)}
-              className="fixed left-0 top-0 z-30 h-screen w-screen bg-black opacity-40"
-            />
-            <motion.div
-              initial={{ height: 0 }}
-              animate={{ height: "auto" }}
-              exit={{ height: 0 }}
-              transition={{ duration: 0.4 }}
-              className={clsx(
-                "fixed left-1/2 top-0 z-40 w-11/12 -translate-x-1/2 overflow-hidden rounded-b-3xl bg-[#E9E8E7] dark:bg-[#0B1018]",
-              )}
-            >
-              <MobileMenu close={() => setIsOpen(!isOpen)} />
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
     </nav>
   );
 };

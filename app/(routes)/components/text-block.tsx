@@ -9,11 +9,15 @@ const TextBlock = () => {
   return (
     <section className="relative mt-32 flex flex-col items-center gap-y-4 px-4 text-black dark:text-white md:px-0">
       <motion.h2
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0.5, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
         viewport={{ once: true }}
-        transition={{ duration: 0.4 }}
-        className="z-10 text-center text-2xl font-medium lg:text-4xl"
+        className="mt-8 bg-gradient-to-br from-black to-neutral-700 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent dark:from-white dark:to-neutral-500"
       >
         DeFi: Explosive Growth, but with Caveats
       </motion.h2>
@@ -84,7 +88,7 @@ const TextBlock = () => {
       </div>
       <button
         onClick={() => setTextIsVisible(!textIsVisible)}
-        className="z-10 font-bold dark:text-lime"
+        className="dark:text-custom-color z-10 font-bold"
       >
         {textIsVisible ? "Show less" : "Show more"}
       </button>

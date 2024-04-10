@@ -25,12 +25,11 @@ const ButtonPrimary: React.FC<ButtonProps> = ({ onClick, text, className }) => {
       type="button"
       onClick={onClick}
       className={cn(
-        "group relative rounded-[50px] border-2 border-black px-10 py-3 text-base font-bold text-white transition-colors hover:bg-transparent hover:text-black dark:border-lime dark:text-black dark:hover:text-lime",
+        " bg-custom-color hover:bg-custom-color/60 group relative rounded-[50px] px-10 py-3 text-base font-bold text-white transition-colors",
         className,
       )}
     >
-      <span className="relative z-10 ">{text}</span>
-      <div className="absolute left-0 top-0 h-full w-full rounded-3xl bg-[#050A12] transition-all duration-300 group-hover:scale-0 group-hover:opacity-0 dark:bg-lime" />
+      {text}
     </button>
   );
 };

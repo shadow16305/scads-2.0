@@ -32,7 +32,7 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
       </TabsList>
       <TabsContent value="wallet" className="space-y-4 py-4">
         <p className="font-semibold">Your address</p>
-        <div className="flex items-center justify-between rounded-3xl bg-neutral-100 px-4 dark:bg-lime/10">
+        <div className="dark:bg-custom-color/10 flex items-center justify-between rounded-3xl bg-neutral-100 px-4">
           <span>{address}</span>
           <Button
             size="icon"

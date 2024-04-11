@@ -24,8 +24,8 @@ const TextBlock = () => {
       <div className="dark:opacity-70">
         <p className="z-10 max-w-[364px] lg:max-w-[647px]">
           DeFi (Decentralized Finance) has experienced phenomenal growth over
-          the past 4 years. The DeFi sector, which did not exist 5 years ago,
-          has already accumulated a staggering market capitalization of 48
+          the past 4 years. The DeFi sector, which did not exist 6 years ago,
+          has already accumulated a staggering market capitalization of 112
           billion US dollars. However, this rapid growth has been overshadowed
           by significant financial losses for investors.
         </p>
@@ -38,25 +38,35 @@ const TextBlock = () => {
               className="z-10 flex origin-top flex-col gap-y-4"
             >
               <p className="max-w-[364px] lg:max-w-[647px]">
-                The main reasons for the losses: Fraudulent projects: scammers
-                lure people in with promises of unrealistically high APR/APY
-                (annual percentage rates) and other questionable investment
-                strategies. Unreliable platforms: many DeFi platforms have
-                vulnerabilities in their code that can be exploited by hackers
-                to steal funds. Lack of regulation: the decentralized nature of
-                DeFi makes it difficult for government agencies to control and
-                supervise.
+                The main reasons for the losses:
+                <ul>
+                  <li>
+                    Fraudulent projects: scammers lure people in with promises
+                    of unrealistically high APR/APY (annual percentage rates)
+                    and other questionable investment strategies.
+                  </li>
+                  <li>
+                    Unreliable platforms: many DeFi platforms have
+                    vulnerabilities in their code that can be exploited by
+                    hackers to steal funds.
+                  </li>
+                  <li>
+                    Manipulative regulation: the decentralized nature of DeFi
+                    protects it from government agencies control or
+                    weaponization.
+                  </li>
+                </ul>
               </p>
               <p className="max-w-[364px] lg:max-w-[647px]">
                 SCADS is an innovative stablecoin based on the Proof of Holding
-                algorithm that has the potential to transform the digital
-                currency landscape.
+                algorithm that will transform the digital currency landscape.
               </p>
               <ul className="max-w-[364px] list-disc ps-4 lg:max-w-[647px]">
                 <li>
-                  Non-fiat: Unlike traditional stablecoins, SCADS is not pegged
-                  to fiat currencies (dollar, euro, etc.). This makes it more
-                  resistant to inflation and economic shocks.
+                  Non-pegged: Unlike traditional stablecoins, SCADS is not
+                  pegged to fiat currencies (dollar, euro, etc.). This makes it
+                  more resistant to inflation and economic shocks.(use the SWISS
+                  FRANC only as a point of reference)
                 </li>
                 <li>
                   Reliable: User funds are stored in their own wallets, which
@@ -88,7 +98,7 @@ const TextBlock = () => {
       </div>
       <button
         onClick={() => setTextIsVisible(!textIsVisible)}
-        className="dark:text-custom-color z-10 font-bold"
+        className="z-10 font-bold dark:text-custom-color"
       >
         {textIsVisible ? "Show less" : "Show more"}
       </button>

@@ -42,8 +42,8 @@ const MainNavigation = () => {
   const navClasses = clsx(
     "fixed top-0 z-50 flex w-screen items-center justify-between transition-all",
     scrolled
-      ? "bg-[#F4F3F2]/10 shadow-md dark:bg-[#0B1018]/10 backdrop-blur-lg"
-      : "bg-transparent",
+      ? "bg-[#F4F3F2]/10 shadow-md dark:bg-[#0B1018]/10 backdrop-blur-lg text-black dark:text-white"
+      : "bg-transparent text-white",
   );
 
   return (
@@ -52,16 +52,16 @@ const MainNavigation = () => {
         <div className="flex min-w-full items-center justify-between gap-x-12 px-4 lg:min-w-0  lg:justify-normal lg:px-0">
           <Link
             href="/"
-            className="z-50 text-xl font-bold text-black dark:text-white dark:invert-0"
+            className="z-50 text-xl font-bold dark:text-white dark:invert-0"
           >
             SCADS
           </Link>
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
-          <div className="hidden gap-x-8 text-black dark:text-white lg:flex">
+          <div className="hidden gap-x-8 dark:text-white lg:flex">
             <SwapModal navigation />
             <Link href="/how-to" className="group relative">
               How to
-              <span className="bg-custom-color absolute bottom-0 left-0 h-0.5 w-0 rounded-3xl transition-all group-hover:w-full" />
+              <span className="absolute bottom-0 left-0 h-0.5 w-0 rounded-3xl bg-custom-color transition-all group-hover:w-full" />
             </Link>
             <DocumentsDropdown />
           </div>

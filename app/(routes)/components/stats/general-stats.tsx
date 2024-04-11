@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const GeneralStats = () => {
   return (
     <div className="flex items-end justify-center">
-      <div className="bg-custom-color/10 h-96 w-0.5 lg:hidden" />
+      <div className="h-96 w-0.5 bg-custom-color/10 lg:hidden" />
       <div className="z-20 flex flex-col items-center gap-y-4 px-8 pt-8 lg:w-full lg:flex-row lg:items-start lg:justify-between">
         {statItems.map((item) => (
           <div
@@ -17,16 +17,18 @@ const GeneralStats = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="bg-custom-color dark:bg-custom-color/20 dark:text-custom-color rounded-full p-2"
+              className="rounded-full bg-white/20 p-3 dark:bg-transparent dark:bg-gradient-to-br dark:from-transparent dark:to-white/10"
             >
-              <div className="relative [&>*]:size-7">{item.icon}</div>
+              <div className="relative text-black dark:text-neutral-400 [&>*]:size-6">
+                {item.icon}
+              </div>
             </motion.div>
             <div className="flex flex-col gap-y-1">
               <motion.p
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="dark:text-custom-color text-sm font-semibold dark:font-normal"
+                className="bg-clip-text text-sm font-semibold text-black dark:bg-gradient-to-b dark:from-white dark:to-neutral-400 dark:font-normal dark:text-transparent"
               >
                 {item.name}
               </motion.p>

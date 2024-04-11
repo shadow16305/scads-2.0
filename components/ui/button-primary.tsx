@@ -25,7 +25,7 @@ const ButtonPrimary: React.FC<ButtonProps> = ({ onClick, text, className }) => {
       type="button"
       onClick={onClick}
       className={cn(
-        " bg-custom-color hover:bg-custom-color/60 group relative rounded-[50px] px-10 py-3 text-base font-bold text-white transition-colors",
+        "group relative rounded-[50px] bg-white/40 px-10 py-3 text-base font-bold text-white backdrop-blur-3xl transition-colors duration-300 hover:bg-white hover:text-black dark:bg-custom-color dark:backdrop-blur-none dark:hover:bg-custom-color/60 dark:hover:text-white",
         className,
       )}
     >

@@ -33,7 +33,7 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
         {navigation ? (
           <button type="button" className="group relative">
             Invest
-            <span className="bg-custom-color absolute bottom-0 left-0 h-0.5 w-0 rounded-3xl transition-all group-hover:w-full" />
+            <span className="absolute bottom-0 left-0 h-0.5 w-0 rounded-3xl bg-black transition-all group-hover:w-full dark:bg-custom-color" />
           </button>
         ) : (
           <ButtonPrimary text="Invest" onClick={() => {}} />

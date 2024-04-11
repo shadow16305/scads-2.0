@@ -15,10 +15,10 @@
 ::-moz-selection {
   /* Code for Firefox */
   color: black;
-  background: #02f9a5;
+  background: #7a87ff;
 }
 
 ::selection {
   color: black;
-  background: #02f9a5;
+  background: #7a87ff;
 }

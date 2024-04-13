@@ -28,7 +28,7 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
         className={cn(navigation && "mx-auto max-w-40")}
       >
         {walletModal.isConnected ? (
-          <Wallet className="hover:text-custom-color transition" />
+          <Wallet className="transition hover:text-custom-color" />
         ) : (
           <ButtonPrimary
             text={walletModal.isConnected ? "Wallet" : "Connect wallet"}
@@ -36,7 +36,7 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
           />
         )}
       </DialogTrigger>
-      <DialogContent className="space-y-4 border-none dark:bg-[#0A1018]">
+      <DialogContent className="max-w-[340px] space-y-4 rounded-3xl border-none backdrop-blur-2xl dark:bg-transparent dark:bg-gradient-to-br dark:from-transparent dark:to-white/10 md:max-w-none">
         <DialogHeader>
           <DialogTitle className="text-2xl">
             {walletModal.isConnected ? "Your wallet" : "Wallets"}

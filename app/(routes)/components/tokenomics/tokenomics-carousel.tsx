@@ -54,8 +54,6 @@ const TokenomicsCarousel: React.FC<CarouselProps> = ({
       </CarouselContent>
       <CarouselPrevious className={arrowClasses} />
       <CarouselNext className={arrowClasses} />
-      <div className="absolute -right-4 top-0 h-full w-8 bg-gradient-to-r from-transparent via-[#F4F3F2] to-[#F4F3F2] dark:via-[#0B1018] dark:to-[#0B1018] lg:hidden" />
-      <div className="absolute -left-4 top-0 h-full w-8 bg-gradient-to-l from-transparent via-[#F4F3F2] to-[#F4F3F2] dark:via-[#0B1018] dark:to-[#0B1018] lg:hidden" />
     </Carousel>
   );
 };

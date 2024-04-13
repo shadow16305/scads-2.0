@@ -33,10 +33,7 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
         <WalletModal />
       )}
       <div className="flex items-center justify-center space-x-2 text-white">
-        <Switch
-          id="airplane-mode"
-          className="bg-[#050A12] dark:bg-[#40FFD1]/10"
-        />
+        <Switch id="airplane-mode" className="bg-[#050A12] dark:bg-white/5" />
         <Label htmlFor="airplane-mode" className={textClasses}>
           Auto-compound
         </Label>

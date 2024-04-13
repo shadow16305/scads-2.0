@@ -5,9 +5,12 @@ const WalletList: React.FC<{ setConnected: () => void }> = ({
   setConnected,
 }) => {
   return (
-    <ul className="flex items-center justify-between gap-x-4">
+    <ul className="flex flex-wrap items-center justify-center gap-y-8 md:justify-between md:gap-x-4">
       {wallets.map((wallet) => (
-        <li key={wallet.name}>
+        <li
+          key={wallet.name}
+          className="mx-auto flex min-w-32 justify-center md:min-w-0"
+        >
           <button
             type="button"
             className="group flex flex-col items-center"

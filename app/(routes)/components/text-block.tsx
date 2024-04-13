@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 const TextBlock = () => {
   const [textIsVisible, setTextIsVisible] = useState(false);
@@ -17,17 +18,25 @@ const TextBlock = () => {
           ease: "easeInOut",
         }}
         viewport={{ once: true }}
-        className="mt-8 bg-gradient-to-br from-black to-neutral-700 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent dark:from-white dark:to-neutral-500"
+        className="mt-8 bg-gradient-to-br from-black to-neutral-700 bg-clip-text py-4 text-center text-3xl font-medium tracking-tight text-transparent dark:from-white dark:to-neutral-500 md:text-4xl"
       >
         DeFi: Explosive Growth, but with Caveats
       </motion.h2>
       <div className="dark:opacity-70">
-        <p className="z-10 max-w-[364px] lg:max-w-[647px]">
+        <p className="z-10 max-w-[340px] lg:max-w-[647px]">
           DeFi (Decentralized Finance) has experienced phenomenal growth over
           the past 4 years. The DeFi sector, which did not exist 6 years ago,
           has already accumulated a staggering market capitalization of 112
-          billion US dollars. However, this rapid growth has been overshadowed
-          by significant financial losses for investors.
+          billion US dollars. However, this rapid growth has been{" "}
+          <span
+            className={cn(
+              textIsVisible
+                ? "text-white"
+                : "dark:to-dark-blue bg-gradient-to-r bg-clip-text text-transparent dark:from-white dark:via-white",
+            )}
+          >
+            overshadowed by significant financial losses for investors.
+          </span>
         </p>
         <AnimatePresence mode="wait">
           {textIsVisible && (
@@ -35,33 +44,29 @@ const TextBlock = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="z-10 flex origin-top flex-col gap-y-4"
+              className="z-10 flex origin-top flex-col gap-y-4 pt-4"
             >
-              <p className="max-w-[364px] lg:max-w-[647px]">
-                The main reasons for the losses:
-                <ul>
-                  <li>
-                    Fraudulent projects: scammers lure people in with promises
-                    of unrealistically high APR/APY (annual percentage rates)
-                    and other questionable investment strategies.
-                  </li>
-                  <li>
-                    Unreliable platforms: many DeFi platforms have
-                    vulnerabilities in their code that can be exploited by
-                    hackers to steal funds.
-                  </li>
-                  <li>
-                    Manipulative regulation: the decentralized nature of DeFi
-                    protects it from government agencies control or
-                    weaponization.
-                  </li>
-                </ul>
-              </p>
-              <p className="max-w-[364px] lg:max-w-[647px]">
+              <p>The main reasons for the losses:</p>
+              <ul className="max-w-[340px] list-disc pl-4 lg:max-w-[647px]">
+                <li>
+                  Fraudulent projects: scammers lure people in with promises of
+                  unrealistically high APR/APY (annual percentage rates) and
+                  other questionable investment strategies.
+                </li>
+                <li>
+                  Unreliable platforms: many DeFi platforms have vulnerabilities
+                  in their code that can be exploited by hackers to steal funds.
+                </li>
+                <li>
+                  Manipulative regulation: the decentralized nature of DeFi
+                  protects it from government agencies control or weaponization.
+                </li>
+              </ul>
+              <p className="max-w-[340px] lg:max-w-[647px]">
                 SCADS is an innovative stablecoin based on the Proof of Holding
                 algorithm that will transform the digital currency landscape.
               </p>
-              <ul className="max-w-[364px] list-disc ps-4 lg:max-w-[647px]">
+              <ul className="max-w-[340px] list-disc pl-4 lg:max-w-[647px]">
                 <li>
                   Non-pegged: Unlike traditional stablecoins, SCADS is not
                   pegged to fiat currencies (dollar, euro, etc.). This makes it

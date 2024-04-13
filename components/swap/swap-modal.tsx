@@ -18,13 +18,13 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
 
   const scadsButtonClasses = clsx(
     panel === "SCADS"
-      ? "bg-custom-color text-white dark:bg-custom-color dark:text-black"
-      : "text-black shadow-md dark:bg-white/5 dark:text-white",
+      ? "bg-black text-white dark:bg-custom-color dark:text-black"
+      : "text-black shadow-md dark:shadow-none dark:bg-white/5 dark:text-white",
   );
   const twineButtonClasses = clsx(
     panel === "TWINE"
-      ? "bg-custom-color text-white dark:bg-custom-color dark:text-black"
-      : "text-black shadow-md dark:bg-white/5 dark:text-white",
+      ? "bg-black text-white dark:bg-custom-color dark:text-black"
+      : "text-black shadow-md dark:shadow-none dark:bg-white/5 dark:text-white",
   );
 
   return (

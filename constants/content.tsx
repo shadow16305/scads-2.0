@@ -143,7 +143,7 @@ export const tokenomicsContent = [
   {
     id: "SEIGNORAGE",
     paragraph:
-      "Every system requires operational costs, which in this case, include decentralized anonymous servers. These servers serve critical functions such as acting as data nodes, providing redundancy, managing system flow, ensuring security, and preventing congestion. To sustain these essential services, a tax of 1.77% per transaction has been established. This tax contributes to the continuous and smooth operation of the system, enabling it to meet its objectives effectively. AS for exchanges. The minimum order is 100k SCADS.",
+      "Is the difference between the value of money and the cost to produce and distribute it. Seniorage covers vital operational expenses, supporting decentralized anonymous servers. They perform crucial roles like data nodes, security management, and congestion prevention.",
   },
   {
     id: "TRANSPARENCY",

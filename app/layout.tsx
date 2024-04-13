@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className="overflow-x-hidden bg-[#F4F3F2] font-['Quicksand',sans-serif] dark:bg-[#000212]">
+      <body className="dark:bg-dark-blue overflow-x-hidden bg-[#F4F3F2] font-['Quicksand',sans-serif]">
         <Providers>
           <MainNavigation />
           {children}

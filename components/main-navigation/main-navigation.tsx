@@ -48,12 +48,13 @@ const MainNavigation = () => {
 
   return (
     <nav className={navClasses}>
-      <div className="mx-auto flex w-full justify-between py-4 lg:max-w-[1100px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
+      <div className="mx-auto flex w-full justify-between py-4 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
         <div className="flex min-w-full items-center justify-between gap-x-12 px-4 lg:min-w-0  lg:justify-normal lg:px-0">
           <Link
             href="/"
-            className="z-50 text-xl font-bold dark:text-white dark:invert-0"
+            className="z-50 flex items-center text-xl font-bold dark:text-white"
           >
+            <Image src="/images/logo-2.png" alt="logo" width={48} height={48} />{" "}
             SCADS
           </Link>
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -87,7 +88,7 @@ const MainNavigation = () => {
                 exit={{ height: 0 }}
                 transition={{ duration: 0.4 }}
                 className={clsx(
-                  "fixed left-1/2 top-0 z-40 w-11/12 -translate-x-1/2 overflow-hidden rounded-b-3xl bg-[#E9E8E7] dark:bg-[#0B1018]",
+                  "dark:bg-dark-blue fixed left-1/2 top-0 z-40 w-11/12 -translate-x-1/2 overflow-hidden rounded-b-3xl bg-[#E9E8E7]",
                 )}
               >
                 <MobileMenu close={() => setIsOpen(!isOpen)} />

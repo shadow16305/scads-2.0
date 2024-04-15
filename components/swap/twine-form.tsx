@@ -15,7 +15,7 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
   const walletModal = useWalletModal();
 
   const textClasses = "text-black dark:text-white";
-  const opacityClasses = "opacity-100 dark:opacity-70";
+  const colorClasses = "opacity-100 dark:opacity-70";
 
   return (
     <form className="mt-2 flex flex-col gap-y-4 2xl:gap-y-6">
@@ -26,7 +26,7 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
         firstToken="TWINE"
         secondToken="SCADS"
       />
-      <Taxes textClasses={textClasses} opacityClasses={opacityClasses} />
+      <Taxes textClasses={textClasses} colorClasses={colorClasses} />
       {walletModal.isConnected ? (
         <ButtonPrimary text="Swap" onClick={() => {}} />
       ) : (
@@ -45,18 +45,18 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
         )}
       >
         <p>
-          <span className={opacityClasses}>SCADS owned:</span> 0.00
+          <span className={colorClasses}>SCADS owned:</span> 0.00
         </p>
         <div className="w-full space-y-2">
           <p className="flex justify-between">
-            <span className={opacityClasses}>Time invested:</span> 62 Days 19
+            <span className={colorClasses}>Time invested:</span> 62 Days 19
             Hours 20 Minutes
           </p>
           <p className="flex justify-between">
-            <span className={opacityClasses}>TWINE minted:</span> 5.495
+            <span className={colorClasses}>TWINE minted:</span> 5.495
           </p>
           <p className="flex justify-between">
-            <span className={opacityClasses}>TWINE claimed:</span> 2.745
+            <span className={colorClasses}>TWINE claimed:</span> 2.745
           </p>
         </div>
       </div>

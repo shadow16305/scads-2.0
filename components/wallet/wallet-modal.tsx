@@ -36,7 +36,7 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
           />
         )}
       </DialogTrigger>
-      <DialogContent className="max-w-[340px] space-y-4 rounded-3xl border-none backdrop-blur-2xl dark:bg-transparent dark:bg-gradient-to-br dark:from-transparent dark:to-white/10 md:max-w-none">
+      <DialogContent className="max-w-[340px] space-y-4 rounded-3xl border-none backdrop-blur-2xl dark:bg-transparent dark:bg-gradient-to-br dark:from-transparent dark:to-white/10 md:max-w-lg">
         <DialogHeader>
           <DialogTitle className="text-2xl">
             {walletModal.isConnected ? "Your wallet" : "Wallets"}

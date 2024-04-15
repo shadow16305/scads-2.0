@@ -1,4 +1,3 @@
-import Disclaimer from "@/app/(routes)/components/disclaimer";
 import Hero from "@/app/(routes)/components/hero";
 import TextBlock from "@/app/(routes)/components/text-block";
 import Tokenomics from "@/app/(routes)/components/tokenomics/tokenomics";
@@ -16,7 +15,6 @@ export default function Home() {
       </div>
       <div className="mx-auto lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
         <Tokenomics />
-        <Disclaimer />
       </div>
     </>
   );

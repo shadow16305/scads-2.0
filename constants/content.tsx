@@ -4,6 +4,7 @@ import { BsHeartPulse } from "react-icons/bs";
 import { GrStorage } from "react-icons/gr";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { MdOutlineDataObject } from "react-icons/md";
+import { Grid, Map, Paperclip } from "lucide-react";
 
 export const tokenomicsButtons = [
   {
@@ -456,5 +457,26 @@ export const cardItems = [
     title: "LIQUIDITY WALLET",
     description:
       "Is a depository to supply liquidity to the market as makers and liquidity providers.",
+  },
+];
+
+export const documents = [
+  {
+    name: "Roadmap",
+    path: "/roadmap",
+    description: "Our current and future plans.",
+    icon: <Map size={16} />,
+  },
+  {
+    name: "Use Cases",
+    path: "/use-cases",
+    description: "The use cases for the scads ecosystem.",
+    icon: <Grid size={16} />,
+  },
+  {
+    name: "Whitepaper",
+    path: "/whitepaper",
+    description: "All the detailed information.",
+    icon: <Paperclip size={16} />,
   },
 ];

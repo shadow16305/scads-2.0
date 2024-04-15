@@ -19,20 +19,20 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
       <TabsList className="grid w-full grid-cols-2 gap-x-2 bg-transparent dark:bg-transparent">
         <TabsTrigger
           value="wallet"
-          className="rounded-3xl text-base text-black shadow-md dark:text-white"
+          className="rounded-3xl border border-white/10 bg-white/[.02] text-base text-black dark:text-white"
         >
           Wallet
         </TabsTrigger>
         <TabsTrigger
           value="transactions"
-          className="rounded-3xl text-base text-black shadow-md dark:text-white"
+          className="rounded-3xl border border-white/10 bg-white/[.02] text-base text-black dark:text-white"
         >
           Transactions
         </TabsTrigger>
       </TabsList>
       <TabsContent value="wallet" className="space-y-4 py-4">
         <p className="font-semibold">Your address</p>
-        <div className="dark:bg-custom-color/10 flex items-center justify-between rounded-3xl bg-neutral-100 px-4">
+        <div className="flex items-center justify-between rounded-3xl bg-neutral-100 px-4 dark:bg-custom-color/10">
           <span>{address}</span>
           <Button
             size="icon"

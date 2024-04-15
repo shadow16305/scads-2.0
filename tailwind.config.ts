@@ -22,7 +22,7 @@ const config = {
         sans: ["var(--sf-pro)"],
       },
       colors: {
-        "custom-color": "#7A87FF",
+        "custom-color": "#5F69CB",
         "dark-blue": "#000212",
       },
       animation: {

@@ -14,7 +14,7 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
   list,
 }) => {
   return (
-    <div className="my-6 flex flex-col items-center gap-y-2 px-2 text-sm text-black opacity-70 dark:text-white md:px-0 md:text-base">
+    <div className="my-6 flex flex-col items-center gap-y-2 px-2 text-sm text-black dark:text-neutral-300 md:px-0 md:text-base">
       <p className="max-w-[340px] lg:max-w-[900px] xl:max-w-[1031px]">
         {paragraph}
       </p>

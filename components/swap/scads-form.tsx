@@ -25,7 +25,7 @@ const ScadsForm: React.FC<{ panel: string }> = ({ panel }) => {
   }, [inputValue]);
 
   const textClasses = "text-black dark:text-white";
-  const opacityClasses = "opacity-100 dark:opacity-70";
+  const colorClasses = "text-black dark:text-neutral-400";
 
   return (
     <form className="mt-2 flex flex-col gap-y-6">
@@ -40,13 +40,13 @@ const ScadsForm: React.FC<{ panel: string }> = ({ panel }) => {
         secondToken={secondToken}
       />
       <div className={`flex w-full justify-between text-sm ${textClasses}`}>
-        <p className={opacityClasses}>1 SCADS = 1 USDT</p>
+        <p className={colorClasses}>1 SCADS = 1 USDT</p>
         <p>
-          <span className={`pr-1 ${opacityClasses}`}>You receive:</span>
+          <span className={`pr-1 ${colorClasses}`}>You receive:</span>
           {receivalAmount.toFixed(1)}
         </p>
       </div>
-      <Taxes textClasses={textClasses} opacityClasses={opacityClasses} />
+      <Taxes textClasses={textClasses} colorClasses={colorClasses} />
       {walletModal.isConnected ? (
         <ButtonPrimary text="Swap" onClick={() => {}} />
       ) : (

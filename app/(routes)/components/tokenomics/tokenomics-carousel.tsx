@@ -44,7 +44,7 @@ const TokenomicsCarousel: React.FC<CarouselProps> = ({
                 "text-nowrap rounded-3xl px-2 py-2 text-xs transition-all duration-300 lg:min-w-[182px]",
                 activeText === item.text
                   ? "border border-custom-color/60 bg-custom-color/40 text-white"
-                  : "border border-white/5 bg-white/10 text-white",
+                  : "border border-white/5 bg-white/[.02] text-white",
               )}
             >
               {item.text}

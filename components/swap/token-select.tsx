@@ -6,6 +6,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { FaChevronDown } from "react-icons/fa6";
 
@@ -28,18 +29,11 @@ const tokens = [
 ];
 
 interface TokenSelectProps {
-  selectClassName: string;
-  tokenClassName: string;
   setToken?: (token: string) => void;
   token: string;
 }
 
-const TokenSelect: React.FC<TokenSelectProps> = ({
-  selectClassName,
-  tokenClassName,
-  setToken,
-  token,
-}) => {
+const TokenSelect: React.FC<TokenSelectProps> = ({ setToken, token }) => {
   const tokenIconClassNames =
     (token === "USDT" && "w-5 h-5") ||
     (token === "BNB" && "h-5 w-5") ||
@@ -48,34 +42,33 @@ const TokenSelect: React.FC<TokenSelectProps> = ({
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
-        <div
-          className={`flex w-[120px] items-center justify-between rounded-3xl border px-3 py-2 lg:w-[140px] ${selectClassName}`}
-        >
-          <div className="flex items-center gap-x-2">
-            <div className={`relative ${tokenIconClassNames}`}>
-              <Image
-                src={`/images/currency/${token}.svg`}
-                alt="currency placeholder"
-                fill
-              />
-            </div>
-            <span className={tokenClassName}>{token}</span>
+      <DropdownMenuTrigger
+        className={cn(
+          "flex w-[120px] items-center justify-between rounded-3xl border border-white/10 bg-white/[.02] px-3 py-2 lg:w-[140px]",
+        )}
+      >
+        <div className="flex items-center gap-x-2">
+          <div className={cn("relative", tokenIconClassNames)}>
+            <Image
+              src={`/images/currency/${token}.svg`}
+              alt="currency placeholder"
+              fill
+            />
           </div>
-          <FaChevronDown size={16} className={tokenClassName} />
+          <span className="text-black dark:text-white">{token}</span>
         </div>
+        <FaChevronDown size={16} className="text-black dark:text-white" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="rounded-2xl border-none bg-[#050A12] text-white">
+      <DropdownMenuContent className="rounded-2xl border-none bg-[#0c0e22] text-white">
         <DropdownMenuLabel>Select a token</DropdownMenuLabel>
-        <DropdownMenuSeparator className="bg-[#40FFD1]/10" />
+        <DropdownMenuSeparator className="bg-white/10" />
         {tokens.map((token) => (
           <DropdownMenuItem
             key={token.name}
-            className="group relative hover:text-black"
+            className="text-sm hover:bg-white/20"
             onClick={() => setToken!(token.name)}
           >
-            <span className="z-10">{token.name}</span>
-            <span className="bg-custom-color absolute left-0 top-0 h-full w-0 rounded-r-2xl transition-all duration-300 group-hover:w-full" />
+            <span>{token.name}</span>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

@@ -1,7 +1,6 @@
 import SwapModal from "@/components/swap/swap-modal";
 import Stats from "./stats/stats";
 import { IoEllipse } from "react-icons/io5";
-import Image from "next/image";
 
 const Hero = () => {
   return (

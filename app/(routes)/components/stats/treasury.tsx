@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 
 const Treasury = () => {
   return (
-    <section className="lg:rounded-t-0 relative flex flex-col items-center gap-y-8 rounded-b-3xl border-t border-neutral-300 px-4 pb-8 dark:border-white/10 md:px-8">
-      <div className="dark:via-dark-blue dark:to-dark-blue absolute -top-6 left-1/2 z-10 -translate-x-1/2 rounded-3xl border border-neutral-300 bg-gradient-to-b from-transparent via-[#F4F3F2] to-[#F4F3F2] px-2 dark:border-white/10 dark:bg-transparent dark:from-transparent">
+    <section className="lg:rounded-t-0 relative flex flex-col items-center gap-y-8 rounded-b-3xl px-4 pb-8 md:px-8">
+      <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-3xl border border-white/60 bg-white/20 px-2 backdrop-blur-3xl dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-transparent dark:via-dark-blue dark:to-transparent">
         <SectionHeader title="Treasury balance" />
       </div>
       <div className="relative mt-16 flex w-full flex-col items-center gap-y-10 rounded-b-3xl lg:flex-row lg:justify-between">

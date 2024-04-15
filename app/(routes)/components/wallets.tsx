@@ -31,6 +31,7 @@ const Wallets = () => {
           onClick={(title: string) => setActiveText(title)}
         />
       </div>
+      <div className="absolute -z-10 h-full w-screen -skew-y-6 bg-gradient-to-r from-custom-color via-[#B5FFFC] to-purple-800 blur-[400px] dark:hidden" />
     </section>
   );
 };

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const TextBlock = () => {
   const [textIsVisible, setTextIsVisible] = useState(false);
@@ -27,15 +28,15 @@ const TextBlock = () => {
           DeFi (Decentralized Finance) has experienced phenomenal growth over
           the past 4 years. The DeFi sector, which did not exist 6 years ago,
           has already accumulated a staggering market capitalization of 112
-          billion US dollars. However, this rapid growth has been{" "}
+          billion US dollars. However, this rapid growth{" "}
           <span
             className={cn(
               textIsVisible
-                ? "text-white"
-                : "dark:to-dark-blue bg-gradient-to-r bg-clip-text text-transparent dark:from-white dark:via-white",
+                ? "dark:text-white"
+                : "bg-gradient-to-r from-black via-black to-transparent bg-clip-text text-transparent dark:from-white dark:via-white dark:to-dark-blue",
             )}
           >
-            overshadowed by significant financial losses for investors.
+            has been overshadowed by significant financial losses for investors.
           </span>
         </p>
         <AnimatePresence mode="wait">
@@ -103,9 +104,14 @@ const TextBlock = () => {
       </div>
       <button
         onClick={() => setTextIsVisible(!textIsVisible)}
-        className="z-10 font-bold dark:text-custom-color"
+        className="group z-10 flex items-end gap-x-2 font-semibold text-black dark:text-white"
       >
         {textIsVisible ? "Show less" : "Show more"}
+        {textIsVisible ? (
+          <ChevronUp className="transition-transform group-hover:-translate-y-1" />
+        ) : (
+          <ChevronDown className="transition-transform group-hover:translate-y-1" />
+        )}
       </button>
     </section>
   );

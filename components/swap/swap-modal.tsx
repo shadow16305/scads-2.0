@@ -24,7 +24,7 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
         {navigation ? (
           <button
             type="button"
-            className="relative transition hover:text-neutral-400"
+            className="relative transition hover:text-neutral-700 dark:hover:text-neutral-400"
           >
             Invest
           </button>

@@ -38,10 +38,10 @@ const MainNavigation = () => {
   }, [isOpen]);
 
   const navClasses = clsx(
-    "fixed top-0 z-50 flex w-screen items-center justify-between transition-all",
+    "fixed top-0 z-50 flex w-screen items-center justify-between transition-all text-black dark:text-white",
     scrolled
-      ? "bg-[#F4F3F2]/10 shadow-md dark:bg-[#0B1018]/10 backdrop-blur-lg text-black dark:text-white"
-      : "bg-transparent text-white",
+      ? "bg-white/10 dark:bg-white/[.02] backdrop-blur-lg"
+      : "bg-transparent",
   );
 
   return (

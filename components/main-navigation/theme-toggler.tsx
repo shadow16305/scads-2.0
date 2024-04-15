@@ -9,12 +9,12 @@ const ThemeToggler = () => {
   return (
     <button
       type="button"
-      className="dark:bg-custom-color/10 z-50 box-border flex h-8 w-16 cursor-pointer items-center justify-end rounded-3xl bg-[#050A12] px-1 py-2 transition-all duration-300 dark:justify-start"
+      className="z-50 box-border flex h-8 w-16 cursor-pointer items-center justify-end rounded-3xl bg-[#050A12] px-1 py-2 transition-all duration-300 dark:justify-start dark:bg-white/10"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       <motion.div
         layout
-        className="bg-custom-color flex h-6 w-6 items-center justify-center rounded-full dark:bg-white"
+        className="flex size-6 items-center justify-center rounded-full bg-[#f4f3f2]"
       >
         <AnimatePresence mode="wait" initial={false}>
           <motion.div

@@ -41,7 +41,7 @@ const FormInputs: React.FC<FormInputsProps> = ({
       />
       <Separator
         orientation="vertical"
-        className="absolute left-1/2 -translate-x-1/2 bg-white/10"
+        className="absolute left-1/2 -translate-x-1/2 bg-black dark:bg-white/10"
       />
       {panel === "SCADS" && (
         <button

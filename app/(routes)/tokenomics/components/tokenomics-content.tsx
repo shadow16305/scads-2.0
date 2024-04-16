@@ -1,4 +1,8 @@
+import { Separator } from "@/components/ui/separator";
+
 interface TokenomicsContentProps {
+  id: string;
+  title: string;
   paragraph: string;
   paragraph_two?: string;
   list?: {
@@ -9,12 +13,18 @@ interface TokenomicsContentProps {
 }
 
 const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
+  id,
+  title,
   paragraph,
   paragraph_two,
   list,
 }) => {
   return (
-    <div className="my-6 flex flex-col items-center gap-y-2 px-2 text-sm text-black dark:text-neutral-300 md:px-0 md:text-base">
+    <section
+      className="flex scroll-mt-64 flex-col gap-y-4 px-2 text-sm text-black dark:text-neutral-300 md:px-0 md:text-base"
+      id={id}
+    >
+      <h2 className="w-fit text-2xl text-black dark:text-white">{title}</h2>
       <p className="max-w-[340px] lg:max-w-[900px] xl:max-w-[1031px]">
         {paragraph}
       </p>
@@ -30,7 +40,8 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
         </ul>
       )}
       {paragraph_two && <p className="max-w-[1031px]">{paragraph_two}</p>}
-    </div>
+      <Separator className="mt-12 bg-gradient-to-r from-custom-color to-purple-600 " />
+    </section>
   );
 };
 

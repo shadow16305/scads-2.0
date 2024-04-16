@@ -11,7 +11,7 @@ const TextBlock = () => {
   return (
     <section className="relative mt-32 flex flex-col items-center gap-y-4 px-4 text-black dark:text-white md:px-0">
       <motion.h2
-        initial={{ opacity: 0.5, y: -100 }}
+        initial={{ opacity: 0.5, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,

@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 import { MouseEvent, useState } from "react";
 
 export const HoverEffect = ({
@@ -23,12 +24,6 @@ export const HoverEffect = ({
     });
   };
 
-  const handleItemClick =
-    (title: string) => (event: MouseEvent<HTMLButtonElement>) => {
-      onClick(title);
-      scrolltoHash("tokenomics");
-    };
-
   return (
     <div
       className={cn(
@@ -37,10 +32,9 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
-        <button
-          type="button"
-          onClick={handleItemClick(item.title)}
+        <Link
           key={item?.title}
+          href="/tokenomics"
           className="group relative block h-full w-full p-2"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(idx)}
@@ -62,11 +56,19 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-          </Card>
-        </button>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: idx * 0.1, duration: 0.5 }}
+            className="h-full w-full"
+          >
+            <Card>
+              <CardTitle>{item.title}</CardTitle>
+              <CardDescription>{item.description}</CardDescription>
+            </Card>
+          </motion.div>
+        </Link>
       ))}
     </div>
   );
@@ -102,7 +104,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "mt-4 rounded-3xl bg-white/10 py-2 font-bold tracking-wide text-black dark:bg-white/5 dark:text-white",
+        "mt-4 rounded-3xl bg-white/10 py-2 text-center font-bold tracking-wide text-black dark:bg-white/5 dark:text-white",
         className,
       )}
     >
@@ -120,7 +122,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-sm leading-relaxed tracking-wide text-black dark:text-white",
+        "mt-4 text-center text-sm leading-relaxed tracking-wide text-black dark:text-white",
         className,
       )}
     >

@@ -9,22 +9,14 @@ import {
   NavigationMenuTrigger,
 } from "../ui/navigation-menu";
 import SwapModal from "../swap/swap-modal";
-import { documents } from "@/constants/content";
+import { documents, tokenomicsLinks } from "@/constants/content";
 
 const NavLinks = () => {
   return (
     <NavigationMenu>
-      <NavigationMenuList className="hidden items-center gap-x-8 rounded-3xl border border-white/40 bg-white/20 px-6 text-sm backdrop-blur-2xl dark:border-white/10 dark:bg-white/[.02] dark:text-white lg:flex">
+      <NavigationMenuList className="hidden items-center gap-x-4 rounded-3xl border border-white/40 bg-white/20 px-6 text-sm backdrop-blur-2xl dark:border-white/10 dark:bg-white/[.02] dark:text-white lg:flex">
         <NavigationMenuItem>
           <SwapModal navigation />
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink
-            href="/how-to"
-            className="transition hover:text-neutral-700 dark:hover:text-neutral-400"
-          >
-            How to
-          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem className="bg-transparent">
           <NavigationMenuTrigger className="bg-transparent p-0 hover:text-neutral-700 dark:hover:text-neutral-400">
@@ -43,7 +35,7 @@ const NavLinks = () => {
                     </div>
                     <div className="flex flex-col gap-y-1">
                       <span className="flex gap-x-1">{document.name}</span>
-                      <span className="text-neutral-400">
+                      <span className="text-neutral-700 dark:text-neutral-400">
                         {document.description}
                       </span>
                     </div>
@@ -52,6 +44,35 @@ const NavLinks = () => {
               ))}
             </ul>
           </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem className="bg-transparent">
+          <NavigationMenuTrigger className="bg-transparent p-0 hover:text-neutral-700 dark:hover:text-neutral-400">
+            <Link href="/tokenomics">Tokenomics</Link>
+          </NavigationMenuTrigger>
+          <NavigationMenuContent className="flex gap-x-4 rounded-xl bg-white dark:bg-[#0c0e22]">
+            <ul className="grid grid-cols-1 gap-x-2 gap-y-2 rounded-xl p-2 text-sm text-black dark:text-white md:w-[448px] md:grid-cols-2 lg:grid-cols-3">
+              {tokenomicsLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.path}
+                    className="flex gap-x-2 rounded-lg p-2 transition-all hover:bg-black hover:text-white dark:hover:bg-white/20"
+                  >
+                    <div className="flex flex-col gap-y-1">
+                      <span className="flex gap-x-1">{link.name}</span>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink
+            href="/how-to"
+            className="transition hover:text-neutral-700 dark:hover:text-neutral-400"
+          >
+            How to
+          </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

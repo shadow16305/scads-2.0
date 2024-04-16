@@ -27,6 +27,7 @@ const GeneralStats = () => {
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
                 className="bg-clip-text text-sm font-semibold text-black dark:bg-gradient-to-b dark:from-white dark:to-neutral-400 dark:font-normal dark:text-transparent lg:text-xs xl:text-sm"
               >
                 {item.name}

@@ -14,7 +14,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="mx-auto mt-32 flex flex-col items-center justify-between pb-8 lg:max-w-[1060px] lg:flex-row lg:items-end xl:max-w-[1240px] 2xl:max-w-[1340px]">
+    <footer className="relative z-50 mx-auto mt-32 flex flex-col items-center justify-between pb-8 lg:max-w-[1060px] lg:flex-row lg:items-end xl:max-w-[1240px] 2xl:max-w-[1340px]">
       <div className="flex flex-col items-center gap-y-5 lg:items-start">
         <div className="flex items-center gap-x-2 text-xl font-bold dark:text-white">
           <Image src="/images/logo-2.png" alt="logo" width={48} height={48} />
@@ -30,7 +30,7 @@ const Footer = () => {
             <DialogContent>
               <DialogHeader>
                 <DialogTitle>Disclaimer</DialogTitle>
-                <DialogDescription className="dark:text-neutral-400">
+                <DialogDescription className="text-black dark:text-neutral-400">
                   While the SCADS algorithm guarantees the stability of SCADS as
                   a stable coin and assures that TWINE is a linear token with a
                   constant growth rate for each minted TWINE, it is important to

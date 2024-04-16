@@ -20,9 +20,10 @@ const Treasury = () => {
           >
             <div className="z-10 flex min-w-full items-center justify-between gap-y-2 md:min-w-0 md:flex-col">
               <motion.p
-                initial={{ y: -30, opacity: 0 }}
+                initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
                 className="text-sm font-semibold text-black dark:bg-gradient-to-b dark:from-white dark:to-neutral-500 dark:bg-clip-text dark:text-transparent lg:text-xs xl:text-sm"
               >
                 {item.name}

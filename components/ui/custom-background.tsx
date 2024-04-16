@@ -19,11 +19,11 @@ const CustomBackground = () => {
       />
       <div className="absolute left-1/2 -z-10 size-full -translate-x-1/2 rounded-full bg-custom-color blur-3xl md:size-[600px]" />
       <div className="absolute -bottom-5 left-1/2 -z-10 size-full -translate-x-1/2 rounded-full bg-purple-600 blur-3xl md:size-[600px] lg:-bottom-[5%]" />
-      <div className="bg-dark-blue absolute -top-10 left-0 hidden h-[110%] w-full rounded-[50%] border-y border-y-custom-color/20 lg:block" />
-      <div className="bg-dark-blue absolute -top-10 left-0 h-20 w-full rounded-[50%] border-y border-y-custom-color/20 lg:hidden" />
-      <div className="bg-dark-blue absolute -bottom-10 left-0 h-20 w-full rounded-[50%] border-y border-y-custom-color/20 lg:hidden" />
-      <div className="from-dark-blue via-dark-blue absolute left-0 h-full w-80 bg-gradient-to-r to-transparent" />
-      <div className="from-dark-blue via-dark-blue absolute right-0 h-full w-80 bg-gradient-to-l to-transparent" />
+      <div className="absolute -top-10 left-0 hidden h-[115%] w-full rounded-[50%] border-y border-y-custom-color/20 bg-dark-blue lg:block" />
+      <div className="absolute -top-10 left-0 h-20 w-full rounded-[50%] border-y border-y-custom-color/20 bg-dark-blue lg:hidden" />
+      <div className="absolute -bottom-10 left-0 h-20 w-full rounded-[50%] border-y border-y-custom-color/20 bg-dark-blue lg:hidden" />
+      <div className="absolute left-0 h-full w-80 bg-gradient-to-r from-dark-blue via-dark-blue to-transparent" />
+      <div className="absolute right-0 h-full w-80 bg-gradient-to-l from-dark-blue via-dark-blue to-transparent" />
     </div>
   );
 };

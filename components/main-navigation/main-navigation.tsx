@@ -50,14 +50,16 @@ const MainNavigation = () => {
         <div className="flex min-w-full items-center justify-between gap-x-12 px-4 lg:min-w-0  lg:justify-normal lg:px-0">
           <Link
             href="/"
-            className="z-50 flex min-w-[260px] items-center gap-x-2 text-xl font-bold dark:text-white"
+            className="z-50 flex items-center gap-x-2 text-xl font-bold dark:text-white"
           >
             <Image src="/images/logo-2.png" alt="logo" width={48} height={48} />{" "}
             SCADS
           </Link>
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
-        <NavLinks />
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <NavLinks />
+        </div>
         <div className="hidden items-center gap-x-6 lg:flex">
           <AddressDropdown />
           <ThemeToggler />

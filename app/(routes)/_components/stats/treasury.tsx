@@ -2,20 +2,19 @@
 
 import { treasuryItems } from "@/constants/content";
 import SectionHeader from "@/components/ui/section-header";
-import { AiOutlineDash } from "react-icons/ai";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Treasury = () => {
   return (
-    <section className="lg:rounded-t-0 relative flex flex-col items-center gap-y-8 rounded-b-3xl px-4 pb-8 md:px-8">
-      <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-3xl border border-white/60 bg-white/20 px-2 backdrop-blur-3xl dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-transparent dark:via-dark-blue dark:to-transparent">
+    <section className="lg:rounded-t-0 relative flex flex-col items-center gap-y-8 rounded-b-3xl px-4 pb-10 md:px-8">
+      <div className="absolute -top-8 left-1/2 -translate-x-1/2 rounded-3xl border border-white/60 bg-white/20 px-2 backdrop-blur-3xl dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-transparent dark:via-dark-blue dark:to-transparent">
         <SectionHeader title="Treasury balance" />
       </div>
-      <div className="relative mt-16 flex w-full flex-col items-center gap-y-10 rounded-b-3xl lg:flex-row lg:justify-between">
+      <div className="mt-8 flex w-full flex-col items-center gap-y-10 rounded-b-3xl lg:flex-row lg:justify-between">
         {treasuryItems.map((item) => (
           <div
-            className="flex min-w-full items-center gap-x-10 md:min-w-0 xl:gap-x-20"
+            className="relative flex min-w-full items-center gap-x-10 md:min-w-0 xl:gap-x-20"
             key={item.id}
           >
             <div className="z-10 flex min-w-full items-center justify-between gap-y-2 md:min-w-0 md:flex-col">
@@ -58,10 +57,10 @@ const Treasury = () => {
               </div>
             </div>
             {item.id !== "ti5" && (
-              <AiOutlineDash
-                className="hidden text-custom-color dark:text-neutral-300 lg:block"
-                size={32}
-              />
+              <>
+                <div className="absolute -right-full h-24 w-[1px] bg-white/10" />
+                <div className="absolute -right-full h-4 w-[1px] bg-white/30" />
+              </>
             )}
           </div>
         ))}

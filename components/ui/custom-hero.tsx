@@ -8,13 +8,18 @@ import { cn } from "@/lib/utils";
 const CustomHero = ({
   title,
   className,
+  color,
 }: {
   title: string;
   className?: string;
+  color: string;
 }) => {
   return (
     <>
-      <LampContainer className={cn("hidden pt-96 dark:flex", className)}>
+      <LampContainer
+        className={cn("hidden pt-96 dark:flex", className)}
+        color={color}
+      >
         <motion.h1
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

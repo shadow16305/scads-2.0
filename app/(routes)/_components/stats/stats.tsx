@@ -1,6 +1,5 @@
 import Treasury from "./treasury";
 import GeneralStats from "./general-stats";
-import { IoEllipse } from "react-icons/io5";
 import { Separator } from "@/components/ui/separator";
 
 const Stats = () => {

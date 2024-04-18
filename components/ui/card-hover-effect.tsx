@@ -15,7 +15,7 @@ export const HoverEffect = ({
   className?: string;
   onClick: (title: string) => void;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(0);
+  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const scrolltoHash = function (element_id: string) {
     const element = document.getElementById(element_id);
@@ -37,12 +37,12 @@ export const HoverEffect = ({
           href="/tokenomics"
           className="group relative block h-full w-full p-2"
           onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(idx)}
+          onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 block h-[80%] w-[80%] rounded-3xl bg-custom-color"
+                className="absolute inset-0 block size-[80%] rounded-3xl bg-purple-600/20"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -84,7 +84,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-transparent bg-white/40 p-4 backdrop-blur-2xl dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-br dark:from-transparent dark:to-white/10",
+        "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-transparent bg-white/40 p-4 backdrop-blur-lg dark:border-white/10 dark:bg-transparent ",
         className,
       )}
     >
@@ -104,7 +104,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "mt-4 rounded-3xl bg-white/10 py-2 text-center font-bold tracking-wide text-black dark:bg-white/5 dark:text-white",
+        "mt-4 rounded-3xl bg-white/10 py-2 text-center font-bold tracking-wide text-black dark:bg-white/[0.02] dark:text-white",
         className,
       )}
     >

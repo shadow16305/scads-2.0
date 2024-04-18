@@ -42,7 +42,7 @@ const Hero = () => {
       </div>
       <Stats />
       <IoEllipse
-        className="absolute -top-1/2 left-1/2 -z-10 hidden -translate-x-1/2 -translate-y-2/3 bg-gradient-to-r from-[#08AEEA] via-custom-color to-[#FF5ACD] text-transparent blur-[800px] dark:lg:block"
+        className="absolute -top-2/3 left-1/2 -z-10 hidden -translate-x-1/2 -translate-y-2/3 bg-gradient-to-r from-[#08AEEA] to-[#FF5ACD] text-transparent blur-[800px] dark:lg:block"
         size={1000}
       />
       <IoEllipse

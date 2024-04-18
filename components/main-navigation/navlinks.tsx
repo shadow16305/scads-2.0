@@ -19,7 +19,7 @@ const NavLinks = () => {
           <SwapModal navigation />
         </NavigationMenuItem>
         <NavigationMenuItem className="bg-transparent">
-          <NavigationMenuTrigger className="bg-transparent p-0 hover:text-neutral-700 dark:hover:text-neutral-400">
+          <NavigationMenuTrigger className="bg-transparent p-0 font-normal hover:text-neutral-700 dark:hover:text-neutral-400">
             Documents
           </NavigationMenuTrigger>
           <NavigationMenuContent className="rounded-xl bg-white dark:bg-[#0c0e22]">
@@ -46,7 +46,7 @@ const NavLinks = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="bg-transparent">
-          <NavigationMenuTrigger className="bg-transparent p-0 hover:text-neutral-700 dark:hover:text-neutral-400">
+          <NavigationMenuTrigger className="bg-transparent p-0 font-normal hover:text-neutral-700 dark:hover:text-neutral-400">
             <Link href="/tokenomics">Tokenomics</Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent className="flex gap-x-4 rounded-xl bg-white dark:bg-[#0c0e22]">

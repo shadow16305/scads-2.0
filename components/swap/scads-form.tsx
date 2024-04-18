@@ -48,7 +48,7 @@ const ScadsForm: React.FC<{ panel: string }> = ({ panel }) => {
       </div>
       <Taxes textClasses={textClasses} colorClasses={colorClasses} />
       {walletModal.isConnected ? (
-        <ButtonPrimary text="Swap" onClick={() => {}} />
+        <ButtonPrimary text="Swap" onClick={() => {}} className="w-full" />
       ) : (
         <WalletModal />
       )}

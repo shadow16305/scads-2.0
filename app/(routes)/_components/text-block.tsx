@@ -19,7 +19,7 @@ const TextBlock = () => {
           ease: "easeInOut",
         }}
         viewport={{ once: true }}
-        className="mt-8 bg-gradient-to-br from-black to-neutral-700 bg-clip-text py-4 text-center text-3xl font-medium tracking-tight text-transparent dark:from-white dark:to-neutral-500 md:text-4xl"
+        className="bg-gradient-to-br from-black to-neutral-700 bg-clip-text py-4 text-center text-3xl font-medium tracking-tight text-transparent dark:from-white dark:to-neutral-500 md:text-4xl"
       >
         DeFi: Explosive Growth, but with Caveats
       </motion.h2>
@@ -104,7 +104,7 @@ const TextBlock = () => {
       </div>
       <button
         onClick={() => setTextIsVisible(!textIsVisible)}
-        className="group z-10 flex items-end gap-x-2 font-semibold text-black dark:text-white"
+        className="group z-10 mt-4 flex items-end gap-x-2 font-semibold text-black dark:text-white"
       >
         {textIsVisible ? "Show less" : "Show more"}
         {textIsVisible ? (

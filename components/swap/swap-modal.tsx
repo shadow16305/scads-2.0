@@ -29,7 +29,7 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
             Invest
           </button>
         ) : (
-          <ButtonPrimary text="Invest" onClick={() => {}} />
+          <ButtonPrimary text="Invest" onClick={() => {}} className="px-10" />
         )}
       </DialogTrigger>
       <DialogContent className="max-w-[360px] rounded-3xl border-none bg-[#F4F3F2] dark:bg-[#0c0e22] md:max-w-lg">

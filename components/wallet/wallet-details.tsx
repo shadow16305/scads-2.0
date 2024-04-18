@@ -36,7 +36,7 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
           <span>{address}</span>
           <Button
             size="icon"
-            className="bg-transparent hover:bg-transparent hover:opacity-70 dark:bg-transparent dark:hover:bg-transparent"
+            className="bg-transparent transition hover:bg-transparent hover:opacity-70 dark:bg-transparent dark:hover:bg-transparent"
             onClick={() => onCopy(address)}
           >
             <Copy className="h-4 w-4 text-black dark:text-white" />

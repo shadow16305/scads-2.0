@@ -462,12 +462,6 @@ export const cardItems = [
 
 export const documents = [
   {
-    name: "Roadmap",
-    path: "/roadmap",
-    description: "Our current and future plans.",
-    icon: <Map size={16} />,
-  },
-  {
     name: "Use Cases",
     path: "/use-cases",
     description: "The use cases for the scads ecosystem.",

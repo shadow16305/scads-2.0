@@ -23,7 +23,7 @@ const TextBlock = () => {
       >
         DeFi: Explosive Growth, but with Caveats
       </motion.h2>
-      <div className="dark:opacity-70">
+      <div className="dark:text-neutral-300">
         <p className="z-10 max-w-[340px] lg:max-w-[647px]">
           DeFi (Decentralized Finance) has experienced phenomenal growth over
           the past 4 years. The DeFi sector, which did not exist 6 years ago,
@@ -88,15 +88,6 @@ const TextBlock = () => {
                   an algorithm. This eliminates the possibility of manipulation
                   and fraud.
                 </li>
-              </ul>
-              <p>SCADS is:</p>
-              <ul className="list-disc ps-4">
-                <li>
-                  Decentralization: Freedom from control by banks and
-                  governments.
-                </li>
-                <li>Self-sufficiency: Independence from fiat currencies.</li>
-                <li>Freedom: Your money, your rules.</li>
               </ul>
             </motion.div>
           )}

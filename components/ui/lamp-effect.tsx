@@ -8,7 +8,7 @@ export const LampContainer = ({
   className,
   color,
 }: {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   color: string;
 }) => {

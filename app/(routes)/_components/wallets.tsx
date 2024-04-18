@@ -5,14 +5,13 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { cardItems } from "@/constants/content";
-import Image from "next/image";
 
 const Wallets = () => {
   const tokenomicsCtx = useContext(TokenomicsContext);
   const setActiveText = tokenomicsCtx.setActiveItem;
 
   return (
-    <section className="relative mx-auto mt-32 flex flex-col items-center gap-y-4 py-12 dark:bg-transparent lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
+    <section className="relative mx-auto mt-32 flex flex-col items-center gap-y-4 dark:bg-transparent lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
       <motion.h2
         initial={{ opacity: 0.5, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}

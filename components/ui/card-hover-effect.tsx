@@ -1,28 +1,19 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { MouseEvent, useState } from "react";
+import { useState } from "react";
 
 export const HoverEffect = ({
   items,
   className,
-  onClick,
 }: {
   items: {
     title: string;
     description: string;
   }[];
   className?: string;
-  onClick: (title: string) => void;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
-  const scrolltoHash = function (element_id: string) {
-    const element = document.getElementById(element_id);
-    element?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
 
   return (
     <div
@@ -57,8 +48,8 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: 50 }}
+            whileInView={{ y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1, duration: 0.5 }}
             className="h-full w-full"

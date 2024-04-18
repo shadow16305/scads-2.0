@@ -1,4 +1,3 @@
-import { motion, AnimatePresence } from "framer-motion";
 import { IoMoonOutline } from "react-icons/io5";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { useTheme } from "next-themes";

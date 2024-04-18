@@ -26,10 +26,7 @@ const Wallets = () => {
         Wallets
       </motion.h2>
       <div className="flex max-w-[340px] flex-col flex-wrap gap-8 md:max-w-[768px] lg:max-w-[1024px] lg:flex-row">
-        <HoverEffect
-          items={cardItems}
-          onClick={(title: string) => setActiveText(title)}
-        />
+        <HoverEffect items={cardItems} />
       </div>
       <div className="absolute -z-10 h-full w-screen -skew-y-6 bg-gradient-to-r from-custom-color via-[#B5FFFC] to-purple-800 blur-[400px] dark:hidden" />
       <div className="absolute -z-10 w-full">

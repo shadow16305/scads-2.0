@@ -11,6 +11,7 @@ import WalletDetails from "./wallet-details";
 import WalletList from "./wallet-list";
 import { Wallet } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
 
 const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
   const walletModal = useWalletModal();
@@ -30,10 +31,9 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
         {walletModal.isConnected ? (
           <Wallet className="transition hover:text-custom-color" />
         ) : (
-          <ButtonPrimary
-            text={walletModal.isConnected ? "Wallet" : "Connect wallet"}
-            className={cn("w-full", navigation && "px-4 py-2 text-sm")}
-          />
+          <Button className={cn("w-full", navigation && "px-4 py-2 text-sm")}>
+            {walletModal.isConnected ? "Wallet" : "Connect wallet"}
+          </Button>
         )}
       </DialogTrigger>
       <DialogContent className="max-w-[340px] space-y-4 rounded-3xl border-none backdrop-blur-2xl dark:bg-[#0c0e22] md:max-w-lg">

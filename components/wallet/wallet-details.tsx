@@ -3,6 +3,7 @@ import ButtonPrimary from "../ui/button-primary";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { Button } from "../ui/button";
 import { Copy, ExternalLink } from "lucide-react";
+import { ScrollArea } from "../ui/scroll-area";
 
 const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
   setDisconnected,
@@ -64,15 +65,17 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
       <TabsContent value="transactions" className="space-y-4 py-4">
         <p className="font-semibold">Recent transactions</p>
         {/* <--- if there are transactions ---> */}
-        {/* <ul className="mx-auto h-48 space-y-2 overflow-visible">
-          <li className="text-center">transaction</li>
-        </ul> */}
+        {/* <ScrollArea className="h-48">
+          <ul className="mx-auto space-y-2">
+            <li className="text-center">transaction</li>
+          </ul>
+        </ScrollArea> */}
         <div className="flex h-36 items-center justify-center">
           <p>No recent transactions...</p>
         </div>
       </TabsContent>
       <div className="flex flex-col gap-y-4">
-        <ButtonPrimary onClick={setDisconnected} text="Disconnect wallet" />
+        <Button onClick={setDisconnected}>Disconnect wallet</Button>
       </div>
     </Tabs>
   );

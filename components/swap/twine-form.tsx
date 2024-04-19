@@ -9,6 +9,7 @@ import FormInputs from "./form-inputs";
 import Taxes from "./taxes";
 import { useWalletModal } from "@/hooks/use-wallet-modal";
 import WalletModal from "../wallet/wallet-modal";
+import { Button } from "../ui/button";
 
 const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
   const [inputValue, setInputValue] = useState(0);
@@ -28,7 +29,7 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
       />
       <Taxes textClasses={textClasses} colorClasses={colorClasses} />
       {walletModal.isConnected ? (
-        <ButtonPrimary text="Swap" onClick={() => {}} />
+        <Button onClick={() => {}}>Swap</Button>
       ) : (
         <WalletModal />
       )}
@@ -61,7 +62,7 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
         </div>
       </div>
       {walletModal.isConnected ? (
-        <ButtonPrimary text="Swap" onClick={() => {}} />
+        <Button onClick={() => {}}>Claim</Button>
       ) : (
         <WalletModal />
       )}

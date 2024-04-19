@@ -6,6 +6,7 @@ import FormInputs from "./form-inputs";
 import Taxes from "./taxes";
 import { useWalletModal } from "@/hooks/use-wallet-modal";
 import WalletModal from "../wallet/wallet-modal";
+import { Button } from "../ui/button";
 
 const ScadsForm: React.FC<{ panel: string }> = ({ panel }) => {
   const [firstToken, setFirstToken] = useState("USDT");
@@ -48,7 +49,9 @@ const ScadsForm: React.FC<{ panel: string }> = ({ panel }) => {
       </div>
       <Taxes textClasses={textClasses} colorClasses={colorClasses} />
       {walletModal.isConnected ? (
-        <ButtonPrimary text="Swap" onClick={() => {}} className="w-full" />
+        <Button onClick={() => {}} className="w-full">
+          Swap
+        </Button>
       ) : (
         <WalletModal />
       )}

@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/dialog";
 import ScadsForm from "./scads-form";
 import TwineForm from "./twine-form";
-import ButtonPrimary from "../ui/button-primary";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { Button } from "../ui/button";
 

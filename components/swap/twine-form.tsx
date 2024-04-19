@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Switch } from "../ui/switch";
 import { Label } from "../ui/label";
 import clsx from "clsx";
-import ButtonPrimary from "../ui/button-primary";
 import FormInputs from "./form-inputs";
 import Taxes from "./taxes";
 import { useWalletModal } from "@/hooks/use-wallet-modal";

@@ -1,5 +1,4 @@
 import toast from "react-hot-toast";
-import ButtonPrimary from "../ui/button-primary";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { Button } from "../ui/button";
 import { Copy, ExternalLink } from "lucide-react";

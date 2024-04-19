@@ -6,7 +6,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "../ui/dialog";
-import ButtonPrimary from "../ui/button-primary";
 import WalletDetails from "./wallet-details";
 import WalletList from "./wallet-list";
 import { Wallet } from "lucide-react";

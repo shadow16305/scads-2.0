@@ -4,27 +4,22 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import SectionHeader from "@/components/ui/section-header";
+import { LampContainer } from "@/components/ui/lamp-effect";
+import AnimatedBackground from "@/components/ui/animated-background";
 
 const TextBlock = () => {
   const [textIsVisible, setTextIsVisible] = useState(false);
 
   return (
-    <section className="relative mt-32 flex flex-col items-center gap-y-4 px-4 text-black dark:text-white md:px-0">
-      <motion.h2
-        initial={{ opacity: 0.5, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        viewport={{ once: true }}
-        className="bg-gradient-to-br from-black to-neutral-700 bg-clip-text py-4 text-center text-3xl font-medium tracking-tight text-transparent dark:from-white dark:to-neutral-500 md:text-4xl"
-      >
-        DeFi: Explosive Growth, but with Caveats
-      </motion.h2>
-      <div className="dark:text-neutral-300">
-        <p className="z-10 max-w-[340px] lg:max-w-[647px]">
+    <section className="relative mt-48 flex flex-col items-center gap-y-4 px-4 text-black dark:text-white md:px-0">
+      <LampContainer
+        color="custom-color"
+        className="absolute -top-16 -z-10 2xl:-top-20"
+      />
+      <SectionHeader title="Introducing Scads" />
+      <div className="max-w-[340px] dark:text-neutral-300 lg:max-w-[1024px]">
+        <p className="z-10">
           DeFi (Decentralized Finance) has experienced phenomenal growth over
           the past 4 years. The DeFi sector, which did not exist 6 years ago,
           has already accumulated a staggering market capitalization of 112
@@ -48,7 +43,7 @@ const TextBlock = () => {
               className="z-10 flex origin-top flex-col gap-y-4 pt-4"
             >
               <p>The main reasons for the losses:</p>
-              <ul className="max-w-[340px] list-disc pl-4 lg:max-w-[647px]">
+              <ul className="list-disc pl-4">
                 <li>
                   Fraudulent projects: scammers lure people in with promises of
                   unrealistically high APR/APY (annual percentage rates) and
@@ -63,11 +58,11 @@ const TextBlock = () => {
                   protects it from government agencies control or weaponization.
                 </li>
               </ul>
-              <p className="max-w-[340px] lg:max-w-[647px]">
+              <p className="">
                 SCADS is an innovative stablecoin based on the Proof of Holding
                 algorithm that will transform the digital currency landscape.
               </p>
-              <ul className="max-w-[340px] list-disc pl-4 lg:max-w-[647px]">
+              <ul className=" list-disc pl-4">
                 <li>
                   Non-pegged: Unlike traditional stablecoins, SCADS is not
                   pegged to fiat currencies (dollar, euro, etc.). This makes it
@@ -104,6 +99,7 @@ const TextBlock = () => {
           <ChevronDown className="transition-transform group-hover:translate-y-1" />
         )}
       </button>
+      <AnimatedBackground color="bg-custom-color" />
     </section>
   );
 };

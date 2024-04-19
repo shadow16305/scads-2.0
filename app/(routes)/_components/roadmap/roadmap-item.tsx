@@ -7,11 +7,11 @@ interface RoadmapItemProps {
 
 const RoadmapItem: React.FC<RoadmapItemProps> = ({ date, l1, l2, l3 }) => {
   return (
-    <li className="relative mb-6 min-w-[340px] sm:mb-0">
+    <li className="relative mb-6 max-w-[300px] sm:mb-0 lg:min-w-[340px] lg:max-w-none">
       <div className="flex items-center">
         <div className="z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full backdrop-blur-lg dark:bg-white/10">
           <svg
-            className="h-2.5 w-2.5 text-custom-color"
+            className="h-2.5 w-2.5 text-white/40"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"

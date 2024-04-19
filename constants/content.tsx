@@ -4,60 +4,15 @@ import { BsHeartPulse } from "react-icons/bs";
 import { GrStorage } from "react-icons/gr";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { MdOutlineDataObject } from "react-icons/md";
-import { Grid, Map, Paperclip } from "lucide-react";
-
-export const tokenomicsButtons = [
-  {
-    id: "tb1",
-    text: "SCADS",
-  },
-  {
-    id: "tb2",
-    text: "TWINE",
-  },
-  {
-    id: "tb3",
-    text: "MARKET CAP",
-  },
-  {
-    id: "tb4",
-    text: "MINTING SPEED",
-  },
-  {
-    id: "tb5",
-    text: "PULSE",
-  },
-  {
-    id: "tb6",
-    text: "LIQUIDITY WALLET",
-  },
-  {
-    id: "tb7",
-    text: "TREASURY",
-  },
-  {
-    id: "tb8",
-    text: "DECENTRALIZATION",
-  },
-  {
-    id: "tb9",
-    text: "PROTECTION",
-  },
-  {
-    id: "tb10",
-    text: "SEIGNORAGE",
-  },
-  {
-    id: "tb11",
-    text: "TRANSPARENCY",
-  },
-  {
-    id: "tb12",
-    text: "PROOF OF HOLD",
-  },
-];
+import { Grid, Paperclip } from "lucide-react";
 
 export const tokenomicsContent = [
+  {
+    id: "proof-of-hold",
+    title: "Proof of hold",
+    paragraph:
+      "SCADS introduces an innovative concept called Proof of Hold (POH) to ensure safety, security, and minimize investment risks. This approach involves users simply purchasing the stable coin and holding it. By doing so, they automatically mint TWINE, the linear token. To facilitate this process, the algorithm incorporates a mapping feature called 'isHolder' to monitor addresses that qualify as holders. The 'ProofOfHolding' function enables an address to include itself in this list, allowing for seamless participation in the Proof of Hold mechanism. This inventive approach provides a secure and risk-reduced investment experience for users.",
+  },
   {
     id: "scads",
     title: "Scads",
@@ -162,11 +117,56 @@ export const tokenomicsContent = [
     paragraph:
       "Every transaction conducted within the system is capable of being verified on the blockchain. In addition, the SCADS algorithm provides real-time tracking of all contract transactions, which are conveniently listed in the contract list. Users have accessible and immediate viewing of this information on the main page, ensuring transparency and ease of access to all participants. This emphasis on transparency enhances trust and confidence within the system.",
   },
+];
+
+export const tokenomicsLinks = [
   {
-    id: "proof-of-hold",
-    title: "Proof of hold",
-    paragraph:
-      "SCADS introduces an innovative concept called Proof of Hold (POH) to ensure safety, security, and minimize investment risks. This approach involves users simply purchasing the stable coin and holding it. By doing so, they automatically mint TWINE, the linear token. To facilitate this process, the algorithm incorporates a mapping feature called 'isHolder' to monitor addresses that qualify as holders. The 'ProofOfHolding' function enables an address to include itself in this list, allowing for seamless participation in the Proof of Hold mechanism. This inventive approach provides a secure and risk-reduced investment experience for users.",
+    name: "Proof of hold",
+    path: "/tokenomics/#proof-of-hold",
+  },
+  {
+    name: "Scads",
+    path: "/tokenomics/#scads",
+  },
+  {
+    name: "Twine",
+    path: "/tokenomics/#twine",
+  },
+  {
+    name: "Market cap",
+    path: "/tokenomics/#market-cap",
+  },
+  {
+    name: "Minting speed",
+    path: "/tokenomics/#minting-speed",
+  },
+  {
+    name: "Pulse",
+    path: "/tokenomics/#pulse",
+  },
+  {
+    name: "Liquidity wallet",
+    path: "/tokenomics/#liquidity-wallet",
+  },
+  {
+    name: "Treasury",
+    path: "/tokenomics/#treasury",
+  },
+  {
+    name: "Decentralization",
+    path: "/tokenomics/#decentralization",
+  },
+  {
+    name: "Protection",
+    path: "/tokenomics/#protection",
+  },
+  {
+    name: "Seignorage",
+    path: "/tokenomics/#seignorage",
+  },
+  {
+    name: "Transparency",
+    path: "/tokenomics/#transparency",
   },
 ];
 
@@ -472,56 +472,5 @@ export const documents = [
     path: "/whitepaper",
     description: "All the detailed information.",
     icon: <Paperclip size={16} />,
-  },
-];
-
-export const tokenomicsLinks = [
-  {
-    name: "Scads",
-    path: "/tokenomics/#scads",
-  },
-  {
-    name: "Twine",
-    path: "/tokenomics/#twine",
-  },
-  {
-    name: "Market cap",
-    path: "/tokenomics/#market-cap",
-  },
-  {
-    name: "Minting speed",
-    path: "/tokenomics/#minting-speed",
-  },
-  {
-    name: "Pulse",
-    path: "/tokenomics/#pulse",
-  },
-  {
-    name: "Liquidity wallet",
-    path: "/tokenomics/#liquidity-wallet",
-  },
-  {
-    name: "Treasury",
-    path: "/tokenomics/#treasury",
-  },
-  {
-    name: "Decentralization",
-    path: "/tokenomics/#decentralization",
-  },
-  {
-    name: "Protection",
-    path: "/tokenomics/#protection",
-  },
-  {
-    name: "Seignorage",
-    path: "/tokenomics/#seignorage",
-  },
-  {
-    name: "Transparency",
-    path: "/tokenomics/#transparency",
-  },
-  {
-    name: "Proof of hold",
-    path: "/tokenomics/#proof-of-hold",
   },
 ];

@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -33,7 +35,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 block size-[80%] rounded-3xl bg-purple-600/20"
+                className="absolute inset-0 block size-[80%] rounded-3xl bg-violet-500"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -75,7 +77,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-transparent bg-white/40 p-4 backdrop-blur-lg dark:border-white/10 dark:bg-transparent ",
+        "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-transparent bg-white/40 p-4 backdrop-blur-xl dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-transparent dark:to-white/5",
         className,
       )}
     >

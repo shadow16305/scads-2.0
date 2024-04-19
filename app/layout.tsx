@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={cn(
-          "bg-[#F4F3F2] dark:bg-dark-blue",
+          "overflow-x-hidden bg-[#F4F3F2] dark:bg-dark-blue",
           inter.className,
         )}
       >

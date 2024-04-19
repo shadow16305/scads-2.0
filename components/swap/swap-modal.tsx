@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Dialog,
   DialogContent,
@@ -8,16 +6,12 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { useState } from "react";
 import ScadsForm from "./scads-form";
 import TwineForm from "./twine-form";
-import clsx from "clsx";
 import ButtonPrimary from "../ui/button-primary";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 
 const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
-  const [panel, setPanel] = useState("SCADS");
-
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -42,24 +36,22 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
               <TabsList className="flex justify-start gap-x-2 bg-transparent dark:bg-transparent">
                 <TabsTrigger
                   value="scads"
-                  onClick={() => setPanel("SCADS")}
                   className="rounded-3xl border border-white/10 bg-white/[.02] px-4 py-1 text-sm text-black dark:text-white"
                 >
                   SCADS
                 </TabsTrigger>
                 <TabsTrigger
                   value="twine"
-                  onClick={() => setPanel("TWINE")}
                   className="rounded-3xl border border-white/10 bg-white/[.02] px-4 py-1 text-sm text-black dark:text-white"
                 >
                   TWINE
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="scads">
-                <ScadsForm panel={panel} />
+                <ScadsForm panel="scads" />
               </TabsContent>
               <TabsContent value="twine">
-                <TwineForm panel={panel} />
+                <TwineForm panel="twine" />
               </TabsContent>
             </Tabs>
           </DialogDescription>

@@ -1,7 +1,6 @@
 "use client";
 
 import { treasuryItems } from "@/constants/content";
-import SectionHeader from "@/components/ui/section-header";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -9,7 +8,9 @@ const Treasury = () => {
   return (
     <section className="lg:rounded-t-0 relative flex flex-col items-center gap-y-8 rounded-b-3xl px-4 pb-10 md:px-8">
       <div className="absolute -top-8 left-1/2 -translate-x-1/2 rounded-3xl border border-white/60 bg-white/20 px-2 backdrop-blur-3xl dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-transparent dark:via-dark-blue dark:to-transparent">
-        <SectionHeader title="Treasury balance" />
+        <h4 className="px-2 py-2 text-sm text-black dark:text-neutral-300 md:px-4">
+          Treasury
+        </h4>
       </div>
       <div className="mt-8 flex w-full flex-col items-center gap-y-10 rounded-b-3xl lg:flex-row lg:justify-between">
         {treasuryItems.map((item) => (

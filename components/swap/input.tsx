@@ -35,10 +35,10 @@ const Input: React.FC<InputProps> = ({
       className={`flex flex-col justify-between lg:h-[140px] 2xl:h-[200px] ${className}`}
     >
       <div className="flex flex-col gap-y-1">
-        {panel === "SCADS" ? (
+        {panel === "scads" ? (
           <TokenSelect setToken={setToken} token={token} />
         ) : (
-          <div className="flex w-fit flex-row items-center justify-between rounded-3xl border border-black px-3 py-2 text-black dark:border-white/10 dark:text-white">
+          <div className="flex w-fit flex-row items-center justify-between rounded-3xl border border-black px-4 py-2 text-black dark:border-white/10 dark:text-white">
             <div className="flex items-center gap-x-2">
               <div className="relative h-4 w-[10px]">
                 <Image

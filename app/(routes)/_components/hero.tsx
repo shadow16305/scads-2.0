@@ -1,7 +1,6 @@
 "use client";
 
 import SwapModal from "@/components/swap/swap-modal";
-import Stats from "./stats/stats";
 import { IoEllipse } from "react-icons/io5";
 import { motion } from "framer-motion";
 
@@ -25,7 +24,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="max-w-[340px] text-center text-black dark:text-neutral-300 lg:max-w-[550px] xl:max-w-[700px]"
+            className="max-w-[340px] text-center text-lg text-black dark:text-neutral-300 lg:max-w-[550px] xl:max-w-[700px]"
           >
             The change is here, freewill will be the chain, proof of hold the
             protocol, SCADS and TWINE, the first proof of technology.
@@ -40,9 +39,8 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      <Stats />
       <IoEllipse
-        className="absolute -top-2/3 left-1/2 -z-10 hidden -translate-x-1/2 -translate-y-2/3 bg-gradient-to-r from-[#08AEEA] to-[#FF5ACD] text-transparent blur-[800px] dark:lg:block"
+        className="absolute -top-full left-1/2 -z-10 hidden -translate-x-1/2 -translate-y-2/3 bg-gradient-to-r from-[#08AEEA] to-[#FF5ACD] text-transparent blur-[800px] dark:lg:block"
         size={1000}
       />
       <IoEllipse

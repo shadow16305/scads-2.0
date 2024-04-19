@@ -1,8 +1,21 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const SectionHeader: React.FC<{ title: string }> = ({ title }) => {
   return (
-    <h4 className="px-2 py-2 text-sm text-black dark:text-neutral-300 md:px-4">
+    <motion.h2
+      initial={{ opacity: 0.5, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: 0.3,
+        duration: 0.8,
+        ease: "easeInOut",
+      }}
+      className="mx-auto mt-8 bg-gradient-to-br from-black to-neutral-700 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent dark:from-white dark:to-neutral-500 lg:max-w-[700px] 2xl:text-7xl"
+    >
       {title}
-    </h4>
+    </motion.h2>
   );
 };
 

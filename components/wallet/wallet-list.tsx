@@ -23,7 +23,9 @@ const WalletList: React.FC<{ setConnected: () => void }> = ({
               height={48}
               className="transition-transform group-hover:-translate-y-1 group-hover:scale-105"
             />
-            <span className="group-hover:opacity-70">{wallet.name}</span>
+            <span className="text-white transition-opacity group-hover:opacity-70">
+              {wallet.name}
+            </span>
           </button>
         </li>
       ))}

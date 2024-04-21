@@ -18,7 +18,7 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
         {navigation ? (
           <button
             type="button"
-            className="relative transition hover:text-neutral-700 dark:hover:text-neutral-400"
+            className="relative transition hover:text-neutral-400"
           >
             Invest
           </button>
@@ -26,23 +26,23 @@ const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
           <Button className="px-10">Invest</Button>
         )}
       </DialogTrigger>
-      <DialogContent className="max-w-[360px] rounded-3xl border-none bg-[#F4F3F2] dark:bg-[#0c0e22] md:max-w-lg">
+      <DialogContent className="max-w-[360px] rounded-3xl border-none bg-[#0c0e22] md:max-w-lg">
         <DialogHeader className="space-y-2">
-          <DialogTitle className="text-2xl font-semibold text-black dark:text-white">
+          <DialogTitle className="text-2xl font-semibold text-white">
             Swap
           </DialogTitle>
           <DialogDescription>
             <Tabs defaultValue="scads">
-              <TabsList className="flex justify-start gap-x-2 bg-transparent dark:bg-transparent">
+              <TabsList className="flex justify-start gap-x-2 bg-transparent">
                 <TabsTrigger
                   value="scads"
-                  className="rounded-3xl border border-white/10 bg-white/[.02] px-4 py-1 text-sm text-black dark:text-white"
+                  className="rounded-3xl border border-white/10 bg-white/[.02] px-4 py-1 text-sm text-white"
                 >
                   SCADS
                 </TabsTrigger>
                 <TabsTrigger
                   value="twine"
-                  className="rounded-3xl border border-white/10 bg-white/[.02] px-4 py-1 text-sm text-black dark:text-white"
+                  className="rounded-3xl border border-white/10 bg-white/[.02] px-4 py-1 text-sm text-white"
                 >
                   TWINE
                 </TabsTrigger>

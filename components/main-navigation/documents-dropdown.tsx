@@ -26,7 +26,7 @@ const DocumentsDropdown: React.FC<{ close?: () => void }> = ({ close }) => {
         Documents
         <FaChevronDown size={12} />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="mx-auto mt-2 w-32 rounded-xl border-none backdrop-blur-xl dark:bg-[#0c0e22]">
+      <DropdownMenuContent className="mx-auto mt-2 w-32 rounded-xl border-none bg-[#0c0e22] backdrop-blur-xl">
         <DropdownMenuGroup>
           {documents.map((document) => (
             <DropdownMenuItem

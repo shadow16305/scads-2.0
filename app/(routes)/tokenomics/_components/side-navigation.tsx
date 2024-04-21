@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const SideNavigation = () => {
   return (
-    <aside className="sticky left-0 top-24 flex h-fit flex-col gap-y-6 rounded-xl border border-white/10 bg-white/40 p-8 dark:bg-transparent dark:bg-gradient-to-br dark:from-transparent dark:to-white/10 xl:top-32">
-      <p className="text-lg text-black dark:text-white">Table of contents</p>
-      <ul className="space-y-4 text-neutral-700 dark:text-neutral-300">
+    <aside className="sticky left-0 top-24 flex h-fit flex-col gap-y-6 rounded-xl border border-white/10 p-8 bg-transparent bg-gradient-to-br from-transparent to-white/10 xl:top-32">
+      <p className="text-lg text-white">Table of contents</p>
+      <ul className="space-y-4 text-neutral-300">
         {tokenomicsLinks.map((link) => (
           <li key={link.name}>
             <Link href={link.path} className="group flex items-center gap-x-2">

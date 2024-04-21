@@ -31,7 +31,7 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
         ) : (
           <span
             className={cn(
-              "flex w-full items-center justify-center gap-x-2 rounded-[50px] bg-black px-8 py-2 text-base font-bold text-white transition-colors duration-300 hover:bg-neutral-800 dark:bg-custom-color dark:hover:bg-[#7480f1]",
+              "flex w-full items-center justify-center gap-x-2 rounded-[50px] bg-custom-color px-8 py-2 text-base font-bold text-white transition-colors duration-300 hover:bg-[#7480f1]",
               navigation && "px-4 py-2 text-sm",
             )}
           >
@@ -39,9 +39,9 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
           </span>
         )}
       </DialogTrigger>
-      <DialogContent className="max-w-[340px] space-y-4 rounded-3xl border-none backdrop-blur-2xl dark:bg-[#0c0e22] md:max-w-lg">
+      <DialogContent className="max-w-[340px] space-y-4 rounded-3xl border-none bg-[#0c0e22] backdrop-blur-2xl md:max-w-lg">
         <DialogHeader>
-          <DialogTitle className="text-2xl">
+          <DialogTitle className="text-2xl text-white">
             {walletModal.isConnected ? "Your wallet" : "Wallets"}
           </DialogTitle>
         </DialogHeader>

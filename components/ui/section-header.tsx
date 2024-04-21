@@ -12,7 +12,7 @@ const SectionHeader: React.FC<{ title: string }> = ({ title }) => {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="mx-auto mt-8 bg-gradient-to-br from-black to-neutral-700 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent dark:from-white dark:to-neutral-500 lg:max-w-[700px] 2xl:text-7xl"
+      className="mx-auto mt-8 bg-gradient-to-br bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent from-white to-neutral-500 lg:max-w-[700px] 2xl:text-7xl"
     >
       {title}
     </motion.h2>

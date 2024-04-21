@@ -12,7 +12,7 @@ const TextBlock = () => {
   const [textIsVisible, setTextIsVisible] = useState(false);
 
   return (
-    <section className="relative mt-48 flex flex-col items-center gap-y-4 px-4 text-black dark:text-white md:px-0">
+    <section className="relative mt-72 flex flex-col items-center gap-y-4 px-4 text-white md:px-0">
       <LampContainer
         colorLine="custom-color"
         colorLeft="from-custom-color"
@@ -20,7 +20,7 @@ const TextBlock = () => {
         className="absolute -top-16 -z-10 2xl:-top-20"
       />
       <SectionHeader title="Introducing Scads" />
-      <div className="max-w-[340px] dark:text-neutral-300 lg:max-w-[1024px]">
+      <div className="max-w-[340px] text-neutral-300 lg:max-w-[1024px]">
         <p className="z-10">
           DeFi (Decentralized Finance) has experienced phenomenal growth over
           the past 4 years. The DeFi sector, which did not exist 6 years ago,
@@ -29,8 +29,8 @@ const TextBlock = () => {
           <span
             className={cn(
               textIsVisible
-                ? "dark:text-white"
-                : "bg-gradient-to-r from-black via-black to-transparent bg-clip-text text-transparent dark:from-white dark:via-white dark:to-dark-blue",
+                ? "text-white"
+                : "bg-gradient-to-r bg-clip-text text-transparent from-white via-white to-dark-blue",
             )}
           >
             has been overshadowed by significant financial losses for investors.
@@ -92,7 +92,7 @@ const TextBlock = () => {
       </div>
       <button
         onClick={() => setTextIsVisible(!textIsVisible)}
-        className="group z-10 mt-4 flex items-end gap-x-2 font-semibold text-black dark:text-white"
+        className="group z-10 mt-4 flex items-end gap-x-2 font-semibold text-white"
       >
         {textIsVisible ? "Show less" : "Show more"}
         {textIsVisible ? (

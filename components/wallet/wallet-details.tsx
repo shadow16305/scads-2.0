@@ -15,31 +15,31 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
 
   return (
     <Tabs defaultValue="wallet">
-      <TabsList className="grid w-full grid-cols-2 gap-x-2 bg-transparent dark:bg-transparent">
+      <TabsList className="grid w-full grid-cols-2 gap-x-2 bg-transparent">
         <TabsTrigger
           value="wallet"
-          className="rounded-3xl border border-white/10 bg-white/[.02] text-base text-black dark:text-white"
+          className="rounded-3xl border border-white/10 bg-white/[.02] text-base text-white"
         >
           Wallet
         </TabsTrigger>
         <TabsTrigger
           value="transactions"
-          className="rounded-3xl border border-white/10 bg-white/[.02] text-base text-black dark:text-white"
+          className="rounded-3xl border border-white/10 bg-white/[.02] text-base text-white"
         >
           Transactions
         </TabsTrigger>
       </TabsList>
-      <TabsContent value="wallet" className="space-y-4 py-4">
+      <TabsContent value="wallet" className="space-y-4 py-4 text-white">
         <p className="font-semibold">Your address</p>
-        <div className="flex items-center justify-between rounded-3xl bg-neutral-100 px-4 dark:bg-custom-color/10">
+        <div className="flex items-center justify-between rounded-3xl bg-custom-color/10 px-4">
           <span>{address}</span>
           <Button
             size="icon"
-            className="bg-transparent transition hover:bg-transparent hover:opacity-70 dark:bg-transparent dark:hover:bg-transparent"
+            className="bg-transparent transition hover:bg-transparent hover:opacity-70"
             onClick={() => onCopy(address)}
             variant="ghost"
           >
-            <Copy className="h-4 w-4 text-black dark:text-white" />
+            <Copy className="h-4 w-4 text-white" />
           </Button>
         </div>
         <div className="space-y-2 text-sm">
@@ -61,7 +61,7 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
           View on BscScan <ExternalLink />
         </a>
       </TabsContent>
-      <TabsContent value="transactions" className="space-y-4 py-4">
+      <TabsContent value="transactions" className="space-y-4 py-4 text-white">
         <p className="font-semibold">Recent transactions</p>
         {/* <--- if there are transactions ---> */}
         {/* 

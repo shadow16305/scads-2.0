@@ -16,9 +16,9 @@ const GeneralStats = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="rounded-full bg-white/20 p-3 dark:bg-transparent dark:bg-gradient-to-br dark:from-transparent dark:to-white/10 lg:p-2 xl:p-3"
+              className="rounded-full bg-gradient-to-br from-transparent to-white/10 p-3 lg:p-2 xl:p-3"
             >
-              <div className="relative text-black dark:text-neutral-400 [&>*]:size-7 lg:[&>*]:size-5 xl:[&>*]:size-6">
+              <div className="relative text-neutral-300 [&>*]:size-7 lg:[&>*]:size-5 xl:[&>*]:size-6">
                 {item.icon}
               </div>
             </motion.div>
@@ -28,7 +28,7 @@ const GeneralStats = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="bg-clip-text text-sm font-semibold text-black dark:bg-gradient-to-b dark:from-white dark:to-neutral-400 dark:font-normal dark:text-transparent lg:text-xs xl:text-sm"
+                className="bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-sm font-normal text-black text-transparent lg:text-xs xl:text-sm"
               >
                 {item.name}
               </motion.p>
@@ -36,7 +36,7 @@ const GeneralStats = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="text-black dark:text-white lg:text-sm xl:text-base"
+                className="text-white lg:text-sm xl:text-base"
               >
                 {item.placeholder}
               </motion.p>

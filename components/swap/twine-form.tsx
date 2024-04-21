@@ -14,8 +14,8 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
   const [inputValue, setInputValue] = useState(0);
   const walletModal = useWalletModal();
 
-  const textClasses = "text-black dark:text-white";
-  const colorClasses = "opacity-100 dark:opacity-70";
+  const textClasses = "text-white";
+  const colorClasses = "text-neutral-300";
 
   return (
     <form className="mt-2 flex flex-col gap-y-4 2xl:gap-y-6">
@@ -33,7 +33,7 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
         <WalletModal />
       )}
       <div className="flex items-center justify-center space-x-2 text-white">
-        <Switch id="airplane-mode" className="bg-[#050A12] dark:bg-white/5" />
+        <Switch id="airplane-mode" className="bg-white/5" />
         <Label htmlFor="airplane-mode" className={textClasses}>
           Auto-compound
         </Label>

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { tutorialDesktop } from "@/constants/content";
 import { motion, AnimatePresence } from "framer-motion";
 
-type TabValue = "metamask" | "trust" | "binance";
+type TabValue = "metamask" | "binance";
 
 type Step = {
   label: string;
@@ -21,7 +21,6 @@ type Step = {
 
 const tabsItems = [
   { label: "Metamask", value: "metamask" },
-  { label: "Trust wallet", value: "trust" },
   { label: "Binance chain", value: "binance" },
 ];
 
@@ -36,7 +35,7 @@ const DesktopInfo = () => {
             key={tab.label}
             value={tab.value as TabValue}
             onClick={() => setCurrentTab(tab.value as TabValue)}
-            className="bg-transparent dark:data-[state=active]:bg-white/20"
+            className="bg-transparent text-white data-[state=active]:bg-white/20"
           >
             {tab.label}
           </TabsTrigger>
@@ -57,28 +56,10 @@ const DesktopInfo = () => {
               className="w-11/12"
             >
               <div className="space-y-2">
-                <p className="text-xl font-medium">{step.label}</p>
-                <ol className="space-y-1">
+                <p className="text-xl font-medium text-white">{step.label}</p>
+                <ol className="space-y-1 text-neutral-300">
                   {Object.values(step.list).map(
-                    (value, i) =>
-                      value && (
-                        <li key={i}>
-                          {value}{" "}
-                          {index === 3 && (
-                            <>
-                              <a
-                                href="https://support.metamask.io/hc/en-us/articles/360058239311-How-to-buy-crypto-in-MetaMask"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="text-custom-color"
-                              >
-                                the {currentTab} wallet
-                              </a>{" "}
-                              website for help.
-                            </>
-                          )}
-                        </li>
-                      ),
+                    (value, i) => value && <li key={i}>{value}</li>,
                   )}
                 </ol>
               </div>

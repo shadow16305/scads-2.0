@@ -7,11 +7,11 @@ import MobileInfo from "./_components/mobile-info";
 
 const Tutorial = () => {
   return (
-    <section className="relative mt-56">
+    <section className="relative mt-72">
       <LampContainer
-        colorLine="slate-500"
-        colorLeft="from-slate-500"
-        colorRight="to-slate-500"
+        colorLine="purple-500"
+        colorLeft="from-purple-500"
+        colorRight="to-purple-500"
         className="absolute -top-20 -z-10 2xl:-top-24"
       />
       <SectionHeader title="Getting started" />
@@ -29,13 +29,13 @@ const Tutorial = () => {
         <TabsList className="relative z-10 flex h-fit gap-y-4 bg-transparent px-6 md:flex-col">
           <TabsTrigger
             value="desktop"
-            className="bg-transparent dark:data-[state=active]:bg-white/20"
+            className="bg-transparent text-white data-[state=active]:bg-white/20"
           >
             Desktop
           </TabsTrigger>
           <TabsTrigger
             value="mobile"
-            className="bg-transparent dark:data-[state=active]:bg-white/20"
+            className="bg-transparent text-white data-[state=active]:bg-white/20"
           >
             Mobile
           </TabsTrigger>
@@ -49,7 +49,7 @@ const Tutorial = () => {
           </TabsContent>
         </div>
       </Tabs>
-      <AnimatedBackground color="bg-slate-400" />
+      <AnimatedBackground color="bg-purple-500" />
     </section>
   );
 };

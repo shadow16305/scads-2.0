@@ -7,7 +7,6 @@ import Hamburger from "@/components/main-navigation/hamburger";
 import { motion, AnimatePresence } from "framer-motion";
 import MobileMenu from "./mobile-menu";
 import clsx from "clsx";
-import ThemeToggler from "./theme-toggler";
 import AddressDropdown from "./address-dropdown";
 import WalletModal from "../wallet/wallet-modal";
 import NavLinks from "./navlinks";
@@ -38,19 +37,17 @@ const MainNavigation = () => {
   }, [isOpen]);
 
   const navClasses = clsx(
-    "fixed top-0 z-50 flex w-screen items-center justify-between transition-all text-black dark:text-white",
-    scrolled
-      ? "bg-white/10 dark:bg-white/[.02] backdrop-blur-lg"
-      : "bg-transparent",
+    "fixed top-0 z-50 flex w-screen items-center justify-between transition-all text-white",
+    scrolled ? "bg-white/[.02] backdrop-blur-lg" : "bg-transparent",
   );
 
   return (
     <nav className={navClasses}>
       <div className="mx-auto flex w-full justify-between py-4 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
-        <div className="flex min-w-full items-center justify-between gap-x-12 px-4 lg:min-w-0  lg:justify-normal lg:px-0">
+        <div className="flex min-w-full items-center justify-between gap-x-12 px-4 lg:min-w-0 lg:justify-normal lg:px-0">
           <Link
             href="/"
-            className="z-50 flex items-center gap-x-2 text-xl font-bold dark:text-white"
+            className="z-50 flex items-center gap-x-2 text-xl font-bold text-white"
           >
             <Image src="/images/logo-2.png" alt="logo" width={48} height={48} />{" "}
             SCADS
@@ -62,7 +59,6 @@ const MainNavigation = () => {
         </div>
         <div className="hidden items-center gap-x-6 lg:flex">
           <AddressDropdown />
-          <ThemeToggler />
           <WalletModal navigation />
         </div>
         <AnimatePresence mode="wait">
@@ -81,7 +77,7 @@ const MainNavigation = () => {
                 exit={{ height: 0 }}
                 transition={{ duration: 0.4 }}
                 className={clsx(
-                  "fixed left-1/2 top-0 z-40 w-11/12 -translate-x-1/2 overflow-hidden rounded-b-3xl bg-[#E9E8E7] dark:bg-dark-blue",
+                  "fixed left-1/2 top-0 z-40 w-11/12 -translate-x-1/2 overflow-hidden rounded-b-3xl bg-dark-blue",
                 )}
               >
                 <MobileMenu close={() => setIsOpen(!isOpen)} />

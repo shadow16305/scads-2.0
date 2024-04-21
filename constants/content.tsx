@@ -514,9 +514,9 @@ export const tutorialDesktop = {
       label:
         "Step 4: Add BNB to your wallet balance to cover gas fees on the network.",
       list: {
-        li1: "Refer to",
-        li2: null,
-        li3: null,
+        li1: "1. Acquire BNB (Binance Coin) tokens from a cryptocurrency exchange.",
+        li2: "2. Transfer the acquired BNB tokens to your Binance Chain Wallet address.",
+        li3: "3. Ensure that your wallet has a sufficient balance of BNB to cover gas fees on the Binance Smart Chain network.",
         li4: null,
         li5: null,
         li6: null,
@@ -556,12 +556,346 @@ export const tutorialDesktop = {
       },
     },
   ],
+  binance: [
+    {
+      label: "Step 1: Install Binance Chain Wallet Extension",
+      list: {
+        li1: "1. Open your preferred web browser (e.g., Chrome, Firefox).",
+        li2: "2. Go to the extension store (Chrome Web Store for Chrome, Add-ons for Firefox).",
+        li3: `3. Search for "Binance Chain Wallet" and click on the official extension.`,
+        li4: `4. Click on "Add to Chrome" (or equivalent for your browser) and follow the prompts to install the extension.`,
+        li5: "5. Once installed, you'll see the Binance Chain Wallet icon in your browser's toolbar.",
+        li6: null,
+      },
+    },
+    {
+      label: "Step 2: Set Up Binance Chain Wallet",
+      list: {
+        li1: "1. Click on the Binance Chain Wallet icon in your browser's toolbar.",
+        li2: `2. Follow the prompts to create a new wallet or import an existing one. Be sure to save your mnemonic phrase securely.`,
+        li3: `3. Set a password for your Binance Chain Wallet and confirm it.`,
+        li4: `4. Agree to the terms and conditions.`,
+        li5: "5. Once your wallet is set up, you'll be redirected to the Binance Chain Wallet dashboard.",
+        li6: null,
+      },
+    },
+    {
+      label: "Step 3: Connect Binance Chain Wallet to the Scads Website",
+      list: {
+        li1: "1. Navigate to the website you want to connect your Binance Chain Wallet to.",
+        li2: `2. Look for the "Connect Wallet" button or similar functionality within the website's interface.`,
+        li3: `3. Click on the "Connect Wallet" button. This will prompt Binance Chain Wallet to open and ask for your permission to connect.`,
+        li4: `4. In the Binance Chain Wallet popup, review the permissions requested by the website and click "Connect" if you agree.`,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 4: Add BNB to Your Wallet Balance",
+      list: {
+        li1: "1. Acquire BNB (Binance Coin) tokens from a cryptocurrency exchange.",
+        li2: "2. Transfer the acquired BNB tokens to your Binance Chain Wallet address.",
+        li3: "3. Ensure that your wallet has a sufficient balance of BNB to cover gas fees on the Binance Smart Chain network.",
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 5: Add Token Addresses to Binance Chain Wallet",
+      list: {
+        li1: "1. Once your Binance Chain Wallet is connected to the website, click on the flame icon in the header (navigation menu) where you can copy token addresses.",
+        li2: `2. Look for an option to "Add Token" or "Custom Token" within the Binance Chain Wallet interface.`,
+        li3: `3. Click on the "Add Token" or "Custom Token" button.`,
+        li4: `4. Enter the token contract address for the token you want to add.`,
+        li5: "5. Binance Chain Wallet should automatically populate the token symbol and decimal places. Verify that this information is correct.",
+        li6: `6. Click "Next" or "Add Token" to finalize adding the token to your Binance Chain Wallet.`,
+      },
+    },
+    {
+      label: "Step 6: Verify Token Addition",
+      list: {
+        li1: "1. After adding the token address, you should see the token listed in your Binance Chain Wallet along with your other assets.",
+        li2: "2. Double-check that the token symbol and balance are displayed correctly.",
+        li3: `3. You may need to manually switch to view the added token if it's not already selected.`,
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 7: Minting Scads",
+      list: {
+        li1: `1. Open the invest modal by clicking on the "Invest" button either in the header (navigation menu) or hero section (at the top of the main page).`,
+        li2: "2. Choose the stable coin available in your wallet (USDT or USDC), enter the amount, and enable it for the first time. Once enabled, you can start minting SCADS.",
+        li3: `3. Once you've minted SCADS, you'll see the total amount in your wallet.`,
+        li4: "Depending on the holding period, your wallet will automatically mint TWINE. The balance is displayed on the site when you log in and in your wallet on your tablet or phone.",
+        li5: "Claim your minted TWINE. You can hold or buy more SCADS to mint more.",
+        li6: "Optionally, you can enable auto-compound, where the system claims your TWINE daily and converts it to SCADS for you.",
+      },
+    },
+  ],
+};
+
+export const tutorialMobile = {
+  metamask: [
+    {
+      label: "Step 1: Download MetaMask Mobile App",
+      list: {
+        li1: "1. Open your app store (Google Play Store for Android, App Store for iOS).",
+        li2: "2. Search for 'MetaMask' and download the official MetaMask Mobile app.",
+        li3: "3. Once downloaded, open the MetaMask app.",
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 2: Create or Import Wallet",
+      list: {
+        li1: "1. If you're new to MetaMask, select 'Create a Wallet' and follow the prompts to set up a new wallet. Be sure to store your seed phrase in a safe place.",
+        li2: "2. If you already have a MetaMask wallet, select 'Import Wallet' and enter your seed phrase to import your existing wallet.",
+        li3: null,
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 3: Access Built-in Browser",
+      list: {
+        li1: "1. In the MetaMask app, navigate to the 'Browser' tab located at the bottom of the screen.",
+        li2: "2. This built-in browser allows you to visit decentralized websites and interact with decentralized applications (dApps) directly from MetaMask.",
+        li3: null,
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label:
+        "Step 4: Add BNB to your wallet balance to cover gas fees on the network.",
+      list: {
+        li1: "1. Acquire BNB (Binance Coin) tokens from a cryptocurrency exchange.",
+        li2: "2. Transfer the acquired BNB tokens to your Binance Chain Wallet address.",
+        li3: "3. Ensure that your wallet has a sufficient balance of BNB to cover gas fees on the Binance Smart Chain network.",
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 5: Visit the Website",
+      list: {
+        li1: "Enter the URL of the website (scads.io) in the address bar of the MetaMask browser.",
+        li2: null,
+        li3: null,
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 6: Connect MetaMask Wallet",
+      list: {
+        li1: `1. When you land on the website, open the navigation menu (tap on the three lines at the top right).`,
+        li2: "2. Click on the 'Connect Wallet' button. A popup with different wallets will appear, tap on MetaMask.",
+        li3: "3. MetaMask will prompt you to authorize the connection. Confirm the connection within the MetaMask app.",
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 7: Secure Your Wallet",
+      list: {
+        li1: "1. Ensure that you're using a secure connection when interacting with decentralized websites.",
+        li2: "2. Enable security features like biometric authentication and PIN protection within the MetaMask app.",
+        li3: "3. Keep your seed phrase secure and never share it with anyone.",
+        li4: "4. Be cautious of phishing attempts and only interact with trusted websites and applications.",
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 8: Minting Scads",
+      list: {
+        li1: `1. Open the invest modal by clicking on the "Invest" button either in the navigation menu (tap on the three lines at the top right) or hero section (at the top of the main page).`,
+        li2: "2. Choose the stable coin available in your wallet (USDT or USDC), enter the amount, and enable it for the first time. Once enabled, you can start minting SCADS.",
+        li3: `3. Once you've minted SCADS, you'll see the total amount in your wallet.`,
+        li4: "Depending on the holding period, your wallet will automatically mint TWINE. The balance is displayed on the site when you log in and in your wallet on your tablet or phone.",
+        li5: "Claim your minted TWINE. You can hold or buy more SCADS to mint more.",
+        li6: "Optionally, you can enable auto-compound, where the system claims your TWINE daily and converts it to SCADS for you.",
+      },
+    },
+  ],
   trust: [
-    // { text: "Trust Wallet Lorem ipsum 1" },
-    // { text: "Trust Wallet Lorem ipsum 2" },
+    {
+      label: "Step 1: Download Trust Wallet App",
+      list: {
+        li1: "1. Open your app store (Google Play Store for Android, App Store for iOS).",
+        li2: "2. Search for 'Trust Wallet' and download the official Trust Wallet app.",
+        li3: "3. Once downloaded, open the Trust Wallet app.",
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 2: Create or Import Wallet",
+      list: {
+        li1: "1. If you're new to Trust Wallet, select 'Create a New Wallet' and follow the prompts to set up a new wallet. Be sure to store your recovery phrase in a safe place.",
+        li2: "2. If you already have a Trust Wallet, select 'Import Wallet' and enter your recovery phrase to import your existing wallet.",
+        li3: null,
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 3: Add BNB to Cover Gas Fees",
+      list: {
+        li1: "1. Acquire BNB (Binance Coin) tokens from a cryptocurrency exchange.",
+        li2: "2. Transfer the acquired BNB tokens to your Trust Wallet address.",
+        li3: "3. Ensure that your wallet has a sufficient balance of BNB to cover gas fees on the Binance Smart Chain network.",
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 4: Connect Trust wallet to the Scads Website",
+      list: {
+        li1: "1. Navigate to the website (scads.io) using the built in browser in Trust wallet.",
+        li2: `2. Look for the "Connect Wallet" button in the header (navigation menu) of the website.`,
+        li3: `3. Click on the "Connect Wallet" button. Pick Trust from the popup that appears on your screen. This will prompt Trust wallet to open and ask for your permission to connect.`,
+        li4: `4. In the MetaMask popup, review the permissions requested by the website and click "Connect" if you agree.`,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 5: Add Token Addresses to Trust Wallet",
+      list: {
+        li1: "1. Once your Trust Wallet is connected to the website, tap on the flame icon in the header (navigation menu) to access your wallet's address.",
+        li2: "2. Copy the token address you want to add.",
+        li3: "3. Return to your Trust Wallet app.",
+        li4: "4. Tap on the 'Tokens' section within the wallet.",
+        li5: "5. Look for an option to 'Add Custom Token' or 'Add Token'.",
+        li6: "6. Paste the token address you copied in step 2.",
+      },
+    },
+    {
+      label: "Step 6: Secure Your Wallet",
+      list: {
+        li1: "1. Enable security features like biometric authentication (e.g., fingerprint, Face ID) and PIN protection within the Trust Wallet app settings.",
+        li2: "2. Keep your recovery phrase secure and never share it with anyone. This phrase is the only way to recover your wallet if you lose access.",
+        li3: "3. Be cautious of phishing attempts and only interact with trusted dApps and DeFi projects.",
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 7: Minting Scads",
+      list: {
+        li1: `1. Open the invest modal by clicking on the "Invest" button either in the header (navigation menu) or hero section (at the top of the main page).`,
+        li2: "2. Choose the stable coin available in your wallet (USDT or USDC), enter the amount, and enable it for the first time. Once enabled, you can start minting SCADS.",
+        li3: `3. Once you've minted SCADS, you'll see the total amount in your wallet.`,
+        li4: "Depending on the holding period, your wallet will automatically mint TWINE. The balance is displayed on the site when you log in and in your wallet on your tablet or phone.",
+        li5: "Claim your minted TWINE. You can hold or buy more SCADS to mint more.",
+        li6: "Optionally, you can enable auto-compound, where the system claims your TWINE daily and converts it to SCADS for you.",
+      },
+    },
   ],
   binance: [
-    // { text: "Binance Chain Lorem ipsum 1" },
-    // { text: "Binance Chain Lorem ipsum 2" },
+    {
+      label: "Step 1: Download Binance Chain Wallet Mobile App",
+      list: {
+        li1: "1. Open your app store (Google Play Store for Android, App Store for iOS).",
+        li2: "2. Search for 'Binance Chain Wallet' and download the official Binance Chain Wallet Mobile app.",
+        li3: "3. Once downloaded, open the Binance Chain Wallet app.",
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 2: Create or Import Wallet",
+      list: {
+        li1: "1. If you're new to Binance Chain Wallet, select 'Create Wallet' and follow the prompts to set up a new wallet. Be sure to store your seed phrase in a safe place.",
+        li2: "2. If you already have a Binance Chain Wallet, select 'Import Wallet' and enter your seed phrase to import your existing wallet.",
+        li3: null,
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 3: Access Built-in Browser",
+      list: {
+        li1: "1. In the Binance Chain Wallet app, navigate to the 'Browser' tab located at the bottom of the screen.",
+        li2: "2. This built-in browser allows you to visit decentralized websites and interact with decentralized applications (dApps) directly from Binance Chain Wallet.",
+        li3: null,
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 4: Add BNB to Your Wallet",
+      list: {
+        li1: "1. Acquire BNB (Binance Coin) tokens from a cryptocurrency exchange.",
+        li2: "2. Transfer the acquired BNB tokens to your Binance Chain Wallet address.",
+        li3: "3. Ensure that your wallet has a sufficient balance of BNB to cover gas fees on the Binance Smart Chain network.",
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 5: Visit the Website",
+      list: {
+        li1: "Enter the URL of the website (scads.io) in the address bar of the Binance Chain Wallet browser.",
+        li2: null,
+        li3: null,
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 6: Connect Binance Chain Wallet",
+      list: {
+        li1: `1. When you land on the website, open the navigation menu (tap on the three lines at the top right).`,
+        li2: "2. Click on the 'Connect Wallet' button. A popup with different wallets will appear, tap on Binance Chain Wallet.",
+        li3: "3. Binance Chain Wallet will prompt you to authorize the connection. Confirm the connection within the Binance Chain Wallet app.",
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 7: Secure Your Wallet",
+      list: {
+        li1: "1. Ensure that you're using a secure connection when interacting with decentralized websites.",
+        li2: "2. Enable security features like biometric authentication and PIN protection within the Binance Chain Wallet app.",
+        li3: "3. Keep your seed phrase secure and never share it with anyone.",
+        li4: "4. Be cautious of phishing attempts and only interact with trusted websites and applications.",
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 8: Minting Scads",
+      list: {
+        li1: `1. Open the invest modal by clicking on the "Invest" button either in the navigation menu (tap on the three lines at the top right) or hero section (at the top of the main page).`,
+        li2: "2. Choose the stable coin available in your wallet (USDT or USDC), enter the amount, and enable it for the first time. Once enabled, you can start minting SCADS.",
+        li3: `3. Once you've minted SCADS, you'll see the total amount in your wallet.`,
+        li4: "Depending on the holding period, your wallet will automatically mint TWINE. The balance is displayed on the site when you log in and in your wallet on your tablet or phone.",
+        li5: "Claim your minted TWINE. You can hold or buy more SCADS to mint more.",
+        li6: "Optionally, you can enable auto-compound, where the system claims your TWINE daily and converts it to SCADS for you.",
+      },
+    },
   ],
 };

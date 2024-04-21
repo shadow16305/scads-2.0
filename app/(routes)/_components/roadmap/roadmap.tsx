@@ -7,7 +7,7 @@ import AnimatedBackground from "@/components/ui/animated-background";
 
 const Roadmap = () => {
   return (
-    <section className="relative mt-56 space-y-8">
+    <section className="relative mt-72 space-y-8">
       <LampContainer
         colorLine="violet-500"
         colorLeft="from-violet-500"
@@ -24,7 +24,7 @@ const Roadmap = () => {
         />
         <div className="absolute left-0 top-0 size-full rounded-xl bg-gradient-to-b from-white/5 to-dark-blue" />
         <div className="z-10 h-80 overflow-y-scroll overscroll-contain">
-          <ol className="relative border-s border-gray-200 dark:border-white/20">
+          <ol className="relative border-s border-white/20">
             {roadmapContent.map((item) => (
               <RoadmapItem
                 key={item.id}

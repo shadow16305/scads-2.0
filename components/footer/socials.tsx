@@ -29,7 +29,7 @@ const socialLinks = [
 
 const Socials = () => {
   return (
-    <div className="mt-6 flex flex-col items-center gap-y-3 text-black dark:text-white lg:mt-0 lg:items-start">
+    <div className="mt-6 flex flex-col items-center gap-y-3 text-white lg:mt-0 lg:items-start">
       <span className="font-semibold">Socials</span>
       <div className="flex items-center gap-x-4">
         {socialLinks.map((link) => (

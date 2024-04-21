@@ -55,9 +55,9 @@ const TokenSelect: React.FC<TokenSelectProps> = ({ setToken, token }) => {
               fill
             />
           </div>
-          <span className="text-black dark:text-white">{token}</span>
+          <span className="text-white">{token}</span>
         </div>
-        <FaChevronDown size={16} className="text-black dark:text-white" />
+        <FaChevronDown size={16} className="text-white" />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="rounded-2xl border-none bg-[#0c0e22] text-white">
         <DropdownMenuLabel>Select a token</DropdownMenuLabel>

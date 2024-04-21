@@ -6,6 +6,7 @@ import Taxes from "./taxes";
 import { useWalletModal } from "@/hooks/use-wallet-modal";
 import WalletModal from "../wallet/wallet-modal";
 import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 const ScadsForm: React.FC<{ panel: string }> = ({ panel }) => {
   const [firstToken, setFirstToken] = useState("USDT");
@@ -24,8 +25,8 @@ const ScadsForm: React.FC<{ panel: string }> = ({ panel }) => {
     setRecivalAmount(inputValue * 0.97);
   }, [inputValue]);
 
-  const textClasses = "text-black dark:text-white";
-  const colorClasses = "text-black dark:text-neutral-400";
+  const textClasses = "text-white";
+  const colorClasses = "text-neutral-400";
 
   return (
     <form className="mt-2 flex flex-col gap-y-6">
@@ -39,10 +40,10 @@ const ScadsForm: React.FC<{ panel: string }> = ({ panel }) => {
         firstToken={firstToken}
         secondToken={secondToken}
       />
-      <div className={`flex w-full justify-between text-sm ${textClasses}`}>
+      <div className={cn("flex w-full justify-between text-sm", textClasses)}>
         <p className={colorClasses}>1 SCADS = 1 USDT</p>
         <p>
-          <span className={`pr-1 ${colorClasses}`}>You receive:</span>
+          <span className={cn("pr-1", colorClasses)}>You receive:</span>
           {receivalAmount.toFixed(1)}
         </p>
       </div>

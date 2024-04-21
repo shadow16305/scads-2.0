@@ -21,10 +21,10 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
 }) => {
   return (
     <section
-      className="flex scroll-mt-64 flex-col gap-y-4 px-2 text-sm text-black dark:text-neutral-300 md:px-0 md:text-base"
+      className="flex scroll-mt-64 flex-col gap-y-4 px-2 text-sm text-neutral-300 md:px-0 md:text-base"
       id={id}
     >
-      <h2 className="w-fit text-2xl text-black dark:text-white">{title}</h2>
+      <h2 className="w-fit text-2xl text-white">{title}</h2>
       <p className="max-w-[340px] lg:max-w-[900px] xl:max-w-[1031px]">
         {paragraph}
       </p>

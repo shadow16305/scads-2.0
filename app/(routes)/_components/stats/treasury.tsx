@@ -7,10 +7,8 @@ import { motion } from "framer-motion";
 const Treasury = () => {
   return (
     <section className="lg:rounded-t-0 relative flex flex-col items-center gap-y-8 rounded-b-3xl px-4 pb-10 md:px-8">
-      <div className="absolute -top-8 left-1/2 -translate-x-1/2 rounded-3xl border border-white/60 bg-white/20 px-2 backdrop-blur-3xl dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-transparent dark:via-dark-blue dark:to-transparent">
-        <h4 className="px-2 py-2 text-sm text-black dark:text-neutral-300 md:px-4">
-          Treasury
-        </h4>
+      <div className=":bg-transparent absolute -top-8 left-1/2 -translate-x-1/2 rounded-3xl border border-white/10 bg-gradient-to-b from-transparent via-dark-blue to-transparent px-2 backdrop-blur-3xl">
+        <h4 className="px-2 py-2 text-sm text-neutral-300 md:px-4">Treasury</h4>
       </div>
       <div className="mt-8 flex w-full flex-col items-center gap-y-10 rounded-b-3xl lg:flex-row lg:justify-between">
         {treasuryItems.map((item) => (
@@ -24,7 +22,7 @@ const Treasury = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="text-sm font-semibold text-black dark:bg-gradient-to-b dark:from-white dark:to-neutral-500 dark:bg-clip-text dark:text-transparent lg:text-xs xl:text-sm"
+                className="bg-gradient-to-b from-white to-neutral-500 bg-clip-text text-sm font-semibold text-transparent lg:text-xs xl:text-sm"
               >
                 {item.name}
               </motion.p>
@@ -35,7 +33,7 @@ const Treasury = () => {
                     alt="Scads"
                     width={7}
                     height={16}
-                    className="invert dark:opacity-70 dark:invert-0"
+                    className="opacity-70"
                   />
                 )}
                 {item.id === "ti3" && (
@@ -44,14 +42,14 @@ const Treasury = () => {
                     alt="Scads"
                     width={7}
                     height={16}
-                    className="invert dark:opacity-70 dark:invert-0"
+                    className="opacity-70"
                   />
                 )}
                 <motion.p
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
-                  className="text-black dark:text-white dark:opacity-70 lg:text-sm xl:text-base"
+                  className="text-white opacity-70 lg:text-sm xl:text-base"
                 >
                   {item.amount}
                 </motion.p>

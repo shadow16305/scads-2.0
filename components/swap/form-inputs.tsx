@@ -25,14 +25,14 @@ const FormInputs: React.FC<FormInputsProps> = ({
   secondToken,
 }) => {
   return (
-    <div className="relative flex h-full justify-between rounded-3xl border border-black bg-transparent px-4 dark:border-white/10 lg:w-[460px]">
+    <div className="relative flex h-full justify-between rounded-3xl border border-black border-white/10 bg-transparent px-4 lg:w-[460px]">
       <Input
         className={cn(
-          "items-start pb-1 pt-4 text-black placeholder:text-black dark:text-white dark:placeholder:text-white",
+          "items-start pb-1 pt-4 text-white placeholder:text-white",
         )}
-        balanceClassName={cn("justify-start text-black dark:text-white")}
-        selectClassName="flex-row text-black border-black dark:text-white dark:border-white/10"
-        tokenClassName="text-black dark:text-white"
+        balanceClassName={cn("justify-start text-white")}
+        selectClassName="flex-row text-white border-white/10"
+        tokenClassName="text-white"
         setToken={setFirstToken}
         token={firstToken}
         setValue={setInputValue}
@@ -41,7 +41,7 @@ const FormInputs: React.FC<FormInputsProps> = ({
       />
       <Separator
         orientation="vertical"
-        className="absolute left-1/2 -translate-x-1/2 bg-black dark:bg-white/10"
+        className="absolute left-1/2 -translate-x-1/2 bg-white/10"
       />
       {panel === "SCADS" && (
         <button
@@ -53,10 +53,10 @@ const FormInputs: React.FC<FormInputsProps> = ({
         </button>
       )}
       <Input
-        className="items-end pb-1 pt-4 text-end text-black placeholder:text-black dark:text-white dark:placeholder:text-white"
-        balanceClassName="justify-end text-black dark:text-white"
-        selectClassName="flex-row-reverse text-black border-black dark:text-white dark:border-white/10"
-        tokenClassName="text-black dark:text-white"
+        className="items-end pb-1 pt-4 text-end text-white placeholder:text-white"
+        balanceClassName="justify-end text-white"
+        selectClassName="flex-row-reverse text-white border-white/10"
+        tokenClassName="text-white"
         setToken={setSecondToken}
         token={secondToken}
         setValue={setInputValue}

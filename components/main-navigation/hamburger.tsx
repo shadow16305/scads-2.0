@@ -7,7 +7,7 @@ interface HamburgerProps {
 
 const Hamburger: React.FC<HamburgerProps> = ({ isOpen, setIsOpen }) => {
   const genericHamburgerLine =
-    "h-1 w-6 my-1 transition ease transform duration-300 bg-black dark:bg-white";
+    "h-1 w-6 my-1 transition ease transform duration-300 bg-white";
 
   return (
     <button

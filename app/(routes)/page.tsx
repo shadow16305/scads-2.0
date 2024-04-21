@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <Hero />
       <Stats />
-      <TextBlock />
       <Wallets />
+      <TextBlock />
       <Roadmap />
       <Tutorial />
     </>

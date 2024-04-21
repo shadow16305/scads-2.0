@@ -44,7 +44,7 @@ const DesktopInfo = () => {
       <AnimatePresence mode="wait">
         <TabsContent
           value={currentTab}
-          className="mt-4 h-80 space-y-12 overflow-y-auto overflow-x-hidden"
+          className="z-20 mt-4 h-80 space-y-12 overflow-y-auto overflow-x-hidden"
         >
           {tutorialDesktop[currentTab].map((step: Step, index) => (
             <motion.div

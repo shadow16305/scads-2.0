@@ -17,7 +17,7 @@ const Tutorial = () => {
       <SectionHeader title="Getting started" />
       <Tabs
         defaultValue="desktop"
-        className="mx-auto mt-4 flex h-[440px] w-[340px] flex-col gap-x-12 rounded-2xl border-x border-t border-white/10 bg-gradient-to-b from-white/15 to-transparent py-10 backdrop-blur-xl md:w-[768px] md:flex-row md:px-20 lg:w-[1000px]"
+        className="mx-auto mt-4 flex h-[440px] w-[340px] flex-col gap-x-12 rounded-2xl py-10 backdrop-blur-xl md:w-[768px] md:flex-row md:px-20 lg:w-[1000px]"
       >
         <div
           style={{
@@ -25,7 +25,7 @@ const Tutorial = () => {
           }}
           className="absolute left-0 top-0 -z-10 size-full rounded-xl opacity-10"
         />
-        <div className="absolute left-0 top-0 size-full rounded-xl bg-gradient-to-b from-white/5 to-dark-blue" />
+        <div className="absolute left-0 top-0 z-0 size-full rounded-xl bg-gradient-to-b from-white/15 to-dark-blue" />
         <TabsList className="relative z-10 flex h-fit gap-y-4 bg-transparent px-6 md:flex-col">
           <TabsTrigger
             value="desktop"
@@ -40,14 +40,12 @@ const Tutorial = () => {
             Mobile
           </TabsTrigger>
         </TabsList>
-        <div>
-          <TabsContent value="desktop" className="pl-2 md:pl-0">
-            <DesktopInfo />
-          </TabsContent>
-          <TabsContent value="mobile" className="pl-2 md:pl-0">
-            <MobileInfo />
-          </TabsContent>
-        </div>
+        <TabsContent value="desktop" className="pl-2 md:pl-0">
+          <DesktopInfo />
+        </TabsContent>
+        <TabsContent value="mobile" className="pl-2 md:pl-0">
+          <MobileInfo />
+        </TabsContent>
       </Tabs>
       <AnimatedBackground color="bg-purple-500" />
     </section>

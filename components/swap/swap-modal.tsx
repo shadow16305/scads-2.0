@@ -11,10 +11,16 @@ import TwineForm from "./twine-form";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { Button } from "../ui/button";
 
-const SwapModal: React.FC<{ navigation: boolean }> = ({ navigation }) => {
+const SwapModal = ({
+  navigation,
+  triggerClassName,
+}: {
+  navigation?: boolean;
+  triggerClassName?: string;
+}) => {
   return (
     <Dialog>
-      <DialogTrigger asChild>
+      <DialogTrigger asChild className={triggerClassName}>
         {navigation ? (
           <button
             type="button"

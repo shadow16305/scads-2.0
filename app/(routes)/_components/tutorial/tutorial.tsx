@@ -7,7 +7,7 @@ import MobileInfo from "./_components/mobile-info";
 
 const Tutorial = () => {
   return (
-    <section className="relative mt-72">
+    <section className="relative mt-52">
       <LampContainer
         colorLine="purple-500"
         colorLeft="from-purple-500"
@@ -17,7 +17,7 @@ const Tutorial = () => {
       <SectionHeader title="Getting started" />
       <Tabs
         defaultValue="desktop"
-        className="mx-auto mt-4 flex h-[440px] w-[340px] flex-col gap-x-12 rounded-2xl py-10 backdrop-blur-xl md:w-[768px] md:flex-row md:px-20 lg:w-[1000px]"
+        className="mx-auto mt-4 flex w-[340px] flex-col gap-x-12 rounded-2xl py-10 backdrop-blur-xl md:w-fit md:flex-row md:px-20"
       >
         <div
           style={{
@@ -40,10 +40,10 @@ const Tutorial = () => {
             Mobile
           </TabsTrigger>
         </TabsList>
-        <TabsContent value="desktop" className="pl-2 md:pl-0">
+        <TabsContent value="desktop" className="max-w-2xl pl-2 md:pl-0">
           <DesktopInfo />
         </TabsContent>
-        <TabsContent value="mobile" className="pl-2 md:pl-0">
+        <TabsContent value="mobile" className="max-w-2xl pl-2 md:pl-0">
           <MobileInfo />
         </TabsContent>
       </Tabs>

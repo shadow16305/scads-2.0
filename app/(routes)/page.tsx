@@ -4,6 +4,7 @@ import Wallets from "@/app/(routes)/_components/wallets";
 import Roadmap from "./_components/roadmap/roadmap";
 import Stats from "./_components/stats/stats";
 import Tutorial from "./_components/tutorial/tutorial";
+import Outro from "./_components/outro";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <TextBlock />
       <Roadmap />
       <Tutorial />
+      <Outro />
     </>
   );
 }

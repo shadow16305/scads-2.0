@@ -49,7 +49,7 @@ const MainNavigation = () => {
             href="/"
             className="z-50 flex items-center gap-x-2 text-xl font-bold text-white"
           >
-            <Image src="/images/logo-2.png" alt="logo" width={48} height={48} />{" "}
+            <Image src="/images/logo.svg" alt="logo" width={36} height={36} />{" "}
             SCADS
           </Link>
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />

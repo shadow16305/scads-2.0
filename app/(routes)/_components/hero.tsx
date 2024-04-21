@@ -26,8 +26,8 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="max-w-[340px] text-center text-lg text-neutral-300 lg:max-w-[550px] xl:max-w-[700px]"
           >
-            The change is here, freewill will be the chain, proof of hold the
-            protocol, SCADS and TWINE, the first proof of technology.
+            Freewill will be the chain, proof of hold the protocol, SCADS and
+            TWINE, the first proof of technology.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -20 }}

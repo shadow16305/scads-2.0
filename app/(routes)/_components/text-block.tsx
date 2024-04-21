@@ -12,7 +12,7 @@ const TextBlock = () => {
   const [textIsVisible, setTextIsVisible] = useState(false);
 
   return (
-    <section className="relative mt-72 flex flex-col items-center gap-y-4 px-4 text-white md:px-0">
+    <section className="relative mt-52 flex flex-col items-center gap-y-4 px-4 text-white md:px-0">
       <LampContainer
         colorLine="custom-color"
         colorLeft="from-custom-color"
@@ -30,7 +30,7 @@ const TextBlock = () => {
             className={cn(
               textIsVisible
                 ? "text-white"
-                : "bg-gradient-to-r bg-clip-text text-transparent from-white via-white to-dark-blue",
+                : "bg-gradient-to-r from-white via-white to-dark-blue bg-clip-text text-transparent",
             )}
           >
             has been overshadowed by significant financial losses for investors.

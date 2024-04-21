@@ -28,13 +28,16 @@ const DesktopInfo = () => {
   const [currentTab, setCurrentTab] = useState<TabValue>("metamask");
 
   return (
-    <Tabs defaultValue="metamask" className="relative z-20">
+    <Tabs
+      defaultValue="metamask"
+      className="relative z-20 flex max-h-96 flex-col items-start"
+    >
       <TabsList>
         {tabsItems.map((tab) => (
           <TabsTrigger
-            key={tab.label}
+            key={tab.value}
             value={tab.value as TabValue}
-            onClick={() => setCurrentTab(tab.value as TabValue)}
+            onFocus={() => setCurrentTab(tab.value as TabValue)}
             className="bg-transparent text-white data-[state=active]:bg-white/20"
           >
             {tab.label}
@@ -44,7 +47,7 @@ const DesktopInfo = () => {
       <AnimatePresence mode="wait">
         <TabsContent
           value={currentTab}
-          className="z-20 mt-4 h-80 space-y-12 overflow-y-auto overflow-x-hidden"
+          className="z-20 mt-4 space-y-12 overflow-y-auto overflow-x-hidden overscroll-y-none"
         >
           {tutorialDesktop[currentTab].map((step: Step, index) => (
             <motion.div

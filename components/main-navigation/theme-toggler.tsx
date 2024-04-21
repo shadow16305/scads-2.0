@@ -9,9 +9,10 @@ const ThemeToggler = () => {
     <button
       type="button"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      className="transition-transform hover:scale-110"
     >
-      <MdOutlineWbSunny className="size-5 dark:hidden" />
-      <IoMoonOutline className="hidden size-5 dark:block" />
+      <MdOutlineWbSunny className="size-7 dark:hidden lg:size-5" />
+      <IoMoonOutline className="hidden size-7 dark:block lg:size-5" />
     </button>
   );
 };

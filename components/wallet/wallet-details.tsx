@@ -2,7 +2,6 @@ import toast from "react-hot-toast";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { Button } from "../ui/button";
 import { Copy, ExternalLink } from "lucide-react";
-import { ScrollArea } from "../ui/scroll-area";
 
 const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
   setDisconnected,
@@ -38,6 +37,7 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
             size="icon"
             className="bg-transparent transition hover:bg-transparent hover:opacity-70 dark:bg-transparent dark:hover:bg-transparent"
             onClick={() => onCopy(address)}
+            variant="ghost"
           >
             <Copy className="h-4 w-4 text-black dark:text-white" />
           </Button>
@@ -53,7 +53,7 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
           </p>
         </div>
         <a
-          href={`https://bscscan.com/address/${"user wallet address"}`}
+          href={`https://bscscan.com/address/${address}`}
           target="_blank"
           rel="noreferrer"
           className="flex justify-end gap-x-2"
@@ -64,11 +64,11 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
       <TabsContent value="transactions" className="space-y-4 py-4">
         <p className="font-semibold">Recent transactions</p>
         {/* <--- if there are transactions ---> */}
-        {/* <ScrollArea className="h-48">
-          <ul className="mx-auto space-y-2">
+        {/* 
+          <ul className="mx-auto space-y-2 h-64 overflow-y-auto">
             <li className="text-center">transaction</li>
           </ul>
-        </ScrollArea> */}
+         */}
         <div className="flex h-36 items-center justify-center">
           <p>No recent transactions...</p>
         </div>

@@ -3,6 +3,7 @@ import TextBlock from "@/app/(routes)/_components/text-block";
 import Wallets from "@/app/(routes)/_components/wallets";
 import Roadmap from "./_components/roadmap/roadmap";
 import Stats from "./_components/stats/stats";
+import Tutorial from "./_components/tutorial/tutorial";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <TextBlock />
       <Wallets />
       <Roadmap />
+      <Tutorial />
     </>
   );
 }

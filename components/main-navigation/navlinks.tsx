@@ -66,14 +66,6 @@ const NavLinks = () => {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink
-            href="/how-to"
-            className="transition hover:text-neutral-700 dark:hover:text-neutral-400"
-          >
-            How to
-          </NavigationMenuLink>
-        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );

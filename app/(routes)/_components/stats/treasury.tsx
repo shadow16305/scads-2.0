@@ -59,8 +59,8 @@ const Treasury = () => {
             </div>
             {item.id !== "ti5" && (
               <>
-                <div className="absolute -right-full h-24 w-[1px] bg-white/10" />
-                <div className="absolute -right-full h-4 w-[1px] bg-white/30" />
+                <div className="absolute -right-full hidden h-24 w-[1px] bg-white/10 lg:block" />
+                <div className="absolute -right-full hidden h-4 w-[1px] bg-white/30 lg:block" />
               </>
             )}
           </div>

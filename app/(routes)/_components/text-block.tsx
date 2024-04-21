@@ -14,7 +14,9 @@ const TextBlock = () => {
   return (
     <section className="relative mt-48 flex flex-col items-center gap-y-4 px-4 text-black dark:text-white md:px-0">
       <LampContainer
-        color="custom-color"
+        colorLine="custom-color"
+        colorLeft="from-custom-color"
+        colorRight="to-custom-color"
         className="absolute -top-16 -z-10 2xl:-top-20"
       />
       <SectionHeader title="Introducing Scads" />

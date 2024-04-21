@@ -474,3 +474,94 @@ export const documents = [
     icon: <Paperclip size={16} />,
   },
 ];
+
+export const tutorialDesktop = {
+  metamask: [
+    {
+      label: "Step 1: Install MetaMask Extension",
+      list: {
+        li1: "1. Open your preferred web browser (e.g., Chrome, Firefox).",
+        li2: "2. Go to the extension store (Chrome Web Store for Chrome, Add-ons for Firefox).",
+        li3: `3. Search for "MetaMask" and click on the official MetaMask extension.`,
+        li4: `4. Click on "Add to Chrome" (or equivalent for your browser) and follow the prompts to install the extension.`,
+        li5: "5. Once installed, you'll see the MetaMask fox icon in your browser's toolbar.",
+        li6: null,
+      },
+    },
+    {
+      label: "Step 2: Set Up MetaMask",
+      list: {
+        li1: "1. Click on the MetaMask fox icon in your browser's toolbar.",
+        li2: `2. Click on "Get Started" to begin the setup process.`,
+        li3: `3. Follow the prompts to create a new wallet or import an existing one. Be sure to write down your seed phrase and store it in a safe place.`,
+        li4: `4. Create a password for your MetaMask wallet and confirm it.`,
+        li5: "5. Once your wallet is set up, you'll be prompted to agree to the terms of use and privacy policy.",
+        li6: null,
+      },
+    },
+    {
+      label: "Step 3: Connect MetaMask to the Scads Website",
+      list: {
+        li1: "1. Navigate to the website you want to connect your MetaMask wallet to.",
+        li2: `2. Look for the "Connect Wallet" button in the header (navigation menu) of the website.`,
+        li3: `3. Click on the "Connect Wallet" button. This will prompt MetaMask to open and ask for your permission to connect.`,
+        li4: `4. In the MetaMask popup, review the permissions requested by the website and click "Connect" if you agree.`,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label:
+        "Step 4: Add BNB to your wallet balance to cover gas fees on the network.",
+      list: {
+        li1: "Refer to",
+        li2: null,
+        li3: null,
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 5: Add Token Addresses to MetaMask",
+      list: {
+        li1: "1. Once your MetaMask wallet is connected to the website, click on the flame icon in the header (navigation menu) where you can copy token addresses.",
+        li2: `2. Look for an option to "Add Token" or "Custom Token" within MetaMask.`,
+        li3: `3. Click on the "Add Token" or "Custom Token" button.`,
+        li4: `4. Enter the token contract address for the token you want to add.`,
+        li5: "5. MetaMask should automatically populate the token symbol and decimal places. Verify that this information is correct.",
+        li6: `6. Click "Next" or "Add Token" to finalize adding the token to your MetaMask wallet.`,
+      },
+    },
+    {
+      label: "Step 6: Verify Token Addition",
+      list: {
+        li1: "1. After adding the token address, you should see the token listed in your MetaMask wallet along with your other assets.",
+        li2: "2. Double-check that the token symbol and balance are displayed correctly.",
+        li3: `3. You may need to manually switch to view the added token if it's not already selected.`,
+        li4: null,
+        li5: null,
+        li6: null,
+      },
+    },
+    {
+      label: "Step 7: Minting Scads",
+      list: {
+        li1: `1. Open the invest modal by clicking on the "Invest" button either in the header (navigation menu) or hero section (at the top of the main page).`,
+        li2: "2. Choose the stable coin available in your wallet (USDT or USDC), enter the amount, and enable it for the first time. Once enabled, you can start minting SCADS.",
+        li3: `3. Once you've minted SCADS, you'll see the total amount in your wallet.`,
+        li4: "Depending on the holding period, your wallet will automatically mint TWINE. The balance is displayed on the site when you log in and in your wallet on your tablet or phone.",
+        li5: "Claim your minted TWINE. You can hold or buy more SCADS to mint more.",
+        li6: "Optionally, you can enable auto-compound, where the system claims your TWINE daily and converts it to SCADS for you.",
+      },
+    },
+  ],
+  trust: [
+    // { text: "Trust Wallet Lorem ipsum 1" },
+    // { text: "Trust Wallet Lorem ipsum 2" },
+  ],
+  binance: [
+    // { text: "Binance Chain Lorem ipsum 1" },
+    // { text: "Binance Chain Lorem ipsum 2" },
+  ],
+};

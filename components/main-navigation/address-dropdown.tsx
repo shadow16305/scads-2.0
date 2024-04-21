@@ -18,16 +18,11 @@ const AddressDropdown = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="invert transition-all hover:scale-105 focus:outline-none focus:ring-0 dark:invert-0">
-        <Image
-          src="/images/address.svg"
-          alt="addresses"
-          width={24}
-          height={24}
-        />
+      <DropdownMenuTrigger className="relative size-10 invert transition-all hover:scale-110 focus:outline-none focus:ring-0 dark:invert-0 lg:size-6">
+        <Image src="/images/address.svg" alt="addresses" fill />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="mr-2 mt-2 max-w-[340px] rounded-xl border-none bg-[#f4f3f2] dark:bg-[#0c0e22] lg:mr-0 lg:min-w-[512px] lg:max-w-none">
-        <DropdownMenuGroup className="flex flex-col space-y-2 px-4 pt-3">
+        <DropdownMenuGroup className="flex flex-col space-y-2 px-4 py-3">
           {addresses.map((item) => (
             <div
               key={item.address}
@@ -48,7 +43,6 @@ const AddressDropdown = () => {
               </div>
             </div>
           ))}
-          <DropdownMenuItem></DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>

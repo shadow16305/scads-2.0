@@ -27,10 +27,10 @@ const socialLinks = [
   },
 ];
 
-const Socials = () => {
+const Socials = ({ navigation }: { navigation?: boolean }) => {
   return (
     <div className="mt-6 flex flex-col items-center gap-y-3 text-white lg:mt-0 lg:items-start">
-      <span className="font-semibold">Socials</span>
+      {!navigation && <span className="font-semibold">Socials</span>}
       <div className="flex items-center gap-x-4">
         {socialLinks.map((link) => (
           <a

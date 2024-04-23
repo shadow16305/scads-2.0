@@ -9,11 +9,11 @@ const Outro = () => {
       <h2 className="mx-auto mt-8 bg-gradient-to-br from-white to-neutral-500 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent lg:max-w-[700px] 2xl:text-7xl">
         The change is here
       </h2>
-      <div className="relative h-8 w-[40rem]">
-        <div className="absolute inset-x-20 top-0 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-violet-500 to-transparent blur-sm" />
-        <div className="absolute inset-x-20 top-0 h-px w-3/4 bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
-        <div className="absolute inset-x-60 top-0 h-[5px] w-1/4 bg-gradient-to-r from-transparent via-custom-color to-transparent blur-sm" />
-        <div className="absolute inset-x-60 top-0 h-px w-1/4 bg-gradient-to-r from-transparent via-custom-color to-transparent" />
+      <div className="relative h-8 w-[280px] md:w-[40rem]">
+        <div className="absolute inset-x-20 left-1/2 top-0 h-[2px] w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-violet-500 to-transparent blur-sm" />
+        <div className="absolute inset-x-20 left-1/2 top-0 h-px w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
+        <div className="absolute inset-x-60 left-1/2 top-0 h-[5px] w-1/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-custom-color to-transparent blur-sm" />
+        <div className="absolute inset-x-60 left-1/2 top-0 h-px w-1/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-custom-color to-transparent" />
         <SparklesCore
           background="transparent"
           minSize={0.4}

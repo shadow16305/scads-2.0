@@ -8,7 +8,7 @@ const Stats = () => {
       <GeneralStats />
       <Separator className="absolute left-0 top-1/2 bg-white/10" />
       <Treasury />
-      <div className="absolute size-full bg-custom-color/40 blur-[200px]" />
+      <div className="absolute h-[600px] w-[340px] bg-custom-color/40 blur-[200px] md:size-full" />
     </div>
   );
 };

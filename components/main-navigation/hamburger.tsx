@@ -7,7 +7,7 @@ interface HamburgerProps {
 
 const Hamburger: React.FC<HamburgerProps> = ({ isOpen, setIsOpen }) => {
   const genericHamburgerLine =
-    "h-1 w-6 my-1 transition ease transform duration-300 bg-white";
+    "h-0.5 w-8 my-1 transition ease transform duration-300 bg-white";
 
   return (
     <button
@@ -16,10 +16,9 @@ const Hamburger: React.FC<HamburgerProps> = ({ isOpen, setIsOpen }) => {
     >
       <div
         className={`${genericHamburgerLine} ${
-          isOpen ? "translate-y-3 rotate-45" : ""
+          isOpen ? "-translate-y-1/2 rotate-45" : ""
         }`}
       />
-      <div className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : ""}`} />
       <div
         className={`${genericHamburgerLine} ${
           isOpen ? "-translate-y-3 -rotate-45" : ""

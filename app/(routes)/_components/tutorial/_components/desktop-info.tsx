@@ -30,7 +30,7 @@ const DesktopInfo = () => {
   return (
     <Tabs
       defaultValue="metamask"
-      className="relative z-20 flex max-h-96 flex-col items-start"
+      className="relative z-20 flex max-h-96 flex-col items-center md:items-start"
     >
       <TabsList>
         {tabsItems.map((tab) => (

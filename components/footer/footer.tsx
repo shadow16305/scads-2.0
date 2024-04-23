@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Socials from "./socials";
+import Socials from "../socials";
 import Disclaimer from "./disclaimer";
 
 const Footer = () => {
@@ -12,12 +12,12 @@ const Footer = () => {
           <Image src="/images/logo.svg" alt="logo" width={32} height={32} />
           SCADS
         </div>
-        <p className="text-neutral-300">
+        <p className="text-center text-neutral-300 md:text-start">
           SCADS © Copyright {currentYear}. All rights reserved. ™
         </p>
       </div>
-      <Disclaimer />
       <Socials />
+      <Disclaimer />
     </footer>
   );
 };

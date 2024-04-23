@@ -10,7 +10,7 @@ const Disclaimer = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className="absolute bottom-0 left-1/2 flex -translate-x-1/2 flex-col items-center">
+    <div className="absolute -bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center md:bottom-0">
       <Button
         onClick={() => setIsVisible(!isVisible)}
         className="rounded-lg rounded-b-none bg-white/10 font-normal backdrop-blur-2xl hover:bg-white/20"
@@ -25,7 +25,7 @@ const Disclaimer = () => {
             animate={{ height: "auto" }}
             exit={{ height: 0 }}
           >
-            <motion.p className="max-w-[340px] rounded-t-xl bg-white/10 p-6 text-neutral-300 backdrop-blur-2xl md:max-w-none">
+            <motion.p className="min-w-[340px] rounded-t-xl bg-white/10 p-6 text-sm text-neutral-300 backdrop-blur-2xl md:min-w-0 md:text-base">
               While the SCADS algorithm guarantees the stability of SCADS as a
               stable coin and assures that TWINE is a linear token with a
               constant growth rate for each minted TWINE, it is important to

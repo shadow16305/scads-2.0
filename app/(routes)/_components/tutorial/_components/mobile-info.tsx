@@ -39,7 +39,7 @@ const MobileInfo = () => {
             key={tab.label}
             value={tab.value as TabValue}
             onFocus={() => setCurrentTab(tab.value as TabValue)}
-            className="bg-transparent text-white data-[state=active]:bg-white/20"
+            className="rounded-3xl bg-transparent text-white data-[state=active]:bg-white/20"
           >
             {tab.label}
           </TabsTrigger>

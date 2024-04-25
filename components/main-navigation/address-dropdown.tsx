@@ -21,7 +21,7 @@ const AddressDropdown = () => {
       <DropdownMenuTrigger className="relative size-10 invert-0 transition-all hover:scale-110 focus:outline-none focus:ring-0 lg:size-8">
         <Image src="/images/address.svg" alt="addresses" fill />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="mr-2 mt-2 max-w-[340px] rounded-xl border-none bg-[#0c0e22] lg:mr-0 lg:min-w-[512px] lg:max-w-none">
+      <DropdownMenuContent className="mr-2 mt-2 max-w-[340px] rounded-xl border-none bg-dark-blue lg:mr-0 lg:min-w-[512px] lg:max-w-none">
         <DropdownMenuGroup className="flex flex-col space-y-2 px-4 py-3">
           {addresses.map((item) => (
             <div
@@ -29,7 +29,7 @@ const AddressDropdown = () => {
               className="flex w-full items-center text-sm"
             >
               <p className="w-[12%] text-white">{item.address}</p>
-              <div className="flex w-[88%] items-center justify-between gap-x-2 rounded-3xl bg-white/10 px-4 py-2">
+              <div className="flex w-[88%] items-center justify-between gap-x-2 rounded-3xl bg-indigo-600/10 px-4 py-2">
                 <p className="min-w-[362px] text-neutral-300">{item.value}</p>
                 <button
                   type="button"

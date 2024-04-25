@@ -31,7 +31,6 @@ const FormInputs: React.FC<FormInputsProps> = ({
           "items-start pb-1 pt-4 text-white placeholder:text-white",
         )}
         balanceClassName={cn("justify-start text-white")}
-        selectClassName="flex-row text-white border-white/10"
         tokenClassName="text-white"
         setToken={setFirstToken}
         token={firstToken}
@@ -46,7 +45,7 @@ const FormInputs: React.FC<FormInputsProps> = ({
       {panel === "SCADS" && (
         <button
           type="button"
-          className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10 bg-[#0c0e22] p-1 text-white transition hover:text-custom-color"
+          className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10 bg-[#0c0e22] p-1 text-white transition hover:text-indigo-600"
           onClick={handleSwap}
         >
           <AiOutlineSwap size={24} />
@@ -55,7 +54,6 @@ const FormInputs: React.FC<FormInputsProps> = ({
       <Input
         className="items-end pb-1 pt-4 text-end text-white placeholder:text-white"
         balanceClassName="justify-end text-white"
-        selectClassName="flex-row-reverse text-white border-white/10"
         tokenClassName="text-white"
         setToken={setSecondToken}
         token={secondToken}

@@ -20,7 +20,7 @@ const CustomHero = ({ title }: { title: string }) => {
         {title}
       </motion.h1>
       <IoEllipse
-        className="absolute -top-3/4 left-1/2 -z-10 hidden -translate-x-1/2 rounded-full bg-gradient-to-r from-custom-color via-custom-color to-purple-600 text-transparent blur-[200px] lg:block"
+        className="absolute -top-full left-1/2 -z-10 hidden -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-transparent blur-[200px] lg:block"
         size={800}
       />
     </>

@@ -29,18 +29,20 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
           Transactions
         </TabsTrigger>
       </TabsList>
-      <TabsContent value="wallet" className="space-y-4 py-4 text-white">
-        <p className="font-semibold">Your address</p>
-        <div className="flex items-center justify-between rounded-3xl bg-custom-color/10 px-4">
-          <span>{address}</span>
-          <Button
-            size="icon"
-            className="bg-transparent transition hover:bg-transparent hover:opacity-70"
-            onClick={() => onCopy(address)}
-            variant="ghost"
-          >
-            <Copy className="h-4 w-4 text-white" />
-          </Button>
+      <TabsContent value="wallet" className="mt-8 space-y-8 pb-4 text-white">
+        <div className="space-y-4">
+          <p className="font-semibold">Your address</p>
+          <div className="flex items-center justify-between rounded-3xl bg-indigo-600/10 px-4">
+            <span>{address}</span>
+            <Button
+              size="icon"
+              className="bg-transparent transition hover:bg-transparent hover:opacity-70"
+              onClick={() => onCopy(address)}
+              variant="ghost"
+            >
+              <Copy className="h-4 w-4 text-white" />
+            </Button>
+          </div>
         </div>
         <div className="space-y-2 text-sm">
           <p className="flex justify-between">
@@ -69,12 +71,18 @@ const WalletDetails: React.FC<{ setDisconnected: () => void }> = ({
             <li className="text-center">transaction</li>
           </ul>
          */}
-        <div className="flex h-36 items-center justify-center">
+        <div className="flex h-48 items-center justify-center">
           <p>No recent transactions...</p>
         </div>
       </TabsContent>
       <div className="flex flex-col gap-y-4">
-        <Button onClick={setDisconnected}>Disconnect wallet</Button>
+        <Button
+          onClick={setDisconnected}
+          variant="ghost"
+          className="w-full rounded-3xl bg-white/10 text-base text-white hover:bg-white/20 hover:text-white"
+        >
+          Disconnect wallet
+        </Button>
       </div>
     </Tabs>
   );

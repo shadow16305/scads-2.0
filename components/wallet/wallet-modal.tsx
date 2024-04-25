@@ -31,15 +31,17 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
         ) : (
           <span
             className={cn(
-              "flex w-full items-center justify-center gap-x-2 rounded-[50px] bg-custom-color px-8 py-2 text-base font-bold text-white transition-colors duration-300 hover:bg-[#7480f1]",
-              navigation && "px-4 py-2 text-sm",
+              "inline-flex w-full items-center justify-center whitespace-nowrap rounded-3xl px-4 py-2 text-white transition-colors duration-300",
+              navigation
+                ? "button-primary border border-[#8a6cff] text-sm font-bold"
+                : "bg-white/20 text-base hover:bg-white/40",
             )}
           >
             Connect wallet
           </span>
         )}
       </DialogTrigger>
-      <DialogContent className="max-w-[340px] space-y-4 rounded-3xl border-none bg-[#0c0e22] backdrop-blur-2xl md:max-w-lg">
+      <DialogContent className="max-w-[340px] space-y-4 rounded-3xl border-none bg-dark-blue backdrop-blur-2xl md:max-w-lg">
         <DialogHeader>
           <DialogTitle className="text-2xl text-white">
             {walletModal.isConnected ? "Your wallet" : "Wallets"}

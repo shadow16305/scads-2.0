@@ -1,21 +1,14 @@
-import { cn } from "@/lib/utils";
-
-interface TaxProps {
-  textClasses: string;
-  colorClasses: string;
-}
-
-const Taxes: React.FC<TaxProps> = ({ textClasses, colorClasses }) => {
+const Taxes = () => {
   return (
-    <div className={cn("flex justify-between text-sm", textClasses)}>
+    <div className="flex justify-between text-sm text-white">
       <p>
-        <span className={colorClasses}>Gas:</span> 0.05%
+        <span className="text-neutral-300">Gas:</span> 0.05%
       </p>
       <p>
-        <span className={colorClasses}>Slippage:</span> 3%
+        <span className="text-neutral-300">Slippage:</span> 3%
       </p>
       <p>
-        <span className={colorClasses}>Tax:</span> 3%
+        <span className="text-neutral-300">Tax:</span> 3%
       </p>
     </div>
   );

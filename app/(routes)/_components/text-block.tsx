@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronRight, ChevronUp } from "lucide-react";
 import SectionHeader from "@/components/ui/section-header";
 import { LampContainer } from "@/components/ui/lamp-effect";
 import AnimatedBackground from "@/components/ui/animated-background";
@@ -13,12 +13,6 @@ const TextBlock = () => {
 
   return (
     <section className="relative mt-52 flex flex-col items-center gap-y-4 px-4 text-white md:px-0">
-      <LampContainer
-        colorLine="custom-color"
-        colorLeft="from-custom-color"
-        colorRight="to-custom-color"
-        className="absolute -top-16 -z-10 2xl:-top-20"
-      />
       <SectionHeader title="Introducing Scads" />
       <div className="max-w-[340px] text-neutral-300 lg:max-w-[1024px]">
         <p className="z-10">
@@ -92,16 +86,15 @@ const TextBlock = () => {
       </div>
       <button
         onClick={() => setTextIsVisible(!textIsVisible)}
-        className="group z-10 mt-4 flex items-end gap-x-2 font-semibold text-white"
+        className="group z-10 mt-4 flex items-center gap-x-2 font-medium text-white"
       >
         {textIsVisible ? "Show less" : "Show more"}
         {textIsVisible ? (
-          <ChevronUp className="transition-transform group-hover:-translate-y-1" />
+          <ChevronRight className="size-4 transition-transform group-hover:-rotate-90" />
         ) : (
-          <ChevronDown className="transition-transform group-hover:translate-y-1" />
+          <ChevronRight className="size-4 transition-transform group-hover:rotate-90" />
         )}
       </button>
-      <AnimatedBackground color="bg-custom-color" />
     </section>
   );
 };

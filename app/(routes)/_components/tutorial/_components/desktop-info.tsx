@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
 import { tutorialDesktop } from "@/constants/content";
 import { motion, AnimatePresence } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 type TabValue = "metamask" | "binance";
 
@@ -32,13 +33,13 @@ const DesktopInfo = () => {
       defaultValue="metamask"
       className="relative z-20 flex max-h-96 flex-col items-center md:items-start"
     >
-      <TabsList>
+      <TabsList className="w-fit">
         {tabsItems.map((tab) => (
           <TabsTrigger
             key={tab.value}
             value={tab.value as TabValue}
             onFocus={() => setCurrentTab(tab.value as TabValue)}
-            className="bg-transparent text-white data-[state=active]:bg-white/20"
+            className="rounded-3xl bg-transparent text-white data-[state=active]:bg-white/20"
           >
             {tab.label}
           </TabsTrigger>

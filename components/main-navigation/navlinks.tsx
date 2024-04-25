@@ -22,7 +22,7 @@ const NavLinks = () => {
           <NavigationMenuTrigger className="bg-transparent p-0 font-normal hover:text-neutral-300">
             Documents
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="rounded-xl bg-[#0c0e22]">
+          <NavigationMenuContent className="rounded-xl bg-dark-blue">
             <ul className="flex flex-col gap-y-2 rounded-xl p-2 text-sm text-white md:min-w-64">
               {documents.map((document) => (
                 <li key={document.name}>
@@ -49,7 +49,7 @@ const NavLinks = () => {
           <NavigationMenuTrigger className="bg-transparent p-0 font-normal hover:text-neutral-300">
             <Link href="/tokenomics">Tokenomics</Link>
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="flex gap-x-4 rounded-xl bg-[#0c0e22]">
+          <NavigationMenuContent className="flex gap-x-4 rounded-xl bg-dark-blue">
             <ul className="grid grid-cols-1 gap-x-2 gap-y-2 rounded-xl p-2 text-sm text-white md:w-[448px] md:grid-cols-2 lg:grid-cols-3">
               {tokenomicsLinks.map((link) => (
                 <li key={link.name}>

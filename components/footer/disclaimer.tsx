@@ -13,7 +13,8 @@ const Disclaimer = () => {
     <div className="absolute -bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center md:bottom-0">
       <Button
         onClick={() => setIsVisible(!isVisible)}
-        className="rounded-lg rounded-b-none bg-white/10 font-normal backdrop-blur-2xl hover:bg-white/20"
+        variant="ghost"
+        className="rounded-lg rounded-b-none bg-white/10 font-normal text-white backdrop-blur-2xl hover:bg-white/20 hover:text-white"
       >
         Disclaimer{" "}
         <ChevronUp className={cn("size-4", isVisible && "rotate-180")} />

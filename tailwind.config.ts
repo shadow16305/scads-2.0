@@ -2,8 +2,6 @@ import type { Config } from "tailwindcss";
 
 const svgToDataUri = require("mini-svg-data-uri");
 
-const colors = require("tailwindcss/colors");
-
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -41,7 +39,6 @@ const config = {
         sans: ["var(--sf-pro)"],
       },
       colors: {
-        "custom-color": "#5F69CB",
         "dark-blue": "#030014",
       },
       animation: {

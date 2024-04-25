@@ -29,13 +29,13 @@ const Tutorial = () => {
         <TabsList className="relative z-10 flex h-fit gap-y-4 bg-transparent px-6 md:flex-col">
           <TabsTrigger
             value="desktop"
-            className="bg-transparent text-white data-[state=active]:bg-white/20"
+            className="rounded-3xl bg-transparent text-white data-[state=active]:bg-white/20"
           >
             Desktop
           </TabsTrigger>
           <TabsTrigger
             value="mobile"
-            className="bg-transparent text-white data-[state=active]:bg-white/20"
+            className="rounded-3xl bg-transparent text-white data-[state=active]:bg-white/20"
           >
             Mobile
           </TabsTrigger>

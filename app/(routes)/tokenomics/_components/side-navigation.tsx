@@ -3,12 +3,17 @@ import Link from "next/link";
 
 const SideNavigation = () => {
   return (
-    <aside className="sticky left-0 top-24 flex h-fit flex-col gap-y-6 rounded-xl border border-white/10 p-8 bg-transparent bg-gradient-to-br from-transparent to-white/10 xl:top-32">
-      <p className="text-lg text-white">Table of contents</p>
-      <ul className="space-y-4 text-neutral-300">
+    <aside className="sticky left-0 top-32 flex h-fit flex-col gap-y-6 rounded-xl border border-white/10 bg-transparent bg-gradient-to-br from-transparent to-white/10 px-6 py-8 xl:top-24 xl:px-8 2xl:top-32">
+      <p className="whitespace-nowrap text-white xl:text-lg">
+        Table of contents
+      </p>
+      <ul className="space-y-2 text-neutral-300 xl:space-y-4">
         {tokenomicsLinks.map((link) => (
           <li key={link.name}>
-            <Link href={link.path} className="group flex items-center gap-x-2">
+            <Link
+              href={link.path}
+              className="group flex items-center gap-x-2 text-sm xl:text-base"
+            >
               {link.name}
               <svg
                 className="hidden lg:block"

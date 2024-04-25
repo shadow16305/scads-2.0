@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 interface InputProps {
   className: string;
   balanceClassName: string;
-  selectClassName: string;
   tokenClassName: string;
   setToken?: (token: string) => void;
   token: string;
@@ -17,7 +16,6 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({
   className,
   balanceClassName,
-  selectClassName,
   tokenClassName,
   setToken,
   token,

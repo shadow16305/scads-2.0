@@ -44,7 +44,7 @@ const Hero = () => {
         size={1000}
       />
       <IoEllipse
-        className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 -translate-y-1/2 text-custom-color/80 blur-[300px] md:hidden"
+        className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 -translate-y-1/2 text-indigo-600/80 blur-[300px] md:hidden"
         size={340}
       />
     </section>

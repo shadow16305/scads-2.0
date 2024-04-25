@@ -14,9 +14,6 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
   const [inputValue, setInputValue] = useState(0);
   const walletModal = useWalletModal();
 
-  const textClasses = "text-white";
-  const colorClasses = "text-neutral-300";
-
   return (
     <form className="mt-2 flex flex-col gap-y-4 2xl:gap-y-6">
       <FormInputs
@@ -26,42 +23,49 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
         firstToken="TWINE"
         secondToken="SCADS"
       />
-      <Taxes textClasses={textClasses} colorClasses={colorClasses} />
+      <Taxes />
       {walletModal.isConnected ? (
-        <Button onClick={() => {}}>Swap</Button>
+        <Button
+          onClick={() => {}}
+          variant="ghost"
+          className="w-full rounded-3xl bg-white/20 text-base text-white hover:bg-white/40 hover:text-white"
+        >
+          Swap
+        </Button>
       ) : (
         <WalletModal />
       )}
       <div className="flex items-center justify-center space-x-2 text-white">
         <Switch id="airplane-mode" className="bg-white/5" />
-        <Label htmlFor="airplane-mode" className={textClasses}>
+        <Label htmlFor="airplane-mode" className="text-white">
           Auto-compound
         </Label>
       </div>
-      <div
-        className={clsx(
-          "flex flex-col items-center gap-y-2 text-sm",
-          textClasses,
-        )}
-      >
+      <div className="flex flex-col items-center gap-y-2 text-sm text-white">
         <p>
-          <span className={colorClasses}>SCADS owned:</span> 0.00
+          <span className="text-neutral-300">SCADS owned:</span> 0.00
         </p>
         <div className="w-full space-y-2">
           <p className="flex justify-between">
-            <span className={colorClasses}>Time invested:</span> 62 Days 19
+            <span className="text-neutral-300">Time invested:</span> 62 Days 19
             Hours 20 Minutes
           </p>
           <p className="flex justify-between">
-            <span className={colorClasses}>TWINE minted:</span> 5.495
+            <span className="text-neutral-300">TWINE minted:</span> 5.495
           </p>
           <p className="flex justify-between">
-            <span className={colorClasses}>TWINE claimed:</span> 2.745
+            <span className="text-neutral-300">TWINE claimed:</span> 2.745
           </p>
         </div>
       </div>
       {walletModal.isConnected ? (
-        <Button onClick={() => {}}>Claim</Button>
+        <Button
+          onClick={() => {}}
+          variant="ghost"
+          className="w-full rounded-3xl bg-white/20 text-base text-white hover:bg-white/40 hover:text-white"
+        >
+          Claim
+        </Button>
       ) : (
         <WalletModal />
       )}

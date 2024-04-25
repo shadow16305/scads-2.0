@@ -7,8 +7,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { FaChevronDown } from "react-icons/fa6";
 
 const tokens = [
   {
@@ -44,7 +44,7 @@ const TokenSelect: React.FC<TokenSelectProps> = ({ setToken, token }) => {
     <DropdownMenu>
       <DropdownMenuTrigger
         className={cn(
-          "flex w-[120px] items-center justify-between rounded-3xl border border-white/10 bg-white/[.02] px-3 py-2 lg:w-[140px]",
+          "group flex w-[120px] items-center justify-between rounded-3xl border border-white/10 bg-white/[.02] px-3 py-2 lg:w-[140px]",
         )}
       >
         <div className="flex items-center gap-x-2">
@@ -57,17 +57,26 @@ const TokenSelect: React.FC<TokenSelectProps> = ({ setToken, token }) => {
           </div>
           <span className="text-white">{token}</span>
         </div>
-        <FaChevronDown size={16} className="text-white" />
+        <ChevronRight
+          size={16}
+          className="group- text-white transition-transform hover:rotate-90"
+        />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="rounded-2xl border-none bg-[#0c0e22] text-white">
+      <DropdownMenuContent className="rounded-2xl border-none bg-dark-blue text-white">
         <DropdownMenuLabel>Select a token</DropdownMenuLabel>
         <DropdownMenuSeparator className="bg-white/10" />
         {tokens.map((token) => (
           <DropdownMenuItem
             key={token.name}
-            className="text-sm hover:bg-white/20"
+            className="flex items-center gap-x-1 text-sm hover:bg-white/20"
             onClick={() => setToken!(token.name)}
           >
+            <Image
+              src={`/images/currency/${token.name}.svg`}
+              alt={token.name}
+              width={12}
+              height={12}
+            />
             <span>{token.name}</span>
           </DropdownMenuItem>
         ))}

@@ -14,7 +14,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="max-w-[310px] bg-gradient-to-br from-white to-neutral-500 bg-clip-text text-center text-2xl font-bold leading-tight text-transparent md:max-w-[800px] lg:text-[44px]"
+            className="max-w-[310px] bg-gradient-to-br from-white to-neutral-500 bg-clip-text text-center text-2xl font-bold !leading-[1.17] text-transparent lg:max-w-[900px] lg:text-5xl"
           >
             The World's First Non-PEGGED self-sustained Stablecoin Powered by
             Proof of Holding

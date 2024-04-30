@@ -10,9 +10,9 @@ const TextBlock = () => {
 
   return (
     <section className="relative mt-52 flex flex-col items-center gap-y-4 px-4 text-white md:px-0">
-      <SectionHeader title="Introducing Scads" />
-      <div className="max-w-[340px] text-neutral-300 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
-        <p className="z-10 text-center">
+      <SectionHeader title="Introducing Scads" y={-50} />
+      <div className="max-w-[340px] text-neutral-300 lg:max-w-[1024px]">
+        <p className="z-10">
           DeFi (Decentralized Finance) has experienced phenomenal growth over
           the past 4 years. The DeFi sector, which did not exist 6 years ago,
           has already accumulated a staggering market capitalization of 112
@@ -25,57 +25,50 @@ const TextBlock = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="z-10 mt-8 flex origin-top"
+              className="z-10 mt-4"
             >
-              <div>
-                <p>The main reasons for the losses:</p>
-                <ul className="list-disc pl-4">
-                  <li>
-                    Fraudulent projects: scammers lure people in with promises
-                    of unrealistically high APR/APY (annual percentage rates)
-                    and other questionable investment strategies.
-                  </li>
-                  <li>
-                    Unreliable platforms: many DeFi platforms have
-                    vulnerabilities in their code that can be exploited by
-                    hackers to steal funds.
-                  </li>
-                  <li>
-                    Manipulative regulation: the decentralized nature of DeFi
-                    protects it from government agencies control or
-                    weaponization.
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p>
-                  SCADS is an innovative stablecoin based on the Proof of
-                  Holding algorithm that will transform the digital currency
-                  landscape.
-                </p>
-                <ul className="list-disc pl-4">
-                  <li>
-                    Non-pegged: Unlike traditional stablecoins, SCADS is not
-                    pegged to fiat currencies (dollar, euro, etc.). This makes
-                    it more resistant to inflation and economic shocks.(use the
-                    SWISS FRANC only as a point of reference)
-                  </li>
-                  <li>
-                    Reliable: User funds are stored in their own wallets, which
-                    ensures maximum security.
-                  </li>
-                  <li>
-                    Risk-free: SCADS offers passive income without staking or
-                    participating in liquidity pools. This guarantees no risks
-                    or losses.
-                  </li>
-                  <li>
-                    Autonomous: SCADS operates without owners, managed solely by
-                    an algorithm. This eliminates the possibility of
-                    manipulation and fraud.
-                  </li>
-                </ul>
-              </div>
+              <p>The main reasons for the losses:</p>
+              <ul className="list-disc pl-4">
+                <li>
+                  Fraudulent projects: scammers lure people in with promises of
+                  unrealistically high APR/APY (annual percentage rates) and
+                  other questionable investment strategies.
+                </li>
+                <li>
+                  Unreliable platforms: many DeFi platforms have vulnerabilities
+                  in their code that can be exploited by hackers to steal funds.
+                </li>
+                <li>
+                  Manipulative regulation: the decentralized nature of DeFi
+                  protects it from government agencies control or weaponization.
+                </li>
+              </ul>
+              <p className="mt-4">
+                SCADS is an innovative stablecoin based on the Proof of Holding
+                algorithm that will transform the digital currency landscape.
+              </p>
+              <ul className="list-disc pl-4">
+                <li>
+                  Non-pegged: Unlike traditional stablecoins, SCADS is not
+                  pegged to fiat currencies (dollar, euro, etc.). This makes it
+                  more resistant to inflation and economic shocks.(use the SWISS
+                  FRANC only as a point of reference)
+                </li>
+                <li>
+                  Reliable: User funds are stored in their own wallets, which
+                  ensures maximum security.
+                </li>
+                <li>
+                  Risk-free: SCADS offers passive income without staking or
+                  participating in liquidity pools. This guarantees no risks or
+                  losses.
+                </li>
+                <li>
+                  Autonomous: SCADS operates without owners, managed solely by
+                  an algorithm. This eliminates the possibility of manipulation
+                  and fraud.
+                </li>
+              </ul>
             </motion.div>
           )}
         </AnimatePresence>

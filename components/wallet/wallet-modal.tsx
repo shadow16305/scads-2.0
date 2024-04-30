@@ -31,7 +31,7 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
         ) : (
           <span
             className={cn(
-              "inline-flex w-full items-center justify-center whitespace-nowrap rounded-3xl px-4 py-2 text-white transition-colors duration-300",
+              "inline-flex w-full items-center justify-center whitespace-nowrap rounded-xl px-4 py-2 text-white transition-colors duration-300",
               navigation
                 ? "button-primary border border-[#8a6cff] text-sm font-bold"
                 : "bg-white/20 text-base hover:bg-white/40",

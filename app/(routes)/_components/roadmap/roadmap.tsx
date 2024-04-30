@@ -13,7 +13,7 @@ const Roadmap = () => {
         colorRight="to-violet-500"
         className="absolute -top-20 -z-20 2xl:-top-24"
       />
-      <SectionHeader title="Roadmap" />
+      <SectionHeader title="Roadmap" y={50} />
       <div className="relative mx-auto flex w-[340px] flex-col rounded-2xl py-10 backdrop-blur-xl lg:w-fit lg:px-20">
         <div
           style={{

@@ -20,7 +20,7 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-50",
         custom:
-          "rounded-3xl px-8 py-2 text-base font-bold text-white transition-colors duration-300 button-primary border border-[#8a6cff]",
+          "rounded-xl px-8 py-2 text-base font-bold text-white transition-colors duration-300 button-primary border border-[#8a6cff]",
         link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50",
       },
       size: {

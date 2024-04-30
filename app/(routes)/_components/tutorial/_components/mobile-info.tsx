@@ -3,6 +3,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { tutorialMobile } from "@/constants/content";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 
 type TabValue = "metamask" | "trust" | "binance";
@@ -20,9 +21,17 @@ type Step = {
 };
 
 const tabsItems = [
-  { label: "Metamask", value: "metamask" },
-  { label: "Trust wallet", value: "trust" },
-  { label: "Binance chain", value: "binance" },
+  { label: "Metamask", value: "metamask", imgPath: "/images/metamask.svg" },
+  {
+    label: "Binance chain",
+    value: "binance",
+    imgPath: "/images/binance.svg",
+  },
+  {
+    label: "Trust wallet",
+    value: "trust",
+    imgPath: "/images/trust.svg",
+  },
 ];
 
 const MobileInfo = () => {
@@ -36,12 +45,27 @@ const MobileInfo = () => {
       <TabsList>
         {tabsItems.map((tab) => (
           <TabsTrigger
-            key={tab.label}
+            key={tab.value}
             value={tab.value as TabValue}
             onFocus={() => setCurrentTab(tab.value as TabValue)}
-            className="rounded-3xl bg-transparent text-white data-[state=active]:bg-white/20"
+            className="flex items-center gap-x-2 rounded-3xl bg-transparent text-white data-[state=active]:bg-white/20"
           >
-            {tab.label}
+            <Image src={tab.imgPath} alt={tab.label} width={24} height={24} />
+            <AnimatePresence>
+              {currentTab === tab.value && (
+                <motion.div
+                  initial={{ width: 0, opacity: 0 }}
+                  animate={{ width: "auto", opacity: 1 }}
+                  exit={{
+                    width: 0,
+                    opacity: 0,
+                    transition: { width: { delay: 0.1 } },
+                  }}
+                >
+                  <span>{tab.label}</span>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </TabsTrigger>
         ))}
       </TabsList>

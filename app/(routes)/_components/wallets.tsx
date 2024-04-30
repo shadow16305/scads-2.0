@@ -5,7 +5,7 @@ import SectionHeader from "@/components/ui/section-header";
 const Wallets = () => {
   return (
     <section className="relative mx-auto mt-32 flex flex-col items-center gap-y-4 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
-      <SectionHeader title="Wallets" />
+      <SectionHeader title="Wallets" y={50} />
       <div className="flex max-w-[340px] flex-col flex-wrap gap-8 md:max-w-[768px] lg:max-w-[1024px] lg:flex-row">
         <HoverEffect items={cardItems} />
       </div>

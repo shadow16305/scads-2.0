@@ -905,48 +905,14 @@ export const tutorialMobile = {
 
 export const accordionItems = [
   {
-    trigger: "What is the PROOF OF HOLD (POH)?",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel aliquam turpis, ut bibendum ipsum. Fusce pellentesque ultrices mollis. Donec dignissim nisi at nulla euismod, sed ornare libero pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit consectetur gravida. Duis ultrices neque est, et efficitur tellus ullamcorper eget. Donec enim sapien, feugiat et tempus egestas, pharetra eget ligula. Pellentesque ligula lacus, aliquam vel maximus non, dignissim et lacus. Donec dictum vestibulum ornare. Proin lobortis, purus sit amet ultrices lacinia, dolor urna suscipit ipsum, non luctus ipsum mi et felis. Mauris pharetra venenatis eros quis finibus.",
-    value: "item-1",
-  },
-  {
-    trigger: "What is SCADS?",
-    content: `SCADS is a stable coin built on a revolutionary concept that will change financial principles.
-Use The world's first self-sufficient monetary system based on innovative Proof of Hold protocol (POH), providing safety of Holding scads in own user's wallets, without the risk of staking or commitment of funds to any platform.
-The Assets are stored in user's WEB3 wallets. Users can always sell them or keep them for the long term, thereby generating passive income, by minting TWINE, the price of which linearly in accordance with number of TWINE minted.
-The prospect of growth of TWINES at the current price of 0.17 cents will ensure its value up to 10 thousand US dollars in the next 2-3 years! due to its exclusivity use case, and scarcity.`,
-    value: "item-2",
-  },
-  {
-    trigger: "What is TWINE?",
-    content: `TWINE is a linear coin that is minted when you hold SCADS with price growth based on number of TWINE minted in the market the more SCADS held the more TWINE’s are minted, When TWINE market supply reach's 5.5m it will gain exclusivity to buy SCADS at that point the demand will grow exponentially`,
-    value: "item-3",
-  },
-  {
-    trigger: "What is PULSE?",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel aliquam turpis, ut bibendum ipsum. Fusce pellentesque ultrices mollis. Donec dignissim nisi at nulla euismod, sed ornare libero pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit consectetur gravida. Duis ultrices neque est, et efficitur tellus ullamcorper eget. Donec enim sapien, feugiat et tempus egestas, pharetra eget ligula. Pellentesque ligula lacus, aliquam vel maximus non, dignissim et lacus. Donec dictum vestibulum ornare. Proin lobortis, purus sit amet ultrices lacinia, dolor urna suscipit ipsum, non luctus ipsum mi et felis. Mauris pharetra venenatis eros quis finibus.`,
-    value: "item-4",
-  },
-  {
-    trigger: "What is Treasury?",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel aliquam turpis, ut bibendum ipsum. Fusce pellentesque ultrices mollis. Donec dignissim nisi at nulla euismod, sed ornare libero pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit consectetur gravida. Duis ultrices neque est, et efficitur tellus ullamcorper eget. Donec enim sapien, feugiat et tempus egestas, pharetra eget ligula. Pellentesque ligula lacus, aliquam vel maximus non, dignissim et lacus. Donec dictum vestibulum ornare. Proin lobortis, purus sit amet ultrices lacinia, dolor urna suscipit ipsum, non luctus ipsum mi et felis. Mauris pharetra venenatis eros quis finibus.`,
-    value: "item-5",
-  },
-  {
-    trigger: "What is a liquidity wallet?",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel aliquam turpis, ut bibendum ipsum. Fusce pellentesque ultrices mollis. Donec dignissim nisi at nulla euismod, sed ornare libero pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit consectetur gravida. Duis ultrices neque est, et efficitur tellus ullamcorper eget. Donec enim sapien, feugiat et tempus egestas, pharetra eget ligula. Pellentesque ligula lacus, aliquam vel maximus non, dignissim et lacus. Donec dictum vestibulum ornare. Proin lobortis, purus sit amet ultrices lacinia, dolor urna suscipit ipsum, non luctus ipsum mi et felis. Mauris pharetra venenatis eros quis finibus.`,
-    value: "item-6",
-  },
-  {
     trigger: "Is SCADS a security, commodity or money?",
     content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel aliquam turpis, ut bibendum ipsum. Fusce pellentesque ultrices mollis. Donec dignissim nisi at nulla euismod, sed ornare libero pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit consectetur gravida. Duis ultrices neque est, et efficitur tellus ullamcorper eget. Donec enim sapien, feugiat et tempus egestas, pharetra eget ligula. Pellentesque ligula lacus, aliquam vel maximus non, dignissim et lacus. Donec dictum vestibulum ornare. Proin lobortis, purus sit amet ultrices lacinia, dolor urna suscipit ipsum, non luctus ipsum mi et felis. Mauris pharetra venenatis eros quis finibus.`,
-    value: "item-7",
+    value: "item-1",
   },
   {
     trigger: "How does SCADS protect capital investment?",
     content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel aliquam turpis, ut bibendum ipsum. Fusce pellentesque ultrices mollis. Donec dignissim nisi at nulla euismod, sed ornare libero pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit consectetur gravida. Duis ultrices neque est, et efficitur tellus ullamcorper eget. Donec enim sapien, feugiat et tempus egestas, pharetra eget ligula. Pellentesque ligula lacus, aliquam vel maximus non, dignissim et lacus. Donec dictum vestibulum ornare. Proin lobortis, purus sit amet ultrices lacinia, dolor urna suscipit ipsum, non luctus ipsum mi et felis. Mauris pharetra venenatis eros quis finibus.`,
-    value: "item-8",
+    value: "item-2",
   },
   {
     trigger:
@@ -957,27 +923,27 @@ B- Governance, voting, and validation are eliminated:
 Governance is eliminated to prevent large holders from monopolizing decision-making.
 Voting is unnecessary as the algorithm runs autonomously without changes in policies.
 Validation by nodes is unnecessary; each wallet pre-validates all transactions based on POH.`,
-    value: "item-9",
+    value: "item-3",
   },
   {
     trigger: "Why SCADS cannot be weaponized or politicized?",
     content: `SCADS is neutral, fully decentralized, and independent. It cannot interfere with users' wallets or their financial activities. SCADS confirms that all users have sovereignty over their wallets. Since SCADS is not tied to any political currency, no government can impose its rules on it. SCADS simply belongs to its users. POH completely decentralizes the algorithm.`,
-    value: "item-10",
+    value: "item-4",
   },
   {
     trigger: "How does (POH) solve inflation and prevent bankruptcy?",
     content: `POH (Proof of Hold) verifies the reserve capital on the chain, triggering the minting of TWINE. This process exponentially grows the capital since TWINE is scarce and has a guaranteed use case, ensuring demand pressure. Thus, capital and value are protected against inflation and failures. Moreover, POH provides the highest financial credibility, even enabling funding for the reserve, ensuring capital safety and guaranteed growth.`,
-    value: "item-11",
+    value: "item-5",
   },
   {
     trigger:
       "How can institutions and governments fund themselves with (POH) without increasing debt or taxes?",
     content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel aliquam turpis, ut bibendum ipsum. Fusce pellentesque ultrices mollis. Donec dignissim nisi at nulla euismod, sed ornare libero pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit consectetur gravida. Duis ultrices neque est, et efficitur tellus ullamcorper eget. Donec enim sapien, feugiat et tempus egestas, pharetra eget ligula. Pellentesque ligula lacus, aliquam vel maximus non, dignissim et lacus. Donec dictum vestibulum ornare. Proin lobortis, purus sit amet ultrices lacinia, dolor urna suscipit ipsum, non luctus ipsum mi et felis. Mauris pharetra venenatis eros quis finibus.`,
-    value: "item-12",
+    value: "item-6",
   },
   {
     trigger: "Is TWINE a reward token?",
     content: `TWINE is an added value token, minted only when user’s exercise the holding of scads. since it minted like scads it have a logarithmic growth based on the number of TWINE minted.`,
-    value: "item-13",
+    value: "item-7",
   },
 ];

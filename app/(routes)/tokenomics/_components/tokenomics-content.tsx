@@ -40,7 +40,7 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
         </ul>
       )}
       {paragraph_two && <p className="max-w-[1031px]">{paragraph_two}</p>}
-      <Separator className="mt-12 bg-gradient-to-r from-indigo-600 to-purple-600 " />
+      <Separator className="mt-12 bg-white/10" />
     </section>
   );
 };

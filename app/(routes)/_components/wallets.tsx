@@ -9,8 +9,8 @@ const Wallets = () => {
       <div className="flex max-w-[340px] flex-col flex-wrap gap-8 md:max-w-[768px] lg:max-w-[1024px] lg:flex-row">
         <HoverEffect items={cardItems} />
       </div>
-      <div className="absolute -bottom-28 -z-10 w-full">
-        <div className="flex h-[40rem] w-full items-center justify-center bg-dark-blue bg-grid-violet-500/[0.4]" />
+      <div className="absolute -z-10 h-full w-full lg:-bottom-28 lg:h-fit">
+        <div className="flex h-full w-full items-center justify-center bg-dark-blue bg-grid-violet-500/[0.4] lg:h-[40rem]" />
         <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-r from-dark-blue/90 via-transparent to-dark-blue/90" />
         <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-dark-blue via-transparent to-dark-blue" />
       </div>

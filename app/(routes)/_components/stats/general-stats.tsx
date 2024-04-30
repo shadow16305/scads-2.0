@@ -16,7 +16,7 @@ const GeneralStats = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="rounded-full bg-gradient-to-br from-transparent to-white/10 p-3 lg:p-2 xl:p-3"
+              className="rounded-full bg-white/10 p-3 lg:p-2 xl:p-3"
             >
               <div className="relative text-neutral-300 [&>*]:size-7 lg:[&>*]:size-5 xl:[&>*]:size-6">
                 {item.icon}

@@ -1,10 +1,13 @@
-import { FaRegClock } from "react-icons/fa";
-import { IoSpeedometerOutline } from "react-icons/io5";
-import { BsHeartPulse } from "react-icons/bs";
-import { GrStorage } from "react-icons/gr";
-import { FaArrowTrendUp } from "react-icons/fa6";
 import { MdOutlineDataObject } from "react-icons/md";
-import { Grid, Paperclip } from "lucide-react";
+import {
+  Clock,
+  Database,
+  Gauge,
+  Grid,
+  HeartPulse,
+  Paperclip,
+  TrendingUp,
+} from "lucide-react";
 
 export const tokenomicsContent = [
   {
@@ -175,31 +178,31 @@ export const statItems = [
     id: "s1",
     name: "Adaptive minting speed",
     placeholder: "0.0000006",
-    icon: <IoSpeedometerOutline />,
+    icon: <Gauge strokeWidth={1.5} />,
   },
   {
     id: "s2",
     name: "Funds in Pulse",
     placeholder: "8079.49",
-    icon: <BsHeartPulse />,
+    icon: <HeartPulse strokeWidth={1.5} />,
   },
   {
     id: "s3",
     name: "Next Pulse",
     placeholder: "05:26:15",
-    icon: <FaRegClock />,
+    icon: <Clock strokeWidth={1.5} />,
   },
   {
     id: "s4",
     name: "Minted TWINE",
     placeholder: "1650851.99",
-    icon: <GrStorage />,
+    icon: <Database strokeWidth={1.5} />,
   },
   {
     id: "s5",
     name: "TWINE price increase",
     placeholder: "0.17",
-    icon: <FaArrowTrendUp />,
+    icon: <TrendingUp strokeWidth={1.5} />,
   },
   {
     id: "s6",

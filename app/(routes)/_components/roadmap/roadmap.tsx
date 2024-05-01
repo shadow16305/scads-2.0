@@ -23,7 +23,7 @@ const Roadmap = () => {
         />
         <div className="absolute left-0 top-0 z-0 size-full rounded-xl bg-gradient-to-b from-white/15 to-dark-blue" />
         <div className="z-10 flex max-h-96 w-full">
-          <ul className="overflow-y-scroll overscroll-y-none border-s border-white/20">
+          <ul className="overflow-y-scroll overscroll-y-none md:border-s md:border-white/20">
             {roadmapContent.map((item) => (
               <RoadmapItem
                 key={item.id}

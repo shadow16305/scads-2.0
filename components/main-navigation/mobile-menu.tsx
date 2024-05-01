@@ -17,7 +17,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ close }) => {
       <div className="mt-24 flex flex-col items-center gap-y-8 text-white lg:hidden">
         <div className="space-x-4 text-xl font-medium">
           <SwapModal navigation />
-          <Link href="/faq">FAQ</Link>
+          <Link href="/faq" onClick={close}>
+            FAQ
+          </Link>
           <Link href="/tokenomics" onClick={close} className="group relative">
             Tokenomics
           </Link>

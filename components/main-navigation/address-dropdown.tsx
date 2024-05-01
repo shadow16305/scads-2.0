@@ -18,8 +18,14 @@ const AddressDropdown = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="relative size-10 invert-0 transition-all hover:scale-110 focus:outline-none focus:ring-0 lg:size-8">
-        <Image src="/images/address.svg" alt="addresses" fill />
+      <DropdownMenuTrigger className="relative invert-0 transition-all focus:outline-none focus:ring-0 md:size-10 lg:size-8 lg:hover:scale-110">
+        <Image
+          src="/images/address.svg"
+          alt="addresses"
+          fill
+          className="hidden md:block"
+        />
+        <span className="md:hidden">Addresses</span>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="mr-2 mt-2 max-w-[340px] rounded-xl border-none bg-dark-blue lg:mr-0 lg:min-w-[512px] lg:max-w-none">
         <DropdownMenuGroup className="flex flex-col space-y-2 px-4 py-3">

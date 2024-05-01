@@ -11,23 +11,14 @@ import TwineForm from "./twine-form";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { Button } from "../ui/button";
 
-const SwapModal = ({
-  navigation,
-  triggerClassName,
-}: {
-  navigation?: boolean;
-  triggerClassName?: string;
-}) => {
+const SwapModal = ({ navigation }: { navigation?: boolean }) => {
   return (
     <Dialog>
-      <DialogTrigger asChild className={triggerClassName}>
+      <DialogTrigger asChild>
         {navigation ? (
-          <button
-            type="button"
-            className="relative transition hover:text-neutral-400"
-          >
+          <span className="button-primary relative cursor-pointer rounded-lg border border-[#8a6cff] px-6 py-1 text-sm font-semibold transition hover:bg-transparent hover:bg-none hover:text-neutral-300 md:border-none md:bg-none md:px-0 md:py-0 md:font-normal md:shadow-none">
             Invest
-          </button>
+          </span>
         ) : (
           <Button className="px-10">Invest</Button>
         )}

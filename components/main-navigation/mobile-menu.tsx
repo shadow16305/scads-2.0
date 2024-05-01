@@ -1,44 +1,57 @@
+"use client";
+
 import Link from "next/link";
-import SwapModal from "../swap/swap-modal";
 import AddressDropdown from "./address-dropdown";
 import WalletModal from "../wallet/wallet-modal";
-import { useWalletModal } from "@/hooks/use-wallet-modal";
 import Socials from "../socials";
+import { motion } from "framer-motion";
 
 interface MobileMenuProps {
   close: () => void;
 }
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ close }) => {
-  const walletModal = useWalletModal();
-
   return (
-    <div className="flex flex-col items-center gap-y-8 py-8">
-      <div className="mt-24 flex flex-col items-center gap-y-8 text-white lg:hidden">
-        <div className="space-x-4 text-xl font-medium">
-          <SwapModal navigation />
+    <div className="space-y-8 pb-8 text-white lg:hidden">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.4 }}
+        className="mt-24 flex justify-center gap-x-8 text-xl font-medium"
+      >
+        <div className="flex flex-col gap-y-4">
           <Link href="/faq" onClick={close}>
             FAQ
           </Link>
-          <Link href="/tokenomics" onClick={close} className="group relative">
+          <Link href="/tokenomics" onClick={close}>
             Tokenomics
           </Link>
-        </div>
-        <div className="space-x-4 text-xl font-medium">
-          <Link href="/use-cases" onClick={close} className="group relative">
+          <Link href="/use-cases" onClick={close}>
             Use cases
           </Link>
-          <Link href="/whitepaper" onClick={close} className="group relative">
+        </div>
+        <div className="flex flex-col gap-y-4">
+          <Link href="/whitepaper" onClick={close}>
             Whitepaper
           </Link>
-        </div>
-        <div className="flex gap-x-6">
           <AddressDropdown />
-          {walletModal.isConnected && <WalletModal />}
         </div>
-      </div>
-      {!walletModal.isConnected && <WalletModal />}
-      <Socials navigation />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.4 }}
+        className="inline-flex justify-center"
+      >
+        <WalletModal />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.4 }}
+      >
+        <Socials navigation />
+      </motion.div>
     </div>
   );
 };

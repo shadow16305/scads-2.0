@@ -27,14 +27,19 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
         className={cn(navigation && "mx-auto max-w-40")}
       >
         {walletModal.isConnected ? (
-          <Wallet className="size-7 transition-transform hover:scale-110 lg:size-5" />
+          <>
+            <Wallet className="hidden size-7 transition-transform hover:scale-110 md:block lg:size-5" />
+            <span className="inline-flex items-center justify-center whitespace-nowrap rounded-xl bg-white/20 px-4 py-2 text-xl text-white transition-colors duration-300 hover:bg-white/40 md:hidden">
+              Wallet
+            </span>
+          </>
         ) : (
           <span
             className={cn(
               "inline-flex w-full items-center justify-center whitespace-nowrap rounded-xl px-4 py-2 text-white transition-colors duration-300",
               navigation
-                ? "button-primary border border-[#8a6cff] text-sm font-bold"
-                : "bg-white/20 text-base hover:bg-white/40",
+                ? "button-primary border border-[#8a6cff] text-xs font-bold md:text-sm"
+                : "bg-white/10 text-xl font-medium hover:bg-white/20 md:text-base",
             )}
           >
             Connect wallet

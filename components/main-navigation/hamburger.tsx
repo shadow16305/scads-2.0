@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { Dispatch, SetStateAction } from "react";
 
 interface HamburgerProps {
@@ -6,23 +7,20 @@ interface HamburgerProps {
 }
 
 const Hamburger: React.FC<HamburgerProps> = ({ isOpen, setIsOpen }) => {
-  const genericHamburgerLine =
-    "h-0.5 w-8 my-1 transition ease transform duration-300 bg-white";
+  const hamburgerLine =
+    "h-0.5 w-6 my-1 transition ease transform duration-300 bg-white";
 
   return (
     <button
       className="group relative z-50 flex h-12 w-12 flex-col items-center justify-center lg:hidden"
       onClick={() => setIsOpen(!isOpen)}
     >
+      <div className={cn(hamburgerLine, isOpen && "origin-center rotate-45")} />
       <div
-        className={`${genericHamburgerLine} ${
-          isOpen ? "-translate-y-1/2 rotate-45" : ""
-        }`}
-      />
-      <div
-        className={`${genericHamburgerLine} ${
-          isOpen ? "-translate-y-3 -rotate-45" : ""
-        }`}
+        className={cn(
+          hamburgerLine,
+          isOpen && "origin-center -translate-y-[10px] -rotate-45",
+        )}
       />
     </button>
   );

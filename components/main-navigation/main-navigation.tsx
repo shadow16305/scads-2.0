@@ -44,16 +44,26 @@ const MainNavigation = () => {
 
   return (
     <nav className={navClasses}>
-      <div className="mx-auto flex w-full justify-between py-4 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
+      <div className="mx-auto flex w-full justify-between py-2 md:py-4 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
         <div className="flex min-w-full items-center justify-between gap-x-12 px-4 lg:min-w-0 lg:justify-normal lg:px-0">
           <Link
             href="/"
-            className="z-50 flex items-center gap-x-2 text-xl font-bold text-white"
+            className="z-50 flex items-center gap-x-2 text-base font-bold text-white md:text-xl"
           >
-            <Image src="/images/logo.svg" alt="logo" width={36} height={36} />{" "}
+            <div className="relative size-6 md:size-9">
+              <Image
+                src="/images/logo.svg"
+                alt="logo"
+                fill
+                className="object-cover"
+              />
+            </div>{" "}
             SCADS
           </Link>
+          <div className="flex items-center gap-x-2 lg:hidden">
+            <SwapModal navigation />
             <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
+          </div>
         </div>
         <div className="absolute left-1/2 -translate-x-1/2">
           <NavLinks />
@@ -78,7 +88,7 @@ const MainNavigation = () => {
                 exit={{ height: 0 }}
                 transition={{ duration: 0.4 }}
                 className={clsx(
-                  "fixed left-1/2 top-0 z-40 w-11/12 -translate-x-1/2 overflow-hidden rounded-b-3xl bg-dark-blue",
+                  "fixed left-1/2 top-0 z-40 w-auto -translate-x-1/2 overflow-hidden rounded-b-3xl bg-dark-blue px-12",
                 )}
               >
                 <MobileMenu close={() => setIsOpen(!isOpen)} />

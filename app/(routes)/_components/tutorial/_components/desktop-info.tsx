@@ -64,11 +64,11 @@ const DesktopInfo = () => {
           </TabsTrigger>
         ))}
       </TabsList>
-      <AnimatePresence mode="wait">
-        <TabsContent
-          value={currentTab}
-          className="z-20 mt-4 space-y-12 overflow-y-auto overflow-x-hidden overscroll-y-none"
-        >
+      <TabsContent
+        value={currentTab}
+        className="z-20 mt-4 space-y-12 overflow-x-hidden overflow-y-scroll overscroll-y-none"
+      >
+        <AnimatePresence mode="wait">
           {tutorialDesktop[currentTab].map((step: Step, index) => (
             <motion.div
               initial={{ opacity: 0 }}
@@ -88,8 +88,8 @@ const DesktopInfo = () => {
               </div>
             </motion.div>
           ))}
-        </TabsContent>
-      </AnimatePresence>
+        </AnimatePresence>
+      </TabsContent>
     </Tabs>
   );
 };

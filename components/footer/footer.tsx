@@ -12,7 +12,7 @@ const Footer = () => {
           <Image src="/images/logo.svg" alt="logo" width={32} height={32} />
           SCADS
         </div>
-        <p className="text-center text-neutral-300 md:text-start">
+        <p className="text-center text-sm text-neutral-300 md:text-start md:text-base">
           SCADS © Copyright {currentYear}. All rights reserved. ™
         </p>
       </div>

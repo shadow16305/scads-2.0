@@ -19,7 +19,7 @@ const NavLinks = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/faq" className="transition hover:text-neutral-300">
-            FAQs
+            FAQ
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem className="bg-transparent">

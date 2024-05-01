@@ -366,7 +366,7 @@ export const roadmapContent = [
   {
     id: "r21",
     date: "March 2025",
-    l1: "Payment system, users will be able to pay locally with scads pegged to value in local currency. (The pegging occurs only on the time of transaction.)",
+    l1: "Payment system, users will be able to pay locally with scads pegged to value in local currency. (The pegging occurs only at the time of transaction.)",
   },
 ];
 

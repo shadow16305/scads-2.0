@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
 @layer base {
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
@@ -11,22 +9,18 @@
     margin: 0;
   }
 
-  /* width */
   ::-webkit-scrollbar {
-    @apply w-2;
+    @apply z-50 w-2;
   }
 
-  /* Track */
   ::-webkit-scrollbar-track {
-    @apply rounded-full bg-white/10;
+    @apply z-50 rounded-full bg-white/10;
   }
 
-  /* Handle */
   ::-webkit-scrollbar-thumb {
-    @apply rounded-full bg-white/20;
+    @apply z-50 rounded-full bg-white/20;
   }
 
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-white/40;
   }

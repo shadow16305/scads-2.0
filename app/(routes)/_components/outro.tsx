@@ -24,7 +24,9 @@ const Outro = () => {
         />
         <div className="absolute inset-0 h-full w-full bg-dark-blue [mask-image:radial-gradient(200px_200px_at_top,transparent_20%,white)]" />
       </div>
-      <SwapModal triggerClassName="mt-12" />
+      <div className="mt-12">
+        <SwapModal />
+      </div>
     </section>
   );
 };

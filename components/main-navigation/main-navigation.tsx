@@ -10,6 +10,7 @@ import clsx from "clsx";
 import AddressDropdown from "./address-dropdown";
 import WalletModal from "../wallet/wallet-modal";
 import NavLinks from "./navlinks";
+import SwapModal from "../swap/swap-modal";
 
 const MainNavigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -52,7 +53,7 @@ const MainNavigation = () => {
             <Image src="/images/logo.svg" alt="logo" width={36} height={36} />{" "}
             SCADS
           </Link>
-          <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
+            <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
         <div className="absolute left-1/2 -translate-x-1/2">
           <NavLinks />

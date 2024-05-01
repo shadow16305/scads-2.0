@@ -19,10 +19,7 @@ const TextBlock = () => {
           it was valued at around $112 billion USD, the estimate can only
           continue thanks to the increasing adoption and interest from
           investors. Still, all this growth was not without issues as the
-          followed major challenges: • Products integrity – an important number
-          of DeFi projects either proved to work unsustainably, offering returns
-          that could never be secured, or simply failed to deliver on their
-          promises.
+          followed major challenges:
         </p>
         <AnimatePresence mode="wait">
           {textIsVisible && (
@@ -33,6 +30,12 @@ const TextBlock = () => {
               className="z-10 mt-4"
             >
               <ul className="list-disc pl-4">
+                <li>
+                  Products integrity – an important number of DeFi projects
+                  either proved to work unsustainably, offering returns that
+                  could never be secured, or simply failed to deliver on their
+                  promises.
+                </li>
                 <li>
                   Platform security – technical issues represented another
                   challenge due to the significant number of breaches happening

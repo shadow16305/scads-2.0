@@ -33,10 +33,10 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
         <ul className="flex max-w-[340px] list-disc flex-col gap-y-2 pl-4 lg:max-w-[900px] xl:max-w-[1031px]">
           {list.map((item, index) => (
             <li key={index}>
-              {item.list_one && <p>{item.list_one}</p>}
-              {item.list_two && <p>{item.list_two}</p>}
-              {item.list_three && <p>{item.list_three}</p>}
-              {item.list_four && <p>{item.list_four}</p>}
+              {item.list_one && item.list_one}
+              {item.list_two && item.list_two}
+              {item.list_three && item.list_three}
+              {item.list_four && item.list_four}
             </li>
           ))}
         </ul>

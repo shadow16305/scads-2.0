@@ -888,23 +888,61 @@ export const tutorialMobile = {
 export const accordionItems = [
   {
     trigger: "Is SCADS a security, commodity or money?",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel aliquam turpis, ut bibendum ipsum. Fusce pellentesque ultrices mollis. Donec dignissim nisi at nulla euismod, sed ornare libero pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit consectetur gravida. Duis ultrices neque est, et efficitur tellus ullamcorper eget. Donec enim sapien, feugiat et tempus egestas, pharetra eget ligula. Pellentesque ligula lacus, aliquam vel maximus non, dignissim et lacus. Donec dictum vestibulum ornare. Proin lobortis, purus sit amet ultrices lacinia, dolor urna suscipit ipsum, non luctus ipsum mi et felis. Mauris pharetra venenatis eros quis finibus.`,
+    content: `SCADS is a form of currency backed by collateralized value, making it suitable for settlements and various types of payments.`,
     value: "item-1",
   },
   {
     trigger: "How does SCADS protect capital investment?",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel aliquam turpis, ut bibendum ipsum. Fusce pellentesque ultrices mollis. Donec dignissim nisi at nulla euismod, sed ornare libero pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit consectetur gravida. Duis ultrices neque est, et efficitur tellus ullamcorper eget. Donec enim sapien, feugiat et tempus egestas, pharetra eget ligula. Pellentesque ligula lacus, aliquam vel maximus non, dignissim et lacus. Donec dictum vestibulum ornare. Proin lobortis, purus sit amet ultrices lacinia, dolor urna suscipit ipsum, non luctus ipsum mi et felis. Mauris pharetra venenatis eros quis finibus.`,
+    content:
+      "SCADS safeguards capital investments through its unique structure and features:",
+    list: [
+      {
+        list_one:
+          "Proof of Hold (POH): SCADS utilizes the POH algorithm, which confirms the reserve capital on-chain. This ensures transparency and security, protecting investors' capital.",
+      },
+      {
+        list_two:
+          "Autonomous Operation: SCADS operates autonomously without human interference or ownership, reducing the risk of manipulation and fraud.",
+      },
+      {
+        list_three:
+          "Reserve-backed Stability: The minting of TWINE, triggered by POH, ensures exponential growth of capital. TWINE's scarcity and use case create demand pressure, protecting capital against inflation and failures.",
+      },
+      {
+        list_four:
+          "Financial Credibility: POH enhances SCADS' financial credibility, making it a secure investment option even for funding reserves.",
+      },
+    ],
+    paragpraph:
+      "Overall, SCADS provides a robust framework that prioritizes the protection of capital investments.",
     value: "item-2",
   },
   {
     trigger:
       "How does SCADS ensure its structure doesn't resemble schemes that could potentially harm investors?",
-    content: `SCADS protects its users by eliminating risks rather than managing them.
-A- Risk of Ponzi schemes and pyramid plays is removed by setting the algorithm to operate autonomously without owners or human interference.
-B- Governance, voting, and validation are eliminated:
-Governance is eliminated to prevent large holders from monopolizing decision-making.
-Voting is unnecessary as the algorithm runs autonomously without changes in policies.
-Validation by nodes is unnecessary; each wallet pre-validates all transactions based on POH.`,
+    content:
+      "SCADS protects its users by eliminating risks rather than managing them.",
+    list: [
+      {
+        list_one:
+          "A - Risk of Ponzi schemes and pyramid plays is removed by setting the algorithm to operate autonomously without owners or human interference.",
+      },
+      {
+        list_two: "B - Governance, voting, and validation are eliminated:",
+      },
+      {
+        list_three:
+          "Governance is eliminated to prevent large holders from monopolizing decision-making.",
+      },
+      {
+        list_four:
+          "Voting is unnecessary as the algorithm runs autonomously without changes in policies.",
+      },
+      {
+        list_five:
+          "Validation by nodes is unnecessary; each wallet pre-validates all transactions based on POH.",
+      },
+    ],
     value: "item-3",
   },
   {
@@ -920,7 +958,7 @@ Validation by nodes is unnecessary; each wallet pre-validates all transactions b
   {
     trigger:
       "How can institutions and governments fund themselves with (POH) without increasing debt or taxes?",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel aliquam turpis, ut bibendum ipsum. Fusce pellentesque ultrices mollis. Donec dignissim nisi at nulla euismod, sed ornare libero pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit consectetur gravida. Duis ultrices neque est, et efficitur tellus ullamcorper eget. Donec enim sapien, feugiat et tempus egestas, pharetra eget ligula. Pellentesque ligula lacus, aliquam vel maximus non, dignissim et lacus. Donec dictum vestibulum ornare. Proin lobortis, purus sit amet ultrices lacinia, dolor urna suscipit ipsum, non luctus ipsum mi et felis. Mauris pharetra venenatis eros quis finibus.`,
+    content: `The formula is simple: POH allows idle capital to generate profit securely by triggering the minting of a secondary token. This boosts reserves, reducing the need for tax hikes to fund them. Institutions can profit more without hefty taxes, and retail users can grow their wealth risk-free. While this doesn't eliminate taxation entirely, it can reduce it by at least 50%, fostering a healthier economy, political stability, and societal well-being.`,
     value: "item-6",
   },
   {

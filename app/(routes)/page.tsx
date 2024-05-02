@@ -11,8 +11,8 @@ export default function Home() {
     <>
       <Hero />
       <Stats />
-      <Wallets />
       <TextBlock />
+      <Wallets />
       <Roadmap />
       <Tutorial />
       <Outro />

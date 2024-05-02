@@ -9,17 +9,17 @@ const TextBlock = () => {
   const [textIsVisible, setTextIsVisible] = useState(false);
 
   return (
-    <section className="relative mt-52 flex flex-col items-center gap-y-4 px-4 text-white md:px-0">
+    <section className="relative mt-32 flex flex-col items-center gap-y-4 px-4 text-white md:px-0">
       <SectionHeader title="Introducing Scads" y={-50} />
       <div className="max-w-[340px] text-neutral-300 lg:max-w-[1024px]">
         <p className="z-10">
           The growth and progression of Decentralized Finance: what started off
           as a new niche market just four years ago grew significantly into a
-          player to be reckoned in the financial industry. While in 1Q of 2024
+          player to be reckoned in the financial industry. While in Q1 of 2024
           it was valued at around $112 billion USD, the estimate can only
           continue thanks to the increasing adoption and interest from
-          investors. Still, all this growth was not without issues as the
-          followed major challenges:
+          investors. Still, all this growth was not without issues because of
+          the following major challenges:
         </p>
         <AnimatePresence mode="wait">
           {textIsVisible && (
@@ -55,7 +55,7 @@ const TextBlock = () => {
                 a currency used only as a reference, with minimal inflation and
                 no connection to U.S. economic cycles. SCADS is primarily about:
               </p>
-              <ul className="list-disc pl-4">
+              <ul className="mt-4 list-disc pl-4">
                 <li>
                   Security – funds are stored on a user’s wallet and are not
                   managed or affected by other financial institutions.

@@ -45,7 +45,12 @@ const DesktopInfo = () => {
             onFocus={() => setCurrentTab(tab.value as TabValue)}
             className="flex items-center gap-x-2 rounded-3xl bg-transparent text-white data-[state=active]:bg-white/20"
           >
-            <Image src={tab.imgPath} alt={tab.label} width={24} height={24} />
+            <Image
+              src={tab.imgPath}
+              alt={`${tab.label} icon`}
+              width={24}
+              height={24}
+            />
             <AnimatePresence>
               {currentTab === tab.value && (
                 <motion.div

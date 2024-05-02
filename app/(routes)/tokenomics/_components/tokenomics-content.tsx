@@ -9,6 +9,7 @@ interface TokenomicsContentProps {
     list_one?: string;
     list_two?: string;
     list_three?: string;
+    list_four?: string;
   }[];
 }
 
@@ -35,6 +36,7 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
               {item.list_one && <p>{item.list_one}</p>}
               {item.list_two && <p>{item.list_two}</p>}
               {item.list_three && <p>{item.list_three}</p>}
+              {item.list_four && <p>{item.list_four}</p>}
             </li>
           ))}
         </ul>

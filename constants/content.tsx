@@ -14,27 +14,27 @@ export const tokenomicsContent = [
     id: "proof-of-hold",
     title: "Proof of hold",
     paragraph:
-      "SCADS introduces an innovative concept called Proof of Hold (POH) to ensure safety, security, and minimize investment risks. This approach involves users simply purchasing the stable coin and holding it. By doing so, they automatically mint TWINE, the linear token. To facilitate this process, the algorithm incorporates a mapping feature called 'isHolder' to monitor addresses that qualify as holders. The 'ProofOfHolding' function enables an address to include itself in this list, allowing for seamless participation in the Proof of Hold mechanism. This inventive approach provides a secure and risk-reduced investment experience for users.",
+      "SCADS proudly presents a brand new feature called Proof of Hold that was developed with the main idea to make SCADS investments safer, secured, and less risky. The mechanism behind it is fairly straightforward: users buy SCADS and keep using it. TWINE, a linear token, is minted automatically. Mapping is employed to precisely locate holder addresses, which are subsequently registered systematically on the list of network participants. Accounts can easily designate their addresses to activate the POH function. This is a great opportunity for investing in much less risk than usual.",
   },
   {
     id: "scads",
     title: "Scads",
     paragraph:
-      "SCADS is a stablecoin, its value referencing the USD for ease of use. It's important to note that SCADS is not pegged to the USD. It can only be minted when backed by collateral, specifically through the exchange of stablecoins for SCADS. This system operates independently, is characterized by fairness, and operates in a permissionless and fully decentralized manner. It continuously evolves within an automated, self-sustaining environment. Crucially, SCADS cannot be subject to seizure or freezing, as each user holds it in their own wallet. This ensures complete and genuine decentralized freedom and independence. It's worth emphasizing that SCADS has no owners who could be compelled to jeopardize users funds.",
+      "SCADS is a stablecoin that references the USD to simplify transactions, though it is not directly pegged to it. The coin can only be created when it is backed by adequate collateral, achieved through trading other stablecoins for SCADS. This system operates autonomously, ensuring fairness and functioning within a permissionless, fully decentralized framework. It is designed to adapt and sustain itself automatically over time. Importantly, SCADS guarantees that it cannot be seized or frozen because each user manages their holdings in their personal wallet, reinforcing true decentralized autonomy and independence. Notably, SCADS is ownerless, which eliminates any risk that individuals could compromise user funds.",
   },
   {
     id: "twine",
     title: "Twine",
     paragraph:
-      "TWINE is a speculative token that also functions as a linear token, ensuring steady price growth and granting an advantageous position for exclusive SCADS minting.",
+      "TWINE is a speculative token with linear characteristics, designed to support gradual price increases and provide privileged access to mint SCADS exclusively.",
     list: [
       {
         list_one:
-          "EXCLUSIVITY: Upon reaching a circulation supply of 5.5 million, TWINE gains exclusive rights to purchase SCADS. This exclusivity feature presents the potential for significant price appreciation, making it an enticing choice for investors seeking higher returns. This status of exclusivity is effective for a duration of 5 years.",
+          "Exclusivity: Once the circulating supply of TWINE reaches 5.5 million, it acquires exclusive rights to purchase SCADS. This exclusivity, which lasts for five years, potentially leads to significant price appreciation and makes TWINE an attractive investment for those seeking higher returns.",
       },
       {
         list_two:
-          "THE CURVED LINEAR FACTOR: The value encapsulated within the token is determined by the number of minted TWINE tokens. With each new TWINE token minted, the price experiences a consistent increase of 0.0000001.",
+          "Curved Linear Growth: The value of TWINE is linked to its minting volume. For each new TWINE token minted, its price rises consistently by 0.0000001. This mechanism ensures a steady upward trajectory in the token’s value, aligning with the increase in supply.",
       },
     ],
   },
@@ -52,23 +52,29 @@ export const tokenomicsContent = [
     list: [
       {
         list_one:
-          "Reward Speed Calculation: Minting Speed = (TWINE < 21,000,000 TWINE - TWINE ALREADY MINTED>) / (SCADS <TOTAL SCADS IN THE MARKET> * TIME <IN MINUTES, 15 YEARS IN MINUTES - TIME ELAPSED SINCE THE BEGINNING>)",
+          "Minting Speed = (TWINE < 21,000,000 TWINE - TWINE ALREADY MINTED>) / (SCADS <TOTAL SCADS IN THE MARKET>  TIME <IN MINUTES, 15 YEARS IN MINUTES - TIME ELAPSED SINCE THE BEGINNING>)*",
       },
       {
-        list_two:
-          "Reward Amount Calculation: TWINE Mint Amount = Hold SCADS Amount * Minting Speed * Difference in Time (in minutes)",
+        list_two: `TWINE < 21,000,000 TWINE - TWINE ALREADY MINTED>:
+This part of the formula calculates the remaining amount of TWINE that can be minted. It subtracts the amount of TWINE already minted from the total cap of 21,000,000 TWINE. This gives the number of TWINE tokens left to be issued.`,
       },
       {
-        list_three:
-          "Function to Calculate Current Reward Speed: getCurrentRewardSpeed(): This function calculates the current minting speed. These formulas and functions are integral to the reward distribution mechanism within the algorithm. They ensure that rewards are distributed in a manner that aligns with the algorithm's design and objectives.",
+        list_three: `SCADS <TOTAL SCADS IN THE MARKET>:
+This refers to the total number of SCADS currently in circulation within the market.`,
+      },
+      {
+        list_four: `TIME <IN MINUTES, 15 YEARS IN MINUTES - TIME ELAPSED SINCE THE BEGINNING>:
+This calculates the total time left for minting. It subtracts the time already elapsed since the beginning of the minting process from the total minting period set for 15 years, expressed in minutes.`,
       },
     ],
+    paragraph_two:
+      "The formula for Minting Speed essentially calculates the rate at which new TWINE tokens will be minted. This rate is determined by the number of TWINE tokens left to be minted, divided by the product of the total SCADS in circulation and the remaining time in minutes for the minting process. This provides a dynamic adjustment mechanism, where the minting speed can increase or decrease based on how many SCADS tokens are in the market and how much time is left until the end of the 15-year period.",
   },
   {
     id: "pulse",
     title: "Pulse",
     paragraph:
-      "Is a smart contract that performs daily operations within the algorithm It buys (SCADS), mint (TWINE), and sells (TWINE) to (SCADS). It generates profits for the system and allocates them as follows: 80% goes back as a sinking fund increasing its investment in the system, and 20% goes to the LQUIDITY wallet in (SCADS) currency, which strengthens the collateralization of (SACDS). While creating a network effect due to transacting constantly. The self-sustaining network effect is a first that pioneers the algorithm on another layer.",
+      "In the smart contract in question, daily activities are automated within the system's algorithm. These activities include purchasing SCADS, minting TWINE, and selling the earned TWINE back to SCADS. This process enables the system to generate profits, which are then distributed efficiently: 80% of these profits are continuously reinvested into the system through a sinking fund that enhances investment capacity. The remaining 20% is allocated to the LIQUIDITY wallet, which is in SCADS and helps strengthen the system’s collateral position. These daily activities of buying SCADS, minting, and selling contribute to creating a network effect that not only retains the system's activity but also makes it self-sustaining. This constant flow of transactions is innovative, positioning the algorithm at the forefront of new developments in operational efficiency.",
   },
   {
     id: "liquidity-wallet",
@@ -79,8 +85,26 @@ export const tokenomicsContent = [
   {
     id: "treasury",
     title: "Treasury",
-    paragraph:
-      "Security at the Core: PROOF OF RESERVE and PROOF OF COLLATERAL in SCADS Reserve and Collateral Crucial in SCADS: Integral Components: SCADS places utmost importance on the concept of reserve and collateral, considering them integral components of its operational framework. These elements are securely held in the treasury and users' wallets, forming the backbone of SCADS's financial robustness. Contracts for PROOF OF RESERVE and PROOF OF COLLATERAL: Proactive Measures: Despite having reserves and collateral securely held, SCADS reinforces its commitment to transparency through specific contracts. Contracts for PROOF OF RESERVE and PROOF OF COLLATERAL are established, providing clear verification mechanisms for the community. Mandatory Collateral for SCADS Minting: Risk Mitigation: SCADS takes a stringent approach to minting, requiring collateral for every SCADS minted. This ensures a risk-averse model, preventing the scenario where SCADS would exist without the necessary backing. Interconnected System: Collateralization Linkages: Logically intertwined, the SCADS ecosystem establishes a strong link between SCADS minting, collateral, and the subsequent minting of TWINE. This collateralized system contrasts with other stablecoins, such as USDT or USDC, providing a more tangible and secure financial foundation. Collateralized Assurance: SCADS, through the implementation of PROOF OF RESERVE and PROOF OF COLLATERAL contracts, reinforces its commitment to a robust and transparent financial model. By ensuring that every SCADS is minted with collateral, and subsequently linking the minting of TWINE to SCADS, SCADS establishes a genuinely collateralized system, setting it apart from other stablecoins in the digital financial landscape.",
+    paragraph: `Fundamental Elements: Reserve and Collateral in SCADS
+SCADS prioritizes the principles of reserve and collateral, treating them as fundamental to its operational integrity. These elements are securely maintained in both the treasury and users' wallets, serving as the foundation of SCADS's financial stability.`,
+    list: [
+      {
+        list_one: `Enforcing Transparency with Contracts:
+While reserves and collateral are securely held, SCADS enhances its transparency with specific contracts. The Proof of Reserve and Proof of Collateral contracts provide clear, verifiable mechanisms that allow the community to confirm the authenticity and adequacy of the reserves and collateral.`,
+      },
+      {
+        list_two: `Mandatory Collateral for Minting SCADS:
+SCADS adopts a conservative approach to minting, requiring sufficient collateral for every token minted. This policy mitigates risks and ensures that each SCADS token is backed by tangible assets, preventing the issuance of unsupported tokens.`,
+      },
+      {
+        list_three: `Interconnected Collateral System:
+The SCADS ecosystem creates a seamless link between the minting of SCADS, the collateral backing it, and the subsequent minting of TWINE. This interconnected system offers a stronger and more reliable financial structure compared to other stablecoins like USDT or USDC.`,
+      },
+      {
+        list_four: `Assurance through Collateralization:
+By implementing the Proof of Reserve and Proof of Collateral contracts, SCADS commits to a transparent and robust financial model. This ensures that every SCADS token is minted with proper collateral, and the minting of TWINE is directly linked to the collateralized SCADS, establishing a truly secure system that distinguishes SCADS from other stablecoins in the digital finance arena.`,
+      },
+    ],
   },
   {
     id: "decentralization",

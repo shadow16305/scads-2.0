@@ -17,14 +17,14 @@ const socialLinks = [
     icon: <FaGithub size={28} />,
     path: "https://github.com/scads-io",
   },
-  {
-    id: "Discord",
-    icon: <FaDiscord size={28} />,
-  },
-  {
-    id: "Medium",
-    icon: <FaMediumM size={28} />,
-  },
+  // {
+  //   id: "Discord",
+  //   icon: <FaDiscord size={28} />,
+  // },
+  // {
+  //   id: "Medium",
+  //   icon: <FaMediumM size={28} />,
+  // },
 ];
 
 const Socials = ({ navigation }: { navigation?: boolean }) => {

@@ -30,7 +30,7 @@ const AddressDropdown = () => {
       <DropdownMenuContent className="mr-2 mt-2 max-w-[340px] rounded-xl border-none bg-dark-blue lg:mr-0 lg:min-w-[512px] lg:max-w-none">
         <DropdownMenuGroup className="flex flex-col space-y-2 px-4 py-3">
           {addresses.map((item) => (
-            <div
+            <DropdownMenuItem
               key={item.address}
               className="flex w-full items-center text-sm"
             >
@@ -45,7 +45,7 @@ const AddressDropdown = () => {
                   <Copy className="size-4" />
                 </button>
               </div>
-            </div>
+            </DropdownMenuItem>
           ))}
         </DropdownMenuGroup>
       </DropdownMenuContent>

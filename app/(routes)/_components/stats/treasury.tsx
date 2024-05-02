@@ -1,8 +1,5 @@
-"use client";
-
 import { treasuryItems } from "@/constants/content";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 const Treasury = () => {
   return (
@@ -17,15 +14,9 @@ const Treasury = () => {
             key={item.id}
           >
             <div className="z-10 flex min-w-full items-center justify-between gap-y-2 md:min-w-0 md:flex-col">
-              <motion.p
-                initial={{ y: -20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="bg-gradient-to-b from-white to-neutral-500 bg-clip-text text-sm font-semibold text-transparent lg:text-xs xl:text-sm"
-              >
+              <p className="bg-gradient-to-b from-white to-neutral-500 bg-clip-text text-sm font-semibold text-transparent lg:text-xs xl:text-sm">
                 {item.name}
-              </motion.p>
+              </p>
               <div className="flex items-center gap-x-0.5">
                 {item.id === "ti2" && (
                   <Image
@@ -45,14 +36,9 @@ const Treasury = () => {
                     className="opacity-70"
                   />
                 )}
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  className="text-white opacity-70 lg:text-sm xl:text-base"
-                >
+                <p className="text-white opacity-70 lg:text-sm xl:text-base">
                   {item.amount}
-                </motion.p>
+                </p>
               </div>
             </div>
             {item.id !== "ti5" && (

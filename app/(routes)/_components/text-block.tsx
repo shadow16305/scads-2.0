@@ -13,13 +13,12 @@ const TextBlock = () => {
       <SectionHeader title="Introducing Scads" y={-50} />
       <div className="max-w-[340px] text-neutral-300 lg:max-w-[1024px]">
         <p className="z-10">
-          The growth and progression of Decentralized Finance: what started off
-          as a new niche market just four years ago grew significantly into a
-          player to be reckoned in the financial industry. While in Q1 of 2024
-          it was valued at around $112 billion USD, the estimate can only
-          continue thanks to the increasing adoption and interest from
-          investors. Still, all this growth was not without issues because of
-          the following major challenges:
+          The evolution of Decentralized Finance (DeFi) from a nascent niche
+          market to a formidable player in the financial industry has been
+          remarkable over the past few years. While it was valued at around $170
+          billion USD as of May 2024, the estimate can only continue thanks to
+          the increasing adoption and interest from investors. Still, all this
+          growth was not without issues as the followed major challenges:
         </p>
         <AnimatePresence mode="wait">
           {textIsVisible && (
@@ -31,13 +30,13 @@ const TextBlock = () => {
             >
               <ul className="list-disc pl-4">
                 <li>
-                  Products integrity – an important number of DeFi projects
-                  either proved to work unsustainably, offering returns that
-                  could never be secured, or simply failed to deliver on their
-                  promises.
+                  Product integrity: A notable aspect within the DeFi space
+                  involves certain projects operating unsustainably, offering
+                  returns without adequate security, or failing to fulfill their
+                  promised outcomes.
                 </li>
                 <li>
-                  Platform security – technical issues represented another
+                  Platform security – Technical issues represented another
                   challenge due to the significant number of breaches happening
                   that at times turned into financial loses.
                 </li>
@@ -48,32 +47,38 @@ const TextBlock = () => {
                 </li>
               </ul>
               <p className="mt-4">
-                SCADS: Disruptive Technology In Stablecoin Ecosystem SCADS
-                redefines the traditional stablecoin landscape thanks to the
-                innovative Proof of Holding algorithm. This stablecoin is not
-                correlated with dollars or euros – the group is the Swiss Franc,
-                a currency used only as a reference, with minimal inflation and
-                no connection to U.S. economic cycles. SCADS is primarily about:
+                SCADS, an innovative stablecoin built on the Proof of Holding
+                algorithm, has the potential to significantly impact the digital
+                currency landscape.
               </p>
+              <p className="mt-4">SCADS is:</p>
               <ul className="mt-4 list-disc pl-4">
                 <li>
-                  Security – funds are stored on a user’s wallet and are not
-                  managed or affected by other financial institutions.
+                  Non-pegged: Unlike traditional stablecoins, SCADS is not
+                  pegged to fiat currencies (dollar, euro, etc.), it uses USDT
+                  only as a point of reference. This makes it more resistant to
+                  inflation and economic shocks.
                 </li>
                 <li>
-                  Passive income – SCADS avoids the common risks of staking and
-                  liquidity pool participation and allows users to earn
-                  passively.
+                  Reliable: User funds are stored in their own wallets, which
+                  ensures maximum security.
                 </li>
                 <li>
-                  Fair and transparent operations – there is no one to
-                  manipulate the algorithm, and its operations are guaranteed to
-                  be fair. Players can influence it collectively to improve and
-                  evolve it. How we plan to move forward: as SCADS continues to
-                  develop and integrate new user feedback for its improvements,
-                  we assure our users in our reliability and creativity in the
-                  DeFi space.
+                  Risk-free: SCADS offers passive income without staking or
+                  participating in liquidity pools. This guarantees no risks or
+                  losses.
                 </li>
+                <li>
+                  Autonomous: SCADS operates without owners, managed solely by
+                  an algorithm. This eliminates the possibility of manipulation
+                  and fraud.
+                </li>
+                <li>
+                  Decentralization: Freedom from control by banks and
+                  governments.
+                </li>
+                <li>Self-sufficiency: Independence from fiat currencies.</li>
+                <li>Freedom: Your money, your rules.</li>
               </ul>
             </motion.div>
           )}

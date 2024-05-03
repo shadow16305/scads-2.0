@@ -14,7 +14,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="max-w-[320px] text-center text-2xl font-bold !leading-[1.17] text-white md:bg-gradient-to-br md:from-white md:to-neutral-500 md:bg-clip-text md:text-transparent lg:max-w-[900px] lg:text-5xl"
+            className="max-w-[320px] bg-gradient-to-br from-white to-neutral-500 bg-clip-text text-center text-2xl font-bold !leading-[1.17] text-transparent lg:max-w-[900px] lg:text-5xl"
           >
             The World's First Non-PEGGED self-sustained Stablecoin Powered by
             Proof of Holding
@@ -26,8 +26,8 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="max-w-[340px] text-center text-neutral-300 md:text-lg lg:max-w-[550px] xl:max-w-[700px]"
           >
-            Freewill will be the chain, proof of hold the protocol, SCADS and
-            TWINE, the first proof of technology.
+            Freewill defines the chain, Proof of Hold drives the protocol, SCADS
+            & TWINE pioneer the technology.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -20 }}

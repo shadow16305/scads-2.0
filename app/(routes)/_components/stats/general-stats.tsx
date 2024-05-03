@@ -1,4 +1,11 @@
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { statItems } from "@/constants/content";
+import { Info } from "lucide-react";
 
 const GeneralStats = () => {
   return (
@@ -15,9 +22,23 @@ const GeneralStats = () => {
               </div>
             </div>
             <div className="flex flex-col items-end gap-y-1 md:items-start">
-              <p className="bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-sm font-normal text-black text-transparent lg:text-xs xl:text-sm">
-                {item.name}
-              </p>
+              <div className="flex items-center gap-x-1">
+                <p className="bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-sm font-normal text-black text-transparent lg:text-xs xl:text-sm">
+                  {item.name}
+                </p>
+                {item.info && (
+                  <TooltipProvider delayDuration={0}>
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <Info className="hidden size-4 text-neutral-300 lg:block" />
+                      </TooltipTrigger>
+                      <TooltipContent className="border-none bg-white/10 text-white backdrop-blur-xl">
+                        <p className="max-w-sm">{item.info}</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                )}
+              </div>
               <p className="text-white lg:text-sm xl:text-base">
                 {item.placeholder}
               </p>

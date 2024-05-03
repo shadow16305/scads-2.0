@@ -33,7 +33,17 @@ const GeneralStats = () => {
                         <Info className="hidden size-4 text-neutral-300 lg:block" />
                       </TooltipTrigger>
                       <TooltipContent className="border-none bg-white/10 text-white backdrop-blur-xl">
-                        <p className="max-w-sm">{item.info}</p>
+                        <p className="max-w-sm">
+                          {item.info}{" "}
+                          {item.id === "s1" && (
+                            <a
+                              href="/tokenomics/#minting-speed"
+                              aria-label="minting speed"
+                            >
+                              predetermined criteria
+                            </a>
+                          )}
+                        </p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>

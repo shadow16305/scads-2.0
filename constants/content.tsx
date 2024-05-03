@@ -14,13 +14,13 @@ export const tokenomicsContent = [
     id: "proof-of-hold",
     title: "Proof of hold",
     paragraph:
-      "SCADS proudly presents a brand new feature called Proof of Hold that was developed with the main idea to make SCADS investments safer, secured, and less risky. The mechanism behind it is fairly straightforward: users buy SCADS and keep using it. TWINE, a linear token, is minted automatically. Mapping is employed to precisely locate holder addresses, which are subsequently registered systematically on the list of network participants. Accounts can easily designate their addresses to activate the POH function. This is a great opportunity for investing in much less risk than usual.",
+      "SCADS introduce the new protocol (Proof of Hold) that was developed to make investments safer, secured, and eliminate risks. The mechanism behind it is fairly straightforward: users buy SCADS and hold it in their wallet. Then the (POH) triggers the minting of TWINE based on the proof that the wallet is holding SCADS. TWINE, a linear token, is minted automatically. Mapping is employed to precisely locate holder addresses, which are subsequently registered systematically on the list of network participants. Designated addresses automatically activate the POH function. This is a great opportunity for investing in much less risk than usual.",
   },
   {
     id: "scads",
     title: "Scads",
     paragraph:
-      "SCADS is a stablecoin that references the USD to simplify transactions, though it is not directly pegged to it. The coin can only be created when it is backed by adequate collateral, achieved through trading other stablecoins for SCADS. This system operates autonomously, ensuring fairness and functioning within a permissionless, fully decentralized framework. It is designed to adapt and sustain itself automatically over time. Importantly, SCADS guarantees that it cannot be seized or frozen because each user manages their holdings in their personal wallet, reinforcing true decentralized autonomy and independence. Notably, SCADS is ownerless, which eliminates any risk that individuals could compromise user funds.",
+      "SCADS is a stablecoin that references the USD to simplify transactions, though it is not at all pegged to it. The coin can only be created when it is hedged by collateral, achieved through trading other stablecoins for SCADS. This system operates autonomously, ensuring fairness and functioning within a permissionless, fully decentralized framework. It is designed to adapt and sustain itself automatically over time. It is important to note that SCADS guarantees the impossibility of confiscation or freezing of funds held in wallets or even better in a hardware (cold) wallet. (protect your keys)",
   },
   {
     id: "twine",
@@ -34,7 +34,7 @@ export const tokenomicsContent = [
       },
       {
         list_two:
-          "Curved Linear Growth: The value of TWINE is linked to its minting volume. For each new TWINE token minted, its price rises consistently by 0.0000001. This mechanism ensures a steady upward trajectory in the token’s value, aligning with the increase in supply.",
+          "Curved Linear Growth: The value of TWINE is linked to its minting volume. For each new TWINE token minted, its price rises consistently by 0.0000001. This mechanism ensures a steady upward trajectory in the token’s value, aligning with the increase in supply",
       },
     ],
   },
@@ -74,7 +74,7 @@ This calculates the total time left for minting. It subtracts the time already e
     id: "pulse",
     title: "Pulse",
     paragraph:
-      "In the smart contract in question, daily activities are automated within the system's algorithm. These activities include purchasing SCADS, minting TWINE, and selling the earned TWINE back to SCADS. This process enables the system to generate profits, which are then distributed efficiently: 80% of these profits are continuously reinvested into the system through a sinking fund that enhances investment capacity. The remaining 20% is allocated to the LIQUIDITY wallet, which is in SCADS and helps strengthen the system’s collateral position. These daily activities of buying SCADS, minting, and selling contribute to creating a network effect that not only retains the system's activity but also makes it self-sustaining. This constant flow of transactions is innovative, positioning the algorithm at the forefront of new developments in operational efficiency.",
+      "PULSE is the beating heart of the algorithm, it is active daily, automated within the algorithm, purchasing SCADS, minting TWINE, and selling the earned TWINE back to SCADS. This process enables the system to generate profits, which are then distributed efficiently: 80% of these profits are continuously reinvested into PULSE like a sinking fund that enhances investment capacity. The remaining 20% is allocated to the LIQUIDITY wallet, which is in SCADS and helps strengthen the system’s collateral position, and later on will also perform as liquidity provider and funder for lending. These daily activities of buying SCADS, minting, and selling contribute to creating a network effect that not only retains the system's activity but also makes it self-sustaining. This constant flow of transactions is innovative, positioning the algorithm at the forefront of new developments in operational efficiency",
   },
   {
     id: "liquidity-wallet",
@@ -202,7 +202,7 @@ export const statItems = [
     id: "s1",
     name: "Adaptive minting speed",
     placeholder: "0.0000006",
-    info: "Automatically adjusts based on predetermined criteria.",
+    info: "Automatically adjusts based on",
     icon: <Gauge strokeWidth={1.5} />,
   },
   {
@@ -233,7 +233,7 @@ export const statItems = [
     id: "s6",
     name: "SCADS Held",
     placeholder: "26513.82",
-    info: "Amount of SCADS tokens that are currently being held or retained in the digital wallets of users.",
+    info: "Total SCADS held in all wallets.",
     icon: <MdOutlineDataObject />,
   },
 ];

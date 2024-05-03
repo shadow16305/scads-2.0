@@ -202,6 +202,7 @@ export const statItems = [
     id: "s1",
     name: "Adaptive minting speed",
     placeholder: "0.0000006",
+    info: "Automatically adjusts based on predetermined criteria.",
     icon: <Gauge strokeWidth={1.5} />,
   },
   {
@@ -232,6 +233,7 @@ export const statItems = [
     id: "s6",
     name: "SCADS Held",
     placeholder: "26513.82",
+    info: "Amount of SCADS tokens that are currently being held or retained in the digital wallets of users.",
     icon: <MdOutlineDataObject />,
   },
 ];
@@ -241,26 +243,31 @@ export const treasuryItems = [
     id: "ti1",
     name: "Total balance",
     amount: "$34781.63",
+    info: "Total balance of funds in treasury.",
   },
   {
     id: "ti2",
     name: "SCADS balance",
     amount: "536",
+    info: "Total SCADS held in treasury. These SCADS were minted by user’s, then sold back to the algorithm, they remain in the treasury ready to be re-minted by user’s.",
   },
   {
     id: "ti3",
     name: "TWINE balance",
     amount: "145017",
+    info: "Total TWINE that is held in treasury as investment.",
   },
   {
     id: "ti4",
     name: "USDT balance",
     amount: "$10304",
+    info: "Total USDT balance in treasury.",
   },
   {
     id: "ti5",
     name: "USDC balance",
     amount: "$0",
+    info: "Total USDC balance held in treasury.",
   },
 ];
 

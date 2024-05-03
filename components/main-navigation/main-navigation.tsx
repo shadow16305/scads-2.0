@@ -11,6 +11,7 @@ import AddressDropdown from "./address-dropdown";
 import WalletModal from "../wallet/wallet-modal";
 import NavLinks from "./navlinks";
 import SwapModal from "../swap/swap-modal";
+import LanguageDropdown from "./language-dropdown";
 
 const MainNavigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -70,6 +71,7 @@ const MainNavigation = () => {
         </div>
         <div className="hidden items-center gap-x-6 lg:flex">
           <AddressDropdown />
+          <LanguageDropdown />
           <WalletModal navigation />
         </div>
         <AnimatePresence mode="wait">

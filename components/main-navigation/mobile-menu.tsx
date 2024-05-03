@@ -5,6 +5,7 @@ import AddressDropdown from "./address-dropdown";
 import WalletModal from "../wallet/wallet-modal";
 import Socials from "../socials";
 import { motion } from "framer-motion";
+import LanguageDropdown from "./language-dropdown";
 
 interface MobileMenuProps {
   close: () => void;
@@ -20,13 +21,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ close }) => {
         className="mt-24 flex justify-center gap-x-8 text-xl font-medium"
       >
         <div className="flex flex-col gap-y-4">
-          <Link href="/">Home</Link>
-          <Link href="/faq" onClick={close}>
-            FAQ
-          </Link>
           <Link href="/tokenomics" onClick={close}>
             Tokenomics
           </Link>
+          <AddressDropdown />
+          <LanguageDropdown />
         </div>
         <div className="flex flex-col gap-y-4">
           <Link href="/use-cases" onClick={close}>
@@ -35,7 +34,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ close }) => {
           <Link href="/whitepaper" onClick={close}>
             Whitepaper
           </Link>
-          <AddressDropdown />
+          <Link href="/faq" onClick={close}>
+            FAQ
+          </Link>
         </div>
       </motion.div>
       <motion.div

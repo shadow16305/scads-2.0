@@ -27,20 +27,22 @@ const AddressDropdown = () => {
         />
         <span className="md:hidden">Addresses</span>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="mr-2 mt-2 max-w-[340px] rounded-xl border-none bg-dark-blue lg:mr-0 lg:min-w-[512px] lg:max-w-none">
+      <DropdownMenuContent className="mr-20 mt-2 max-w-fit rounded-xl border-none bg-dark-blue md:max-w-none lg:mr-0">
         <DropdownMenuGroup className="flex flex-col space-y-2 px-4 py-3">
           {addresses.map((item) => (
             <DropdownMenuItem
               key={item.address}
-              className="flex w-full items-center text-sm"
+              className="flex w-full flex-col items-start text-sm md:flex-row md:items-center"
             >
-              <p className="w-[12%] text-white">{item.address}</p>
-              <div className="flex w-[88%] items-center justify-between gap-x-2 rounded-3xl bg-indigo-600/10 px-4 py-2">
-                <p className="min-w-[362px] text-neutral-300">{item.value}</p>
+              <p className="text-white md:w-[12%]">{item.address}</p>
+              <div className="flex items-center rounded-3xl bg-indigo-600/10 px-4 py-2 md:w-[88%] md:justify-between">
+                <p className="text-xs text-neutral-300 md:min-w-[332px]">
+                  {item.value}
+                </p>
                 <button
                   type="button"
                   onClick={() => onCopy(item.value)}
-                  className="text-white transition hover:opacity-70"
+                  className="hidden text-white transition hover:opacity-70 md:block"
                 >
                   <Copy className="size-4" />
                 </button>

@@ -39,6 +39,7 @@ const GeneralStats = () => {
                             <a
                               href="/tokenomics/#minting-speed"
                               aria-label="minting speed"
+                              className="underline"
                             >
                               predetermined criteria
                             </a>

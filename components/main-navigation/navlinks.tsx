@@ -15,6 +15,11 @@ const NavLinks = () => {
     <NavigationMenu>
       <NavigationMenuList className="hidden items-center gap-x-4 rounded-3xl border border-white/10 bg-white/[.02] px-6 text-sm text-white backdrop-blur-2xl lg:flex">
         <NavigationMenuItem>
+          <Link href="/" className="transition hover:text-neutral-300">
+            Home
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <SwapModal navigation />
         </NavigationMenuItem>
         <NavigationMenuItem>

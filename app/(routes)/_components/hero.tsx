@@ -3,8 +3,11 @@
 import SwapModal from "@/components/swap/swap-modal";
 import { IoEllipse } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/contexts/localization";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative">
       <div className="relative z-10 mx-auto flex justify-center pt-40 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">

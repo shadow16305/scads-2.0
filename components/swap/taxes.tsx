@@ -5,10 +5,10 @@ const Taxes = () => {
         <span className="text-neutral-300">Gas:</span> 0.05%
       </p>
       <p>
-        <span className="text-neutral-300">Slippage:</span> 3%
+        <span className="text-neutral-300">Slippage:</span> (DEX's)
       </p>
       <p>
-        <span className="text-neutral-300">Tax:</span> 3%
+        <span className="text-neutral-300">Seignorage:</span> 3%
       </p>
     </div>
   );

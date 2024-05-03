@@ -426,7 +426,8 @@ export const cardItems = [
   },
   {
     title: "SEIGNORAGE",
-    description: "The system self cost of minting.",
+    description:
+      "Is the difference between the value of money and the cost to produce and distribute it.",
   },
   {
     title: "PULSE",

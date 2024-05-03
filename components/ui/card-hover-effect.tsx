@@ -95,14 +95,14 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <span
+    <h3
       className={cn(
         "mt-4 rounded-3xl bg-white/[0.02] py-2 text-center font-bold tracking-wide text-white",
         className,
       )}
     >
       {children}
-    </span>
+    </h3>
   );
 };
 export const CardDescription = ({

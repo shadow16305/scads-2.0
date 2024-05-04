@@ -9,17 +9,17 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { useTranslation } from "@/contexts/localization";
-import { EN, RU, languageList } from "@/lib/localization/languages";
+import { languageList } from "@/lib/localization/languages";
 
 const LanguageDropdown = () => {
-  const { setLanguage } = useTranslation();
+  const { setLanguage, t } = useTranslation();
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="transition-transform lg:hover:scale-110">
         <>
           <Globe className="hidden lg:block" />
-          <span className="lg:hidden">Languages</span>
+          <span className="lg:hidden">{t("Languages")}</span>
         </>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="mr-2 mt-2 max-w-[340px] rounded-xl border-none bg-dark-blue lg:mr-0 lg:max-w-none">

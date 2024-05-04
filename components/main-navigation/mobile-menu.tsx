@@ -6,36 +6,44 @@ import WalletModal from "../wallet/wallet-modal";
 import Socials from "../socials";
 import { motion } from "framer-motion";
 import LanguageDropdown from "./language-dropdown";
+import { useTranslation } from "@/contexts/localization";
+import { cn } from "@/lib/utils";
+import { RU } from "@/lib/localization/languages";
 
 interface MobileMenuProps {
   close: () => void;
 }
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ close }) => {
+  const { t, currentLanguage } = useTranslation();
+
   return (
     <div className="space-y-8 pb-8 text-white lg:hidden">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.4 }}
-        className="mt-24 flex justify-center gap-x-8 text-xl font-medium"
+        className={cn(
+          "mt-24 flex justify-center gap-x-8 text-xl font-medium",
+          currentLanguage === RU && "text-base",
+        )}
       >
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col items-start gap-y-4">
           <Link href="/tokenomics" onClick={close}>
-            Tokenomics
+            {t("Tokenomics")}
           </Link>
           <AddressDropdown />
           <LanguageDropdown />
         </div>
-        <div className="flex flex-col gap-y-4">
-          <Link href="/use-cases" onClick={close}>
-            Use cases
+        <div className={cn("flex flex-col gap-y-4")}>
+          <Link href="/use-cases" onClick={close} className="whitespace-nowrap">
+            {t("Use cases")}
           </Link>
           <Link href="/whitepaper" onClick={close}>
-            Whitepaper
+            {t("Whitepaper")}
           </Link>
           <Link href="/faq" onClick={close}>
-            FAQ
+            {t("FAQ")}
           </Link>
         </div>
       </motion.div>

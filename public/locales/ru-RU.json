@@ -131,5 +131,21 @@
   "How can institutions and governments fund themselves with (POH) without increasing debt or taxes?": "Как институты и правительства могут привлекать средства через ДОВ, не увеличивая долг или налоговые обязательства?",
   "The formula is simple: POH allows idle capital to generate profit securely by triggering the minting of a secondary token. This boosts reserves, reducing the need for tax hikes to fund them. Institutions can profit more without hefty taxes, and retail users can grow their wealth risk-free. While this doesn't eliminate taxation entirely, it can reduce it by at least 50%, fostering a healthier economy, political stability, and societal well-being.": "Формула проста: благодаря POH простаивающий капитал безопасно генерирует прибыль, активируя чеканку вторичного токена. Это увеличивает резервы, сокращая необходимость в налоговых повышениях для их финансирования. Институты могут получать больше прибыли без значительных налоговых обязательств, а розничные пользователи могут безрисково увеличивать свое состояние. Хотя это не устраняет налогообложение полностью, оно может значительно уменьшить его, способствуя здоровой экономике, политической стабильности и общественному благополучию.",
   "Is TWINE a reward token?": "TWINE - это токен вознаграждения?",
-  "TWINE is an added value token, minted only when user’s exercise the holding of scads. since it minted like scads it have a logarithmic growth based on the number of TWINE minted.": "TWINE - это токен добавленной стоимости, который чеканится только при удержании SCADS. Его рост имеет логарифмическую зависимость от количества отчеканенных TWINE."
+  "TWINE is an added value token, minted only when user’s exercise the holding of scads. since it minted like scads it have a logarithmic growth based on the number of TWINE minted.": "TWINE - это токен добавленной стоимости, который чеканится только при удержании SCADS. Его рост имеет логарифмическую зависимость от количества отчеканенных TWINE.",
+  "Tokenomics": "Токеномика",
+  "Addresses": "Адреса",
+  "Languages": "Языки",
+  "Use cases": "Случаи использования",
+  "Whitepaper": "Белая Бумага",
+  "FAQ": "ЧЗВ",
+  "Wallet": "Кошелёк",
+  "Connect wallet": "Подключить кошелёк",
+  "Transactions": "Транзакции",
+  "Your address": "Ваш адрес",
+  "BNB Balance": "Баланс BNB",
+  "SCADS Balance": "Баланс SCADS",
+  "View on BscScan": "Смотреть на BscScan",
+  "Recent transactions": "Недавние транзакции",
+  "No recent transactions...": "Нет недавних транзакций...",
+  "Disconnect wallet": "Отключить кошелёк"
 }

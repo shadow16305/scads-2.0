@@ -85,24 +85,20 @@ This calculates the total time left for minting. It subtracts the time already e
   {
     id: "treasury",
     title: "Treasury",
-    paragraph: `Fundamental Elements: Reserve and Collateral in SCADS
-SCADS prioritizes the principles of reserve and collateral, treating them as fundamental to its operational integrity. These elements are securely maintained in both the treasury and users' wallets, serving as the foundation of SCADS's financial stability.`,
+    paragraph:
+      "Fundamental Elements: SCADS prioritizes the principles of reserve and collateral, treating them as fundamental to its operational integrity. Enforcing Transparency with Contracts: SCADS enhances transparency with specific contracts like the Proof of Reserve and Proof of Collateral, providing clear, verifiable mechanisms for for all to see.",
     list: [
       {
-        list_one: `Enforcing Transparency with Contracts:
-While reserves and collateral are securely held, SCADS enhances its transparency with specific contracts. The Proof of Reserve and Proof of Collateral contracts provide clear, verifiable mechanisms that allow the community to confirm the authenticity and adequacy of the reserves and collateral.`,
+        list_one:
+          "Mandatory Collateral for Minting SCADS: SCADS adopts strict minting rules, requiring sufficient collateral for every token minted to mitigate risks and ensure each SCADS token is backed by tangible assets, preventing the issuance of unsupported tokens.",
       },
       {
-        list_two: `Mandatory Collateral for Minting SCADS:
-SCADS adopts a conservative approach to minting, requiring sufficient collateral for every token minted. This policy mitigates risks and ensures that each SCADS token is backed by tangible assets, preventing the issuance of unsupported tokens.`,
+        list_two:
+          "Interconnected Collateral System: The SCADS ecosystem creates a seamless link between the minting of SCADS, the collateral backing it, and the subsequent minting of TWINE, offering a stronger and more reliable financial structure compared to other stablecoins like USDT or USDC.",
       },
       {
-        list_three: `Interconnected Collateral System:
-The SCADS ecosystem creates a seamless link between the minting of SCADS, the collateral backing it, and the subsequent minting of TWINE. This interconnected system offers a stronger and more reliable financial structure compared to other stablecoins like USDT or USDC.`,
-      },
-      {
-        list_four: `Assurance through Collateralization:
-By implementing the Proof of Reserve and Proof of Collateral contracts, SCADS commits to a transparent and robust financial model. This ensures that every SCADS token is minted with proper collateral, and the minting of TWINE is directly linked to the collateralized SCADS, establishing a truly secure system that distinguishes SCADS from other stablecoins in the digital finance arena.`,
+        list_three:
+          "Assurance through Collateralization: By implementing the Proof of Reserve and Proof of Collateral contracts, SCADS commits to a transparent and robust financial model, ensuring every SCADS token is minted with proper collateral, and the minting of TWINE is directly linked to the collateralized SCADS, establishing a truly secure system that distinguishes SCADS from other stablecoins in the digital finance arena.",
       },
     ],
   },

@@ -1,3 +1,5 @@
+"use client";
+
 import { useWalletModal } from "@/hooks/use-wallet-modal";
 import {
   Dialog,
@@ -10,9 +12,12 @@ import WalletDetails from "./wallet-details";
 import WalletList from "./wallet-list";
 import { Wallet } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/contexts/localization";
 
 const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
   const walletModal = useWalletModal();
+
+  const { t } = useTranslation();
 
   const onChange = (open: boolean) => {
     if (!open) {
@@ -30,7 +35,7 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
           <>
             <Wallet className="hidden size-7 transition-transform hover:scale-110 md:block lg:size-5" />
             <span className="inline-flex items-center justify-center whitespace-nowrap rounded-xl bg-white/20 px-4 py-2 text-xl text-white transition-colors duration-300 hover:bg-white/40 md:hidden">
-              Wallet
+              {t("Wallet")}
             </span>
           </>
         ) : (
@@ -42,7 +47,7 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
                 : "bg-white/10 text-xl font-medium hover:bg-white/20 md:text-base",
             )}
           >
-            Connect wallet
+            {t("Connect wallet")}
           </span>
         )}
       </DialogTrigger>

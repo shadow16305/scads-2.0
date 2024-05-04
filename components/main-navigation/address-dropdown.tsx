@@ -1,3 +1,5 @@
+"use client";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,12 +11,15 @@ import { addresses } from "@/constants/content";
 import Image from "next/image";
 import toast from "react-hot-toast";
 import { Copy } from "lucide-react";
+import { useTranslation } from "@/contexts/localization";
 
 const AddressDropdown = () => {
   const onCopy = (address: string) => {
     navigator.clipboard.writeText(address);
     toast.success("Address copied to clipboard.");
   };
+
+  const { t } = useTranslation();
 
   return (
     <DropdownMenu>
@@ -25,7 +30,7 @@ const AddressDropdown = () => {
           fill
           className="hidden md:block"
         />
-        <span className="md:hidden">Addresses</span>
+        <span className="md:hidden">{t("Addresses")}</span>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="mr-20 mt-2 max-w-fit rounded-xl border-none bg-dark-blue md:max-w-none lg:mr-0">
         <DropdownMenuGroup className="flex flex-col space-y-2 px-4 py-3">

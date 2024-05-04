@@ -29,7 +29,7 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
 
   return (
     <section
-      className="flex scroll-mt-64 flex-col gap-y-4 px-2 text-sm text-neutral-300 md:px-0 md:text-base"
+      className="flex scroll-mt-64 flex-col items-center gap-y-4 px-2 text-sm text-neutral-300 md:px-0 md:text-base lg:items-start"
       id={id}
     >
       <h2 className="w-fit text-2xl text-white">{title}</h2>

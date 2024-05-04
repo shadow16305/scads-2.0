@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const SideNavigation = () => {
   return (
-    <aside className="sticky left-0 top-32 flex h-fit flex-col gap-y-6 rounded-xl border border-white/10 bg-transparent bg-gradient-to-br from-transparent to-white/10 px-6 py-8 xl:top-24 xl:px-8 2xl:top-32">
+    <aside className="sticky left-0 top-32 hidden h-fit flex-col gap-y-6 rounded-xl border border-white/10 bg-transparent bg-gradient-to-br from-transparent to-white/10 px-6 py-8 lg:flex xl:top-24 xl:px-8 2xl:top-32">
       <p className="whitespace-nowrap text-white xl:text-lg">
         Table of contents
       </p>

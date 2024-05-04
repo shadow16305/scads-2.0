@@ -40,7 +40,7 @@ const GeneralStats = () => {
             </div>
             <div className="flex flex-col items-end gap-y-1 md:items-start">
               <div className="flex items-center gap-x-1">
-                <p className="bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-sm font-normal text-black text-transparent lg:text-xs xl:text-sm">
+                <p className="bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-end text-sm font-normal text-black text-transparent lg:text-start lg:text-xs xl:text-sm">
                   {t(item.name)}
                 </p>
                 {item.info && currentLanguage === EN && (

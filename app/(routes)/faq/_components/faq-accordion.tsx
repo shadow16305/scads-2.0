@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
@@ -5,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { accordionItems } from "@/constants/content";
+import { useTranslation } from "@/contexts/localization";
 
 interface AccordionItem {
   trigger: string;
@@ -27,24 +30,26 @@ const FaqAccordion = ({ searchValue }: { searchValue: string }) => {
     item.trigger.toLowerCase().includes(searchValue.toLowerCase()),
   );
 
+  const { t } = useTranslation();
+
   return (
     <Accordion type="single" collapsible className="w-full">
       {filteredItems.map((item) => (
         <AccordionItem value={item.value} key={item.value}>
           <AccordionTrigger className="text-start text-sm text-white md:text-base">
-            {item.trigger}
+            {t(item.trigger)}
           </AccordionTrigger>
           <AccordionContent className="text-neutral-300">
-            <p>{item.content}</p>
+            <p>{t(item.content)}</p>
             {item.list && (
               <ul>
                 {item.list.map((item, index) => (
                   <li key={index}>
-                    {item.list_one && item.list_one}
-                    {item.list_two && item.list_two}
-                    {item.list_three && item.list_three}
-                    {item.list_four && item.list_four}
-                    {item.list_five && item.list_five}
+                    {item.list_one && t(item.list_one)}
+                    {item.list_two && t(item.list_two)}
+                    {item.list_three && t(item.list_three)}
+                    {item.list_four && t(item.list_four)}
+                    {item.list_five && t(item.list_five)}
                   </li>
                 ))}
               </ul>

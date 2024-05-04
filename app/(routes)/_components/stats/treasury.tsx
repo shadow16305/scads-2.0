@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Tooltip,
   TooltipContent,
@@ -5,13 +7,16 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { treasuryItems } from "@/constants/content";
+import { useTranslation } from "@/contexts/localization";
 import { Info } from "lucide-react";
 import Image from "next/image";
 
 const Treasury = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="lg:rounded-t-0 relative flex flex-col items-center gap-y-8 rounded-b-3xl px-4 pb-10 md:px-8">
-      <span className="absolute -top-16 left-1/2 -translate-x-1/2 rounded-3xl border border-white/10 bg-gradient-to-b from-transparent via-dark-blue to-transparent px-6 py-1 text-sm text-neutral-300 backdrop-blur-3xl lg:-top-6">
+      <span className="absolute -top-16 left-1/2 -translate-x-1/2 rounded-3xl border border-white/10 bg-gradient-to-b from-transparent via-dark-blue to-transparent px-6 py-1 text-sm text-neutral-300 backdrop-blur-3xl lg:-top-9">
         Treasury
       </span>
       <div className="flex w-full flex-col items-center gap-y-10 rounded-b-3xl lg:mt-8 lg:flex-row lg:justify-between">
@@ -23,7 +28,7 @@ const Treasury = () => {
             <div className="z-10 flex min-w-full items-center justify-between gap-y-2 md:min-w-0 md:flex-col">
               <div className="flex items-center gap-x-1">
                 <p className="bg-gradient-to-b from-white to-neutral-500 bg-clip-text text-sm font-semibold text-transparent lg:text-xs xl:text-sm">
-                  {item.name}
+                  {t(item.name)}
                 </p>
                 <TooltipProvider delayDuration={0}>
                   <Tooltip>
@@ -31,7 +36,7 @@ const Treasury = () => {
                       <Info className="hidden size-4 text-neutral-300 lg:block" />
                     </TooltipTrigger>
                     <TooltipContent className="border-none bg-white/10 text-white backdrop-blur-xl">
-                      <p className="max-w-sm">{item.info}</p>
+                      <p className="max-w-sm">{t(item.info)}</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>

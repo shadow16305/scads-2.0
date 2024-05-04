@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from "@/contexts/localization";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -16,6 +17,8 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const { t } = useTranslation();
 
   return (
     <div
@@ -57,8 +60,8 @@ export const HoverEffect = ({
             className="h-full w-full"
           >
             <Card>
-              <CardTitle>{item.title}</CardTitle>
-              <CardDescription>{item.description}</CardDescription>
+              <CardTitle>{t(item.title)}</CardTitle>
+              <CardDescription>{t(item.description)}</CardDescription>
             </Card>
           </motion.div>
         </Link>

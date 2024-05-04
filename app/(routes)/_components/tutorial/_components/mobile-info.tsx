@@ -2,6 +2,7 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { tutorialMobile } from "@/constants/content";
+import { useTranslation } from "@/contexts/localization";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
@@ -37,6 +38,8 @@ const tabsItems = [
 const MobileInfo = () => {
   const [currentTab, setCurrentTab] = useState<TabValue>("metamask");
 
+  const { t } = useTranslation();
+
   return (
     <Tabs
       defaultValue="metamask"
@@ -62,7 +65,7 @@ const MobileInfo = () => {
                     transition: { width: { delay: 0.1 } },
                   }}
                 >
-                  <span>{tab.label}</span>
+                  <span>{t(tab.label)}</span>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -84,10 +87,12 @@ const MobileInfo = () => {
               className="w-11/12"
             >
               <div className="space-y-2">
-                <p className="text-xl font-medium text-white">{step.label}</p>
+                <p className="text-xl font-medium text-white">
+                  {t(step.label)}
+                </p>
                 <ol className="space-y-1 text-neutral-300">
                   {Object.values(step.list).map(
-                    (value, i) => value && <li key={i}>{value}</li>,
+                    (value, i) => value && <li key={i}>{t(value)}</li>,
                   )}
                 </ol>
               </div>

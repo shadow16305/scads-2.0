@@ -475,8 +475,8 @@ export const tutorialDesktop = {
       list: {
         li1: "1. Open your preferred web browser (e.g., Chrome, Firefox).",
         li2: "2. Go to the extension store (Chrome Web Store for Chrome, Add-ons for Firefox).",
-        li3: `3. Search for "MetaMask" and click on the official MetaMask extension.`,
-        li4: `4. Click on "Add to Chrome" (or equivalent for your browser) and follow the prompts to install the extension.`,
+        li3: '3. Search for "MetaMask" and click on the official MetaMask extension.',
+        li4: '4. Click on "Add to Chrome" (or equivalent for your browser) and follow the prompts to install the extension.',
         li5: "5. Once installed, you'll see the MetaMask fox icon in your browser's toolbar.",
         li6: null,
       },
@@ -485,9 +485,9 @@ export const tutorialDesktop = {
       label: "Step 2: Set Up MetaMask",
       list: {
         li1: "1. Click on the MetaMask fox icon in your browser's toolbar.",
-        li2: `2. Click on "Get Started" to begin the setup process.`,
-        li3: `3. Follow the prompts to create a new wallet or import an existing one. Be sure to write down your seed phrase and store it in a safe place.`,
-        li4: `4. Create a password for your MetaMask wallet and confirm it.`,
+        li2: '2. Click on "Get Started" to begin the setup process.',
+        li3: "3. Follow the prompts to create a new wallet or import an existing one. Be sure to write down your seed phrase and store it in a safe place.",
+        li4: "4. Create a password for your MetaMask wallet and confirm it.",
         li5: "5. Once your wallet is set up, you'll be prompted to agree to the terms of use and privacy policy.",
         li6: null,
       },
@@ -495,10 +495,10 @@ export const tutorialDesktop = {
     {
       label: "Step 3: Connect MetaMask to the Scads Website",
       list: {
-        li1: "1. Navigate to the website you want to connect your MetaMask wallet to.",
-        li2: `2. Look for the "Connect Wallet" button in the header (navigation menu) of the website.`,
-        li3: `3. Click on the "Connect Wallet" button. This will prompt MetaMask to open and ask for your permission to connect.`,
-        li4: `4. In the MetaMask popup, review the permissions requested by the website and click "Connect" if you agree.`,
+        li1: "1. Navigate to the scads.io website.",
+        li2: '2. Look for the "Connect Wallet" button in the header (navigation menu) of the website.',
+        li3: '3. Click on the "Connect Wallet" button. This will prompt MetaMask to open and ask for your permission to connect.',
+        li4: '4. In the MetaMask popup, review the permissions requested by the website and click "Connect" if you agree.',
         li5: null,
         li6: null,
       },
@@ -519,11 +519,11 @@ export const tutorialDesktop = {
       label: "Step 5: Add Token Addresses to MetaMask",
       list: {
         li1: "1. Once your MetaMask wallet is connected to the website, click on the flame icon in the header (navigation menu) where you can copy token addresses.",
-        li2: `2. Look for an option to "Add Token" or "Custom Token" within MetaMask.`,
-        li3: `3. Click on the "Add Token" or "Custom Token" button.`,
-        li4: `4. Enter the token contract address for the token you want to add.`,
+        li2: '2. Look for an option to "Add Token" or "Custom Token" within MetaMask.',
+        li3: '3. Click on the "Add Token" or "Custom Token" button.',
+        li4: "4. Enter the token contract address for the token you want to add.",
         li5: "5. MetaMask should automatically populate the token symbol and decimal places. Verify that this information is correct.",
-        li6: `6. Click "Next" or "Add Token" to finalize adding the token to your MetaMask wallet.`,
+        li6: '6. Click "Next" or "Add Token" to finalize adding the token to your MetaMask wallet.',
       },
     },
     {
@@ -531,7 +531,7 @@ export const tutorialDesktop = {
       list: {
         li1: "1. After adding the token address, you should see the token listed in your MetaMask wallet along with your other assets.",
         li2: "2. Double-check that the token symbol and balance are displayed correctly.",
-        li3: `3. You may need to manually switch to view the added token if it's not already selected.`,
+        li3: "3. You may need to manually switch to view the added token if it's not already selected.",
         li4: null,
         li5: null,
         li6: null,
@@ -540,9 +540,9 @@ export const tutorialDesktop = {
     {
       label: "Step 7: Minting Scads",
       list: {
-        li1: `1. Open the invest modal by clicking on the "Invest" button either in the header (navigation menu) or hero section (at the top of the main page).`,
+        li1: '1. Open the invest modal by clicking on the "Invest" button either in the header (navigation menu) or hero section (at the top of the main page).',
         li2: "2. Choose the stable coin available in your wallet (USDT or USDC), enter the amount, and enable it for the first time. Once enabled, you can start minting SCADS.",
-        li3: `3. Once you've minted SCADS, you'll see the total amount in your wallet.`,
+        li3: "3. Once you've minted SCADS, you'll see the total amount in your wallet.",
         li4: "Depending on the holding period, your wallet will automatically mint TWINE. The balance is displayed on the site when you log in and in your wallet on your tablet or phone.",
         li5: "Claim your minted TWINE. You can hold or buy more SCADS to mint more.",
         li6: "Optionally, you can enable auto-compound, where the system claims your TWINE daily and converts it to SCADS for you.",
@@ -636,7 +636,7 @@ export const tutorialMobile = {
       label: "Step 1: Download MetaMask Mobile App",
       list: {
         li1: "1. Open your app store (Google Play Store for Android, App Store for iOS).",
-        li2: "2. Search for 'MetaMask' and download the official MetaMask Mobile app.",
+        li2: '2. Search for "MetaMask" and download the official MetaMask Mobile app.',
         li3: "3. Once downloaded, open the MetaMask app.",
         li4: null,
         li5: null,
@@ -646,8 +646,8 @@ export const tutorialMobile = {
     {
       label: "Step 2: Create or Import Wallet",
       list: {
-        li1: "1. If you're new to MetaMask, select 'Create a Wallet' and follow the prompts to set up a new wallet. Be sure to store your seed phrase in a safe place.",
-        li2: "2. If you already have a MetaMask wallet, select 'Import Wallet' and enter your seed phrase to import your existing wallet.",
+        li1: '1. If you\'re new to MetaMask, select "Create a Wallet" and follow the prompts to set up a new wallet. Be sure to store your seed phrase in a safe place.',
+        li2: '2. If you already have a MetaMask wallet, select "Import Wallet" and enter your seed phrase to import your existing wallet.',
         li3: null,
         li4: null,
         li5: null,
@@ -657,7 +657,7 @@ export const tutorialMobile = {
     {
       label: "Step 3: Access Built-in Browser",
       list: {
-        li1: "1. In the MetaMask app, navigate to the 'Browser' tab located at the bottom of the screen.",
+        li1: '1. In the MetaMask app, navigate to the "Browser" tab located at the bottom of the screen.',
         li2: "2. This built-in browser allows you to visit decentralized websites and interact with decentralized applications (dApps) directly from MetaMask.",
         li3: null,
         li4: null,
@@ -691,8 +691,8 @@ export const tutorialMobile = {
     {
       label: "Step 6: Connect MetaMask Wallet",
       list: {
-        li1: `1. When you land on the website, open the navigation menu (tap on the three lines at the top right).`,
-        li2: "2. Click on the 'Connect Wallet' button. A popup with different wallets will appear, tap on MetaMask.",
+        li1: "1. When you land on the website, open the navigation menu (tap on the two lines at the top right).",
+        li2: '2. Click on the "Connect Wallet" button. A popup with different wallets will appear, tap on MetaMask.',
         li3: "3. MetaMask will prompt you to authorize the connection. Confirm the connection within the MetaMask app.",
         li4: null,
         li5: null,
@@ -713,7 +713,7 @@ export const tutorialMobile = {
     {
       label: "Step 8: Minting Scads",
       list: {
-        li1: `1. Open the invest modal by clicking on the "Invest" button either in the navigation menu (tap on the three lines at the top right) or hero section (at the top of the main page).`,
+        li1: '1. Open the invest modal by clicking on the "Invest" button either in the navigation menu (tap on the three lines at the top right) or hero section (at the top of the main page).',
         li2: "2. Choose the stable coin available in your wallet (USDT or USDC), enter the amount, and enable it for the first time. Once enabled, you can start minting SCADS.",
         li3: `3. Once you've minted SCADS, you'll see the total amount in your wallet.`,
         li4: "Depending on the holding period, your wallet will automatically mint TWINE. The balance is displayed on the site when you log in and in your wallet on your tablet or phone.",
@@ -896,7 +896,8 @@ export const tutorialMobile = {
 export const accordionItems = [
   {
     trigger: "Is SCADS a security, commodity or money?",
-    content: `SCADS is a form of currency backed by collateralized value, making it suitable for settlements and various types of payments.`,
+    content:
+      "SCADS is a form of currency backed by collateralized value, making it suitable for settlements and various types of payments.",
     value: "item-1",
   },
   {
@@ -921,8 +922,6 @@ export const accordionItems = [
           "Financial Credibility: POH enhances SCADS' financial credibility, making it a secure investment option even for funding reserves.",
       },
     ],
-    paragpraph:
-      "Overall, SCADS provides a robust framework that prioritizes the protection of capital investments.",
     value: "item-2",
   },
   {
@@ -955,23 +954,27 @@ export const accordionItems = [
   },
   {
     trigger: "Why SCADS cannot be weaponized or politicized?",
-    content: `SCADS is neutral, fully decentralized, and independent. It cannot interfere with users' wallets or their financial activities. SCADS confirms that all users have sovereignty over their wallets. Since SCADS is not tied to any political currency, no government can impose its rules on it. SCADS simply belongs to its users. POH completely decentralizes the algorithm.`,
+    content:
+      "SCADS is neutral, fully decentralized, and independent. It cannot interfere with users' wallets or their financial activities. SCADS confirms that all users have sovereignty over their wallets. Since SCADS is not tied to any political currency, no government can impose its rules on it. SCADS simply belongs to its users. POH completely decentralizes the algorithm.",
     value: "item-4",
   },
   {
     trigger: "How does (POH) solve inflation and prevent bankruptcy?",
-    content: `POH (Proof of Hold) verifies the reserve capital on the chain, triggering the minting of TWINE. This process exponentially grows the capital since TWINE is scarce and has a guaranteed use case, ensuring demand pressure. Thus, capital and value are protected against inflation and failures. Moreover, POH provides the highest financial credibility, even enabling funding for the reserve, ensuring capital safety and guaranteed growth.`,
+    content:
+      "POH (Proof of Hold) verifies the reserve capital on the chain, triggering the minting of TWINE. This process exponentially grows the capital since TWINE is scarce and has a guaranteed use case, ensuring demand pressure. Thus, capital and value are protected against inflation and failures. Moreover, POH provides the highest financial credibility, even enabling funding for the reserve, ensuring capital safety and guaranteed growth.",
     value: "item-5",
   },
   {
     trigger:
       "How can institutions and governments fund themselves with (POH) without increasing debt or taxes?",
-    content: `The formula is simple: POH allows idle capital to generate profit securely by triggering the minting of a secondary token. This boosts reserves, reducing the need for tax hikes to fund them. Institutions can profit more without hefty taxes, and retail users can grow their wealth risk-free. While this doesn't eliminate taxation entirely, it can reduce it by at least 50%, fostering a healthier economy, political stability, and societal well-being.`,
+    content:
+      "The formula is simple: POH allows idle capital to generate profit securely by triggering the minting of a secondary token. This boosts reserves, reducing the need for tax hikes to fund them. Institutions can profit more without hefty taxes, and retail users can grow their wealth risk-free. While this doesn't eliminate taxation entirely, it can reduce it by at least 50%, fostering a healthier economy, political stability, and societal well-being.",
     value: "item-6",
   },
   {
     trigger: "Is TWINE a reward token?",
-    content: `TWINE is an added value token, minted only when user’s exercise the holding of scads. since it minted like scads it have a logarithmic growth based on the number of TWINE minted.`,
+    content:
+      "TWINE is an added value token, minted only when user’s exercise the holding of scads. since it minted like scads it have a logarithmic growth based on the number of TWINE minted.",
     value: "item-7",
   },
 ];

@@ -76,7 +76,7 @@ const TextBlock = () => {
         onClick={() => setTextIsVisible(!textIsVisible)}
         className="group z-10 mt-4 flex items-center gap-x-2 font-medium text-white"
       >
-        {textIsVisible ? "Show less" : "Show more"}
+        {textIsVisible ? t("Show less") : t("Show more")}
         {textIsVisible ? (
           <ChevronRight className="size-4 transition-transform group-hover:-rotate-90" />
         ) : (

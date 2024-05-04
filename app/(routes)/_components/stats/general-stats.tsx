@@ -17,7 +17,7 @@ const GeneralStats = () => {
 
   return (
     <div className="flex items-end justify-center">
-      <div className="z-20 flex min-w-full flex-col flex-wrap items-center gap-y-4 px-4 pt-8 md:w-full md:min-w-0 md:flex-row md:items-start md:justify-between md:px-8">
+      <div className="z-20 flex min-w-full flex-col items-center gap-y-4 px-4 pt-8 md:w-full md:min-w-0 md:flex-row md:flex-wrap md:items-start md:justify-between md:px-8 lg:flex-nowrap">
         {statItems.map((item) => (
           <div
             key={item.id}

@@ -13,11 +13,12 @@ import WalletList from "./wallet-list";
 import { Wallet } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "@/contexts/localization";
+import { RU } from "@/lib/localization/languages";
 
 const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
   const walletModal = useWalletModal();
 
-  const { t } = useTranslation();
+  const { t, currentLanguage } = useTranslation();
 
   const onChange = (open: boolean) => {
     if (!open) {
@@ -29,11 +30,14 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
     <Dialog open={walletModal.isOpen} onOpenChange={onChange}>
       <DialogTrigger
         onClick={() => walletModal.onOpen()}
-        className={cn(navigation && "mx-auto max-w-40")}
+        className={cn(
+          navigation && "mx-auto max-w-40",
+          currentLanguage === RU && navigation && "max-w-44",
+        )}
       >
         {walletModal.isConnected ? (
           <>
-            <Wallet className="hidden size-7 transition-transform hover:scale-110 md:block md:size-5" />
+            <Wallet className="hidden size-7 transition-transform hover:scale-110 md:block md:size-5 lg:size-6" />
             <span className="inline-flex items-center justify-center whitespace-nowrap rounded-xl bg-white/20 px-4 py-2 text-xl text-white transition-colors duration-300 hover:bg-white/40 md:hidden">
               {t("Wallet")}
             </span>

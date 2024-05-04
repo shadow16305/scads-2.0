@@ -1,8 +1,11 @@
 "use client";
 
+import { useTranslation } from "@/contexts/localization";
 import { motion } from "framer-motion";
 
 const SectionHeader = ({ title, y }: { title: string; y: number }) => {
+  const { t } = useTranslation();
+
   return (
     <motion.h2
       initial={{ opacity: 0.5, y: y }}
@@ -12,9 +15,9 @@ const SectionHeader = ({ title, y }: { title: string; y: number }) => {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="mx-auto mt-8 bg-gradient-to-br from-white to-neutral-500 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent lg:max-w-[700px] 2xl:text-7xl"
+      className="mx-auto mt-8 bg-gradient-to-br from-white to-neutral-500 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent 2xl:text-7xl"
     >
-      {title}
+      {t(title)}
     </motion.h2>
   );
 };

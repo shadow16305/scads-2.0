@@ -13,6 +13,7 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
+    path: string;
   }[];
   className?: string;
 }) => {
@@ -30,7 +31,7 @@ export const HoverEffect = ({
       {items.map((item, idx) => (
         <Link
           key={item?.title}
-          href="/tokenomics"
+          href={item.path}
           className="group relative block h-full w-full p-2"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}

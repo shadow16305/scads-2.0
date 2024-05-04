@@ -14,7 +14,7 @@ const TextBlock = () => {
   return (
     <section className="relative mt-32 flex flex-col items-center gap-y-4 px-4 text-white md:px-0">
       <SectionHeader title="Introducing Scads" y={-50} />
-      <div className="max-w-[340px] text-neutral-300 lg:max-w-[1024px]">
+      <div className="max-w-[340px] text-neutral-300 md:max-w-[720px] lg:max-w-[1024px]">
         <p className="z-10">
           {t(
             "The evolution of Decentralized Finance (DeFi) from a nascent niche market to a formidable player in the financial industry has been remarkable over the past few years. While it was valued at around $170 billion USD as of May 2024, the estimate can only continue thanks to the increasing adoption and interest from investors. Still, all this growth was not without issues as the followed major challenges:",

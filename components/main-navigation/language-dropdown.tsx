@@ -18,8 +18,8 @@ const LanguageDropdown = () => {
     <DropdownMenu>
       <DropdownMenuTrigger className="transition-transform lg:hover:scale-110">
         <>
-          <Globe className="hidden lg:block" />
-          <span className="lg:hidden">{t("Languages")}</span>
+          <Globe className="hidden md:block md:size-5 lg:size-6" />
+          <span className="md:hidden">{t("Languages")}</span>
         </>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="mr-2 mt-2 max-w-[340px] rounded-xl border-none bg-dark-blue lg:mr-0 lg:max-w-none">

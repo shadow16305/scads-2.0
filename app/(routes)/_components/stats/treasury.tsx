@@ -19,7 +19,7 @@ const Treasury = () => {
       <span className="absolute -top-16 left-1/2 -translate-x-1/2 rounded-3xl border border-white/10 bg-gradient-to-b from-transparent via-dark-blue to-transparent px-6 py-1 text-sm text-neutral-300 backdrop-blur-3xl lg:-top-9">
         Treasury
       </span>
-      <div className="flex w-full flex-col items-center gap-y-10 rounded-b-3xl lg:mt-8 lg:flex-row lg:justify-between">
+      <div className="flex w-full flex-col items-center gap-y-10 rounded-b-3xl md:flex-row md:justify-between lg:mt-8">
         {treasuryItems.map((item) => (
           <div
             className="relative flex min-w-full items-center gap-x-10 md:min-w-0 xl:gap-x-20"

@@ -36,7 +36,7 @@ const FaqPage = () => {
       >
         <SearchBar searchValue={searchValue} setSearchValue={setSearchValue} />
       </motion.div>
-      <section className="mx-auto mt-12 flex max-w-[340px] flex-col items-center lg:max-w-[1024px]">
+      <section className="mx-auto mt-12 flex max-w-[340px] flex-col items-center md:max-w-[720px] lg:max-w-[1024px]">
         <FaqAccordion searchValue={searchValue} />
       </section>
       <IoEllipse

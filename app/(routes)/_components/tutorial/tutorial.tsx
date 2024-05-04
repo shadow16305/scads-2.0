@@ -13,12 +13,12 @@ const Tutorial = () => {
         colorLine="purple-500"
         colorLeft="from-purple-500"
         colorRight="to-purple-500"
-        className="absolute -top-20 -z-10 2xl:-top-24"
+        className="absolute -top-20 -z-10 md:-top-48 lg:-top-20 2xl:-top-24"
       />
       <SectionHeader title="Getting started" y={50} />
       <Tabs
         defaultValue="desktop"
-        className="mx-auto mt-4 flex w-[340px] flex-col gap-x-12 rounded-2xl py-10 backdrop-blur-xl md:w-fit md:flex-row md:px-20"
+        className="mx-auto mt-4 flex w-[340px] flex-col gap-x-12 rounded-2xl py-10 backdrop-blur-xl md:w-[720px] md:flex-row md:px-10 lg:w-fit lg:px-20"
       >
         <div
           style={{

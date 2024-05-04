@@ -9,7 +9,7 @@ const TokenomicsPage = () => {
     <>
       <CustomHero title="Tokenomics" />
       <div className="relative z-10">
-        <div className="relative mx-auto flex gap-x-20 scroll-smooth pt-12 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
+        <div className="relative mx-auto flex scroll-smooth pt-12 md:gap-x-10 lg:max-w-[1024px] lg:gap-x-20 xl:max-w-[1240px] 2xl:max-w-[1340px]">
           <SideNavigation />
           <article className="space-y-12">
             {tokenomicsContent.map((item) => (

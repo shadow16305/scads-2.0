@@ -23,7 +23,7 @@ const AddressDropdown = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="relative invert-0 transition-all focus:outline-none focus:ring-0 md:size-10 lg:size-8 lg:hover:scale-110">
+      <DropdownMenuTrigger className="relative invert-0 transition-all focus:outline-none focus:ring-0 md:size-7 lg:size-8 lg:hover:scale-110">
         <Image
           src="/images/address.svg"
           alt="addresses"
@@ -32,7 +32,7 @@ const AddressDropdown = () => {
         />
         <span className="md:hidden">{t("Addresses")}</span>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="mr-20 mt-2 max-w-fit rounded-xl border-none bg-dark-blue md:max-w-none lg:mr-0">
+      <DropdownMenuContent className="mr-20 mt-2 max-w-fit rounded-xl border-none bg-dark-blue md:mr-0 md:max-w-none">
         <DropdownMenuGroup className="flex flex-col space-y-2 px-4 py-3">
           {addresses.map((item) => (
             <DropdownMenuItem

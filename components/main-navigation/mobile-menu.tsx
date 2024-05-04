@@ -18,7 +18,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ close }) => {
   const { t, currentLanguage } = useTranslation();
 
   return (
-    <div className="space-y-8 pb-8 text-white lg:hidden">
+    <div className="space-y-8 pb-8 text-white md:hidden">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

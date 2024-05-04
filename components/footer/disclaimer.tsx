@@ -10,7 +10,7 @@ const Disclaimer = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className="absolute -bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center md:bottom-0">
+    <div className="absolute -bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center lg:bottom-0">
       <Button
         onClick={() => setIsVisible(!isVisible)}
         variant="ghost"

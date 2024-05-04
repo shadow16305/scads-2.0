@@ -33,7 +33,7 @@ const WalletModal: React.FC<{ navigation?: boolean }> = ({ navigation }) => {
       >
         {walletModal.isConnected ? (
           <>
-            <Wallet className="hidden size-7 transition-transform hover:scale-110 md:block lg:size-5" />
+            <Wallet className="hidden size-7 transition-transform hover:scale-110 md:block md:size-5" />
             <span className="inline-flex items-center justify-center whitespace-nowrap rounded-xl bg-white/20 px-4 py-2 text-xl text-white transition-colors duration-300 hover:bg-white/40 md:hidden">
               {t("Wallet")}
             </span>

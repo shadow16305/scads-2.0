@@ -421,31 +421,37 @@ export const cardItems = [
     title: "SCADS",
     description:
       "Decentralized, stable digital currency for secure global transactions, not pegged based on (POH).",
+    path: "/tokenomics/#scads",
   },
   {
     title: "TWINE",
     description:
       "Linearly growing digital asset for minted by holding SCADS long-term, secured and trusted investment.",
+    path: "/tokenomics/#twine",
   },
   {
     title: "SEIGNORAGE",
     description:
       "Is the difference between the value of money and the cost to produce and distribute it.",
+    path: "/tokenomics/#seignorage",
   },
   {
     title: "PULSE",
     description:
       "Self-sustained investment protocol & network effect within SCADS ecosystem.",
+    path: "/tokenomics/#pulse",
   },
   {
     id: "ci5",
     title: "TREASURY",
     description: "Financial backbone of SCADS, managing assets and liquidity.",
+    path: "/tokenomics/#treasury",
   },
   {
     title: "LIQUIDITY WALLET",
     description:
       "Is a depository to supply liquidity to the market as makers and liquidity providers.",
+    path: "/tokenomics/#liquidity-wallet",
   },
 ];
 

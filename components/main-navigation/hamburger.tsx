@@ -12,7 +12,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ isOpen, setIsOpen }) => {
 
   return (
     <button
-      className="group relative z-50 flex h-12 w-12 flex-col items-center justify-center lg:hidden"
+      className="group relative z-50 flex h-12 w-12 flex-col items-center justify-center md:hidden"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className={cn(hamburgerLine, isOpen && "origin-center rotate-45")} />

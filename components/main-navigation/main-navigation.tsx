@@ -45,8 +45,8 @@ const MainNavigation = () => {
 
   return (
     <nav className={navClasses}>
-      <div className="mx-auto flex w-full justify-between py-2 md:py-4 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
-        <div className="flex min-w-full items-center justify-between gap-x-12 px-4 lg:min-w-0 lg:justify-normal lg:px-0">
+      <div className="mx-auto flex w-full justify-between py-2 md:max-w-[768px] md:py-4 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
+        <div className="flex min-w-full items-center justify-between gap-x-12 px-4 md:min-w-0 md:justify-normal lg:px-0">
           <Link
             href="/"
             className="z-50 flex items-center gap-x-2 text-base font-bold text-white md:text-xl"
@@ -61,15 +61,15 @@ const MainNavigation = () => {
             </div>{" "}
             SCADS
           </Link>
-          <div className="flex items-center gap-x-2 lg:hidden">
+          <div className="flex items-center gap-x-2 md:hidden">
             <SwapModal navigation />
             <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
           </div>
         </div>
-        <div className="absolute left-1/2 -translate-x-1/2">
+        <div className="absolute left-1/2 md:-translate-x-[60%] lg:-translate-x-1/2">
           <NavLinks />
         </div>
-        <div className="hidden items-center gap-x-6 lg:flex">
+        <div className="hidden items-center md:flex md:gap-x-3 lg:gap-x-6">
           <AddressDropdown />
           <LanguageDropdown />
           <WalletModal navigation />

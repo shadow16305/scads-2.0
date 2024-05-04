@@ -17,11 +17,11 @@ const GeneralStats = () => {
 
   return (
     <div className="flex items-end justify-center">
-      <div className="z-20 flex min-w-full flex-col items-center gap-y-4 px-4 pt-8 md:min-w-0 md:px-8 lg:w-full lg:flex-row lg:items-start lg:justify-between">
+      <div className="z-20 flex min-w-full flex-col flex-wrap items-center gap-y-4 px-4 pt-8 md:w-full md:min-w-0 md:flex-row md:items-start md:justify-between md:px-8">
         {statItems.map((item) => (
           <div
             key={item.id}
-            className="flex min-w-full items-center justify-between gap-x-10 md:justify-normal md:gap-x-3 lg:min-w-0"
+            className="flex min-w-full items-center justify-between gap-x-10 md:min-w-[200px] md:justify-normal md:gap-x-3 lg:min-w-0"
           >
             <div
               className={cn(
@@ -31,7 +31,7 @@ const GeneralStats = () => {
             >
               <div
                 className={cn(
-                  "relative flex items-center justify-center text-neutral-300 [&>*]:size-7 lg:[&>*]:size-5 xl:[&>*]:size-6",
+                  "relative flex items-center justify-center text-neutral-300 [&>*]:size-7 md:[&>*]:size-5 xl:[&>*]:size-6",
                   currentLanguage !== EN && "xl:size-5",
                 )}
               >

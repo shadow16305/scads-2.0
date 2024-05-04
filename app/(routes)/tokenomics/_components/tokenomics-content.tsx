@@ -33,11 +33,11 @@ const TokenomicsContent: React.FC<TokenomicsContentProps> = ({
       id={id}
     >
       <h2 className="w-fit text-2xl text-white">{title}</h2>
-      <p className="max-w-[340px] lg:max-w-[900px] xl:max-w-[1031px]">
+      <p className="max-w-[340px] md:max-w-[720px] lg:max-w-[900px] xl:max-w-[1031px]">
         {t(paragraph)}
       </p>
       {list && (
-        <ul className="flex max-w-[340px] list-disc flex-col gap-y-2 pl-4 lg:max-w-[900px] xl:max-w-[1031px]">
+        <ul className="flex max-w-[340px] list-disc flex-col gap-y-2 pl-4 md:max-w-[720px] lg:max-w-[900px] xl:max-w-[1031px]">
           {list.map((item, index) => (
             <Fragment key={index}>
               {item.list_one && <li>{t(item.list_one)}</li>}

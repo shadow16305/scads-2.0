@@ -11,10 +11,10 @@ const Roadmap = () => {
         colorLine="violet-500"
         colorLeft="from-violet-500"
         colorRight="to-violet-500"
-        className="absolute -top-20 -z-20 2xl:-top-24"
+        className="absolute -top-20 -z-20 md:-top-48 lg:-top-20 2xl:-top-24"
       />
       <SectionHeader title="Roadmap" y={50} />
-      <div className="relative mx-auto flex w-[340px] flex-col rounded-2xl py-10 backdrop-blur-xl lg:w-fit lg:px-20">
+      <div className="relative mx-auto flex w-[340px] flex-col rounded-2xl py-10 backdrop-blur-xl md:w-[720px] md:px-20 lg:w-fit">
         <div
           style={{
             backgroundImage: `url("https://thumbs.dreamstime.com/b/white-noise-background-effect-sound-effect-grain-distress-overlay-texture-your-design-grainy-gradient-background-145456887.jpg")`,

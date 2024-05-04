@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
     <section className="relative">
-      <div className="relative z-10 mx-auto flex justify-center pt-40 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
+      <div className="relative z-10 mx-auto flex justify-center pt-40 md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
         <div className="flex flex-col items-center gap-y-8 text-white lg:max-w-none">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -20,7 +20,7 @@ const Hero = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className={cn(
-              "max-w-[320px] bg-gradient-to-br from-white to-neutral-500 bg-clip-text text-center text-2xl font-bold !leading-[1.17] text-transparent lg:max-w-[900px] lg:text-5xl",
+              "max-w-[320px] bg-gradient-to-br from-white to-neutral-500 bg-clip-text text-center text-2xl font-bold !leading-[1.17] text-transparent md:max-w-[768px] lg:max-w-[900px] lg:text-5xl",
               currentLanguage === RU && "lg:text-4xl",
             )}
           >
@@ -34,7 +34,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="max-w-[340px] text-center text-neutral-300 md:text-lg lg:max-w-[550px] xl:max-w-[700px]"
+              className="max-w-[340px] text-center text-neutral-300 md:max-w-[550px] md:text-lg xl:max-w-[700px]"
             >
               Freewill defines the chain, Proof of Hold drives the protocol,
               SCADS & TWINE pioneer the technology.

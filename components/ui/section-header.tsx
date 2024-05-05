@@ -15,7 +15,7 @@ const SectionHeader = ({ title, y }: { title: string; y: number }) => {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="mx-auto mt-8 bg-gradient-to-br from-white to-neutral-500 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent 2xl:text-7xl"
+      className="mx-auto mt-8 bg-gradient-to-br from-white to-neutral-500 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent lg:text-7xl"
     >
       {t(title)}
     </motion.h2>

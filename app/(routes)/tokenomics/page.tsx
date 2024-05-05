@@ -25,11 +25,15 @@ const TokenomicsPage = () => {
             ))}
           </article>
         </div>
-        <IoEllipse
-          className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 -translate-y-1/2 text-indigo-600/80 blur-[300px] md:hidden"
-          size={340}
-        />
       </div>
+      <IoEllipse
+        className="absolute -top-1/2 left-1/2 -z-10 hidden -translate-x-1/2 -translate-y-2/3 bg-gradient-to-r from-[#08AEEA] to-[#FF5ACD] text-transparent blur-[800px] lg:block"
+        size={1000}
+      />
+      <IoEllipse
+        className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 -translate-y-1/2 text-indigo-600/80 blur-[300px] md:hidden"
+        size={340}
+      />
     </>
   );
 };

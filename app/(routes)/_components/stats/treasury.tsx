@@ -24,7 +24,7 @@ const Treasury = () => {
           currentLanguage === RU && "lg:-top-9",
         )}
       >
-        Treasury
+        {t("Treasury")}
       </span>
       <div className="flex w-full flex-col items-center gap-y-10 rounded-b-3xl md:flex-row md:justify-between lg:mt-8">
         {treasuryItems.map((item) => (

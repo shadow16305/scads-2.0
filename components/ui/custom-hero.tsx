@@ -26,10 +26,6 @@ const CustomHero = ({
       >
         {title}
       </motion.h1>
-      <IoEllipse
-        className="absolute -top-full left-1/2 -z-10 hidden -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-transparent blur-[200px] lg:block"
-        size={800}
-      />
     </>
   );
 };

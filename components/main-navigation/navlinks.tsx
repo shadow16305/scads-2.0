@@ -48,7 +48,7 @@ const NavLinks = () => {
                     <div className="flex flex-col gap-y-1">
                       <span className="flex gap-x-1">{t(document.name)}</span>
                       <span className="text-neutral-400">
-                        {document.description}
+                        {t(document.description)}
                       </span>
                     </div>
                   </NavigationMenuLink>

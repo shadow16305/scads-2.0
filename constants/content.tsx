@@ -459,7 +459,7 @@ export const documents = [
   {
     name: "Use Cases",
     path: "/use-cases",
-    description: "The use cases for the scads ecosystem.",
+    description: "The use cases for the SCADS ecosystem.",
     icon: <Grid size={16} />,
   },
   {

@@ -12,10 +12,11 @@ const TokenomicsPage = () => {
         <div className="relative mx-auto flex scroll-smooth pt-12 md:gap-x-10 lg:max-w-[1024px] lg:gap-x-20 xl:max-w-[1240px] 2xl:max-w-[1340px]">
           <SideNavigation />
           <article className="space-y-12">
-            {tokenomicsContent.map((item) => (
+            {tokenomicsContent.map((item, index) => (
               <TokenomicsContent
                 key={item.id}
                 id={item.id}
+                index={index + 1}
                 title={item.title}
                 paragraph={item.paragraph}
                 paragraph_two={item.paragraph_two}

@@ -16,7 +16,7 @@ const SwapModal = ({ navigation }: { navigation?: boolean }) => {
     <Dialog>
       <DialogTrigger asChild>
         {navigation ? (
-          <span className="button-primary relative cursor-pointer rounded-lg border border-[#8a6cff] px-6 py-1 text-sm font-semibold transition hover:bg-transparent hover:bg-none hover:text-neutral-300 md:border-none md:bg-none md:px-0 md:py-0 md:font-normal md:shadow-none">
+          <span className="button-primary relative cursor-pointer rounded-lg border border-[#8a6cff] px-6 py-1 text-sm font-semibold transition hover:bg-transparent hover:bg-none hover:text-[#B4BCD0] md:border-none md:bg-none md:px-0 md:py-0 md:font-normal md:shadow-none">
             Invest
           </span>
         ) : (

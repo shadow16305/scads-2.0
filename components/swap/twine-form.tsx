@@ -42,18 +42,18 @@ const TwineForm: React.FC<{ panel: string }> = ({ panel }) => {
       </div>
       <div className="flex flex-col items-center gap-y-2 text-sm text-white">
         <p>
-          <span className="text-neutral-300">SCADS owned:</span> 0.00
+          <span className="text-[#B4BCD0]">SCADS owned:</span> 0.00
         </p>
         <div className="w-full space-y-2">
           <p className="flex justify-between">
-            <span className="text-neutral-300">Time invested:</span> 62 Days 19
+            <span className="text-[#B4BCD0]">Time invested:</span> 62 Days 19
             Hours 20 Minutes
           </p>
           <p className="flex justify-between">
-            <span className="text-neutral-300">TWINE minted:</span> 5.495
+            <span className="text-[#B4BCD0]">TWINE minted:</span> 5.495
           </p>
           <p className="flex justify-between">
-            <span className="text-neutral-300">TWINE claimed:</span> 2.745
+            <span className="text-[#B4BCD0]">TWINE claimed:</span> 2.745
           </p>
         </div>
       </div>

@@ -34,7 +34,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="max-w-[340px] text-center text-neutral-300 md:max-w-[550px] md:text-lg xl:max-w-[700px]"
+              className="max-w-[340px] text-center text-[#B4BCD0] md:max-w-[550px] md:text-lg xl:max-w-[700px]"
             >
               Freewill defines the chain, Proof of Hold drives the protocol,
               SCADS & TWINE pioneer the technology.

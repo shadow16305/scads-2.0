@@ -26,12 +26,12 @@ const NavLinks = () => {
           <SwapModal navigation />
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/faq" className="transition hover:text-neutral-300">
+          <Link href="/faq" className="transition hover:text-[#B4BCD0]">
             FAQ
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem className="bg-transparent">
-          <NavigationMenuTrigger className="bg-transparent p-0 font-normal hover:text-neutral-300">
+          <NavigationMenuTrigger className="bg-transparent p-0 font-normal hover:text-[#B4BCD0]">
             Documents
           </NavigationMenuTrigger>
           <NavigationMenuContent className="rounded-xl bg-dark-blue">
@@ -58,7 +58,7 @@ const NavLinks = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="bg-transparent">
-          <NavigationMenuTrigger className="bg-transparent p-0 font-normal hover:text-neutral-300">
+          <NavigationMenuTrigger className="bg-transparent p-0 font-normal hover:text-[#B4BCD0]">
             <Link href="/tokenomics">Tokenomics</Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent className="flex gap-x-4 rounded-xl bg-dark-blue">

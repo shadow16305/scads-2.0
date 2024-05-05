@@ -426,7 +426,7 @@ export const cardItems = [
   {
     title: "TWINE",
     description:
-      "Linearly growing digital asset for minted by holding SCADS long-term, secured and trusted investment.",
+      "Linearly growing digital asset minted by holding SCADS long-term, secured and trusted investment.",
     path: "/tokenomics/#twine",
   },
   {

@@ -472,7 +472,7 @@ const data = {
 const UseCasesPage = () => {
   return (
     <div className="relative">
-      <main className="mx-auto mt-40 flex max-w-[340px] flex-col items-center overflow-hidden pb-20 text-neutral-300 lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
+      <main className="mx-auto mt-40 flex max-w-[340px] flex-col items-center overflow-hidden pb-20 text-[#B4BCD0] lg:max-w-[1024px] xl:max-w-[1240px] 2xl:max-w-[1340px]">
         <h1 className="max-w-[300px] text-center text-[26px] font-bold lg:max-w-[600px] lg:text-4xl 2xl:max-w-[700px] 2xl:text-5xl">
           SCADS AND TWINES USE CASES
         </h1>

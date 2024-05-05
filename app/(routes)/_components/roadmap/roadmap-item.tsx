@@ -14,7 +14,7 @@ const RoadmapItem: React.FC<RoadmapItemProps> = ({ date, l1, l2, l3 }) => {
       <time className="mb-2 text-sm font-normal leading-none text-white">
         {date}
       </time>
-      <ul className="text-base font-normal text-neutral-300 lg:max-w-xl">
+      <ul className="text-base font-normal text-[#B4BCD0] lg:max-w-xl">
         <li>{l1}</li>
         {l2 && <li>{l2}</li>}
         {l3 && <li>{l3}</li>}

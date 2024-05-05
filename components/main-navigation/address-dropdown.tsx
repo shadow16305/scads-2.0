@@ -41,7 +41,7 @@ const AddressDropdown = () => {
             >
               <p className="text-white md:w-[12%]">{item.address}</p>
               <div className="flex items-center rounded-3xl bg-indigo-600/10 px-4 py-2 md:w-[88%] md:justify-between">
-                <p className="text-xs text-neutral-300 md:min-w-[332px]">
+                <p className="text-xs text-[#B4BCD0] md:min-w-[332px]">
                   {item.value}
                 </p>
                 <button

@@ -39,7 +39,7 @@ const FaqAccordion = ({ searchValue }: { searchValue: string }) => {
           <AccordionTrigger className="text-start text-sm text-white md:text-base">
             {t(item.trigger)}
           </AccordionTrigger>
-          <AccordionContent className="text-neutral-300">
+          <AccordionContent className="text-[#B4BCD0]">
             <p>{t(item.content)}</p>
             {item.list && (
               <ul>

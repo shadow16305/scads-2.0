@@ -15,7 +15,7 @@ const FaqPage = () => {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="mt-32 text-center text-lg text-neutral-300"
+        className="mt-32 text-center text-lg text-[#B4BCD0]"
       >
         FAQ
       </motion.p>

@@ -90,7 +90,7 @@ const DesktopInfo = () => {
                 <p className="text-xl font-medium text-white">
                   {t(step.label)}
                 </p>
-                <ol className="space-y-1 text-neutral-300">
+                <ol className="space-y-1 text-[#B4BCD0]">
                   {Object.values(step.list).map(
                     (value, i) => value && <li key={i}>{t(value)}</li>,
                   )}

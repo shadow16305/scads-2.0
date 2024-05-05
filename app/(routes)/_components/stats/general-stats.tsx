@@ -31,7 +31,7 @@ const GeneralStats = () => {
             >
               <div
                 className={cn(
-                  "relative flex items-center justify-center text-neutral-300 [&>*]:size-7 md:[&>*]:size-5 xl:[&>*]:size-6",
+                  "relative flex items-center justify-center text-[#B4BCD0] [&>*]:size-7 md:[&>*]:size-5 xl:[&>*]:size-6",
                   currentLanguage !== EN && "xl:size-5",
                 )}
               >
@@ -47,7 +47,7 @@ const GeneralStats = () => {
                   <TooltipProvider delayDuration={0}>
                     <Tooltip>
                       <TooltipTrigger>
-                        <Info className="hidden size-4 text-neutral-300 lg:block" />
+                        <Info className="hidden size-4 text-[#B4BCD0] lg:block" />
                       </TooltipTrigger>
                       <TooltipContent className="border-none bg-white/10 text-white backdrop-blur-xl">
                         <p className="max-w-sm">

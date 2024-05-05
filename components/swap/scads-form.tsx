@@ -38,9 +38,9 @@ const ScadsForm: React.FC<{ panel: string }> = ({ panel }) => {
         secondToken={secondToken}
       />
       <div className="flex w-full justify-between text-sm text-white">
-        <p className="text-neutral-300">1 SCADS = 1 USDT</p>
+        <p className="text-[#B4BCD0]">1 SCADS = 1 USDT</p>
         <p>
-          <span className="pr-1 text-neutral-300">You receive:</span>
+          <span className="pr-1 text-[#B4BCD0]">You receive:</span>
           {receivalAmount.toFixed(1)}
         </p>
       </div>

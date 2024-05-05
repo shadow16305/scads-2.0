@@ -20,7 +20,7 @@ const Treasury = () => {
     <section className="lg:rounded-t-0 relative flex flex-col items-center gap-y-8 rounded-b-3xl px-4 pb-10 md:px-8">
       <span
         className={cn(
-          "absolute -top-16 left-1/2 -translate-x-1/2 rounded-3xl border border-white/10 bg-gradient-to-b from-transparent via-dark-blue to-transparent px-6 py-1 text-sm text-neutral-300 backdrop-blur-3xl lg:-top-6",
+          "absolute -top-16 left-1/2 -translate-x-1/2 rounded-3xl border border-white/10 bg-gradient-to-b from-transparent via-dark-blue to-transparent px-6 py-1 text-sm text-[#B4BCD0] backdrop-blur-3xl lg:-top-6",
           currentLanguage === RU && "lg:-top-9",
         )}
       >
@@ -40,7 +40,7 @@ const Treasury = () => {
                 <TooltipProvider delayDuration={0}>
                   <Tooltip>
                     <TooltipTrigger>
-                      <Info className="hidden size-4 text-neutral-300 lg:block" />
+                      <Info className="hidden size-4 text-[#B4BCD0] lg:block" />
                     </TooltipTrigger>
                     <TooltipContent className="border-none bg-white/10 text-white backdrop-blur-xl">
                       <p className="max-w-sm">{t(item.info)}</p>

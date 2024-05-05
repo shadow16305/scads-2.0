@@ -7,7 +7,7 @@ const SideNavigation = () => {
       <p className="whitespace-nowrap text-white xl:text-lg">
         Table of contents
       </p>
-      <ul className="space-y-2 text-neutral-300 xl:space-y-4">
+      <ul className="space-y-2 text-[#B4BCD0] xl:space-y-4">
         {tokenomicsLinks.map((link) => (
           <li key={link.name}>
             <Link

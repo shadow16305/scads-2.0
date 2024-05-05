@@ -45,7 +45,6 @@ const TextBlock = () => {
                   "SCADS, an innovative stablecoin built on the Proof of Holding algorithm, has the potential to significantly impact the digital currency landscape.",
                 )}
               </p>
-              <p className="mt-4">SCADS is:</p>
               <ul className="mt-4 list-disc pl-4">
                 <li>
                   {t(

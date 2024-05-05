@@ -8,15 +8,22 @@ import {
 } from "@/components/ui/tooltip";
 import { treasuryItems } from "@/constants/content";
 import { useTranslation } from "@/contexts/localization";
+import { RU } from "@/lib/localization/languages";
+import { cn } from "@/lib/utils";
 import { Info } from "lucide-react";
 import Image from "next/image";
 
 const Treasury = () => {
-  const { t } = useTranslation();
+  const { t, currentLanguage } = useTranslation();
 
   return (
     <section className="lg:rounded-t-0 relative flex flex-col items-center gap-y-8 rounded-b-3xl px-4 pb-10 md:px-8">
-      <span className="absolute -top-16 left-1/2 -translate-x-1/2 rounded-3xl border border-white/10 bg-gradient-to-b from-transparent via-dark-blue to-transparent px-6 py-1 text-sm text-neutral-300 backdrop-blur-3xl lg:-top-9">
+      <span
+        className={cn(
+          "absolute -top-16 left-1/2 -translate-x-1/2 rounded-3xl border border-white/10 bg-gradient-to-b from-transparent via-dark-blue to-transparent px-6 py-1 text-sm text-neutral-300 backdrop-blur-3xl lg:-top-6",
+          currentLanguage === RU && "lg:-top-9",
+        )}
+      >
         Treasury
       </span>
       <div className="flex w-full flex-col items-center gap-y-10 rounded-b-3xl md:flex-row md:justify-between lg:mt-8">

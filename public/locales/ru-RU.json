@@ -165,8 +165,8 @@
   "Minting speed": "Cкорость эмиссии",
   "Liquidity wallet": "Ликвидный кошелек",
   "LIQUIDITY WALLET": "ЛИКВИДИЙНЫЙ КОШЕЛЁК",
-  "Treasury": "КАЗНЯ",
-  "TREASURY": "КАЗНЯ",
+  "Treasury": "Казна",
+  "TREASURY": "КАЗНА",
   "Decentralization": "Децентрализация",
   "Protection": "Защита",
   "Seignorage": "Cеньораж",
@@ -177,5 +177,6 @@
   "Introducing Scads": "Представляем Scads",
   "Use Cases": "Случаи Использования",
   "The use cases for the SCADS ecosystem.": "Случаи использования экосистемы SCADS.",
-  "All the detailed information.": "Вся подробная информация."
+  "All the detailed information.": "Вся подробная информация.",
+  "Table of contents": "Контент"
 }

@@ -27,12 +27,12 @@ const NavLinks = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/faq" className="transition hover:text-[#B4BCD0]">
-            FAQ
+            {t("FAQ")}
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem className="bg-transparent">
           <NavigationMenuTrigger className="bg-transparent p-0 font-normal hover:text-[#B4BCD0]">
-            Documents
+            {t("Documents")}
           </NavigationMenuTrigger>
           <NavigationMenuContent className="rounded-xl bg-dark-blue">
             <ul className="flex flex-col gap-y-2 rounded-xl p-2 text-sm text-white md:min-w-64">
@@ -59,7 +59,7 @@ const NavLinks = () => {
         </NavigationMenuItem>
         <NavigationMenuItem className="bg-transparent">
           <NavigationMenuTrigger className="bg-transparent p-0 font-normal hover:text-[#B4BCD0]">
-            <Link href="/tokenomics">Tokenomics</Link>
+            <Link href="/tokenomics">{t("Tokenomics")}</Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent className="flex gap-x-4 rounded-xl bg-dark-blue">
             <ul

@@ -360,7 +360,7 @@ export const roadmapContent = [
   {
     id: "r15",
     date: "March 2023",
-    l1: "Updates for all contracts again based on regulation changes.",
+    l1: "Updates for all contracts based on regulation changes.",
   },
   {
     id: "r16",

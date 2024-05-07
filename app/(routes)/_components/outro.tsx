@@ -11,7 +11,7 @@ const Outro = () => {
   return (
     <section className="mt-32 flex flex-col items-center">
       <Image src="/images/logo.svg" alt="logo" width={80} height={80} />
-      <h2 className="mx-auto mt-8 bg-gradient-to-br from-white to-neutral-500 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent lg:max-w-[700px] lg:text-7xl">
+      <h2 className="mx-auto mt-8 bg-gradient-to-br from-white to-neutral-500 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent lg:text-7xl">
         {t("The change is here")}
       </h2>
       <div className="relative h-8 w-[280px] md:w-[40rem]">

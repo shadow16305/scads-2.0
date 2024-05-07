@@ -10,8 +10,14 @@ import {
 import { addresses } from "@/constants/content";
 import Image from "next/image";
 import toast from "react-hot-toast";
-import { Copy } from "lucide-react";
+import { Copy, NotebookTabs } from "lucide-react";
 import { useTranslation } from "@/contexts/localization";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
 
 const AddressDropdown = () => {
   const onCopy = (address: string) => {
@@ -23,13 +29,17 @@ const AddressDropdown = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="relative invert-0 transition-all focus:outline-none focus:ring-0 md:size-7 lg:size-8 lg:hover:scale-110">
-        <Image
-          src="/images/address.svg"
-          alt="addresses"
-          fill
-          className="hidden md:block"
-        />
+      <DropdownMenuTrigger className="md:pt-1.5">
+        <TooltipProvider delayDuration={0}>
+          <Tooltip>
+            <TooltipTrigger>
+              <NotebookTabs className="transition-all focus:outline-none focus:ring-0 md:size-6 lg:hover:scale-110" />
+            </TooltipTrigger>
+            <TooltipContent className="border-none bg-white/10 text-sm text-white backdrop-blur-xl">
+              <p>Token addresses.</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
         <span className="md:hidden">{t("Addresses")}</span>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="mr-20 mt-2 max-w-fit rounded-xl border-none bg-dark-blue md:mr-0 md:max-w-none">

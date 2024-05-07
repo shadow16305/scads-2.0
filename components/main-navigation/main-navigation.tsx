@@ -69,7 +69,7 @@ const MainNavigation = () => {
         <div className="absolute left-1/2 md:-translate-x-[60%] lg:-translate-x-1/2">
           <NavLinks />
         </div>
-        <div className="hidden items-center md:flex md:gap-x-3 lg:gap-x-6">
+        <div className="hidden md:flex md:items-center md:gap-x-3 lg:gap-x-6">
           <AddressDropdown />
           <LanguageDropdown />
           <WalletModal navigation />

@@ -10,15 +10,30 @@ import {
 } from "../ui/dropdown-menu";
 import { useTranslation } from "@/contexts/localization";
 import { languageList } from "@/lib/localization/languages";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
 
 const LanguageDropdown = () => {
   const { setLanguage, t } = useTranslation();
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="transition-transform lg:hover:scale-110">
+      <DropdownMenuTrigger className="transition-transform md:pt-1.5 lg:hover:scale-110">
         <>
-          <Globe className="hidden md:block md:size-5 lg:size-6" />
+          <TooltipProvider delayDuration={0}>
+            <Tooltip>
+              <TooltipTrigger>
+                <Globe className="hidden md:block md:size-5 lg:size-6" />
+              </TooltipTrigger>
+              <TooltipContent className="border-none bg-white/10 text-sm text-white backdrop-blur-xl">
+                <p>Languages.</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
           <span className="md:hidden">{t("Languages")}</span>
         </>
       </DropdownMenuTrigger>

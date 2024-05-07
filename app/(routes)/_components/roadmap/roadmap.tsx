@@ -14,16 +14,9 @@ const Roadmap = () => {
         className="absolute -top-20 -z-20 md:-top-48 lg:-top-20 2xl:-top-24"
       />
       <SectionHeader title="Roadmap" y={50} />
-      <div className="relative mx-auto flex w-[340px] flex-col rounded-2xl py-10 backdrop-blur-xl md:w-[720px] md:px-20 lg:w-fit">
-        <div
-          style={{
-            backgroundImage: `url("https://thumbs.dreamstime.com/b/white-noise-background-effect-sound-effect-grain-distress-overlay-texture-your-design-grainy-gradient-background-145456887.jpg")`,
-          }}
-          className="absolute left-0 top-0 -z-10 size-full rounded-xl opacity-10"
-        />
-        <div className="absolute left-0 top-0 z-0 size-full rounded-xl bg-gradient-to-b from-white/15 to-dark-blue" />
+      <div className="relative z-10 mx-auto flex w-[340px] flex-col rounded-2xl bg-gradient-to-b from-white/15 to-transparent py-10 backdrop-blur-xl md:w-[720px] md:px-20 lg:w-fit">
         <div className="z-10 flex max-h-96 w-full">
-          <ul className="overflow-y-scroll overscroll-y-none md:border-s md:border-white/20">
+          <ul className="block w-full overflow-y-scroll overscroll-y-none md:border-s md:border-white/20">
             {roadmapContent.map((item) => (
               <RoadmapItem
                 key={item.id}

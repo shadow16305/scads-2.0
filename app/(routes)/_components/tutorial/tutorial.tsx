@@ -18,15 +18,8 @@ const Tutorial = () => {
       <SectionHeader title="Getting started" y={50} />
       <Tabs
         defaultValue="desktop"
-        className="mx-auto mt-4 flex w-[340px] flex-col gap-x-12 rounded-2xl py-10 backdrop-blur-xl md:w-[720px] md:flex-row md:px-10 lg:w-fit lg:px-20"
+        className="relative z-10 mx-auto mt-4 flex w-[340px] flex-col gap-x-12 rounded-2xl bg-gradient-to-b from-white/15 to-transparent py-10 backdrop-blur-xl md:w-[720px] md:flex-row md:px-10 lg:w-fit lg:px-20"
       >
-        <div
-          style={{
-            backgroundImage: `url("https://thumbs.dreamstime.com/b/white-noise-background-effect-sound-effect-grain-distress-overlay-texture-your-design-grainy-gradient-background-145456887.jpg")`,
-          }}
-          className="absolute left-0 top-0 -z-10 size-full rounded-xl opacity-10"
-        />
-        <div className="absolute left-0 top-0 z-0 size-full rounded-xl bg-gradient-to-b from-white/15 to-dark-blue" />
         <TabsList className="relative z-10 flex h-fit gap-y-4 bg-transparent px-6 md:flex-col">
           <TabsTrigger
             value="desktop"

@@ -10,7 +10,7 @@ const AnimatedBackground = ({ color }: { color: string }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       className={cn(
-        "absolute left-1/2 top-1/2 h-24 w-[340px] -translate-x-1/2 rounded-full blur-[200px] md:w-full",
+        "absolute left-1/2 top-1/2 z-0 h-24 w-[340px] -translate-x-1/2 rounded-full blur-[200px] md:w-full",
         color,
       )}
     />

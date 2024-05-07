@@ -379,19 +379,24 @@ export const roadmapContent = [
   },
   {
     id: "r19",
+    date: "August 2024",
+    l1: "The media campaign has commenced. Engaging with social media audiences",
+  },
+  {
+    id: "r20",
     date: "November 2024",
     l1: "Media campaign started, Crypto social media.",
     l2: "Seeding social media.",
   },
   {
-    id: "r20",
+    id: "r21",
     date: "February 2025",
     l1: "Media campaign mainstream media. ",
     l2: "Scads secured wallet.",
     l3: "LENDING based on user’s own collateral in SCADS for. (Lending does not incur interest only transactions fees.)",
   },
   {
-    id: "r21",
+    id: "r22",
     date: "March 2025",
     l1: "Payment system, users will be able to pay locally with scads pegged to value in local currency. (The pegging occurs only at the time of transaction.)",
   },

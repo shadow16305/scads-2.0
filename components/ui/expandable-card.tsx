@@ -6,6 +6,7 @@ import { useOutsideClick } from "@/hooks/use-outside-click";
 import { tokenomicsContent } from "@/constants/content";
 import { useTranslation } from "@/contexts/localization";
 import { EN, RU } from "@/lib/localization/languages";
+import { cn } from "@/lib/utils";
 
 export function ExpandableCardDemo() {
   const [active, setActive] = useState<
@@ -73,9 +74,9 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="flex h-full w-full max-w-[600px] flex-col overflow-hidden bg-white/5 backdrop-blur-xl sm:rounded-xl md:h-fit md:max-h-[90%]"
+              className="flex h-fit max-h-[90%] w-11/12 max-w-[600px] flex-col overflow-hidden rounded-xl bg-white/5 backdrop-blur-xl md:w-full"
             >
-              <div>
+              <div className="overflow-y-scroll md:overflow-y-hidden">
                 <div className="flex items-start justify-between p-4">
                   <div className="">
                     <motion.h3
@@ -86,7 +87,7 @@ export function ExpandableCardDemo() {
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.paragraph}-${id}`}
-                      className="text-[#B4BCD0]"
+                      className="text-sm text-[#B4BCD0] md:text-base"
                     >
                       {active.paragraph}
                     </motion.p>
@@ -99,7 +100,11 @@ export function ExpandableCardDemo() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="flex h-40 flex-col items-start gap-4 overflow-auto pb-4 text-xs text-[#B4BCD0] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] md:h-fit md:text-sm lg:text-base"
+                    className={cn(
+                      "flex flex-col items-start gap-4 overflow-auto pb-4 text-xs text-[#B4BCD0] md:h-fit md:text-sm lg:text-base",
+                      !active.paragraph_two &&
+                        "[mask:linear-gradient(to_bottom,white,white,transparent)] md:[mask:linear-gradient(to_bottom,transparent,transparent,transparent)]",
+                    )}
                   >
                     <ul className="flex max-w-[340px] list-disc flex-col gap-y-2 px-8 text-sm md:max-w-[720px] lg:max-w-[900px] xl:max-w-[1031px]">
                       {active.list.map((item, index) => (
@@ -131,7 +136,7 @@ export function ExpandableCardDemo() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      className="flex h-40 flex-col items-start gap-4 overflow-auto pb-10 text-xs text-[#B4BCD0] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] md:h-fit md:text-sm lg:text-base"
+                      className="flex flex-col items-start gap-4 overflow-auto pb-10 text-xs text-[#B4BCD0] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] md:h-fit md:text-sm lg:text-base"
                     >
                       {active.paragraph_two}
                     </motion.div>
@@ -142,13 +147,13 @@ export function ExpandableCardDemo() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="mx-auto mt-4 w-full md:max-w-[768px] lg:max-w-[1024px]">
+      <ul className="mx-auto mt-4 w-11/12 md:max-w-[768px] lg:max-w-[1024px]">
         {tokenomicsContent.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="my-4 flex cursor-pointer flex-col items-center justify-between rounded-xl bg-white/5 p-4 backdrop-blur-xl md:flex-row"
+            className="my-4 flex cursor-pointer flex-col items-center justify-between rounded-xl bg-white/5 p-4 backdrop-blur-xl transition-colors hover:bg-white/10 md:flex-row"
           >
             <div className="flex flex-col gap-4 md:flex-row ">
               <div className="">
@@ -166,6 +171,12 @@ export function ExpandableCardDemo() {
                 </motion.p>
               </div>
             </div>
+            <motion.button
+              layoutId={`button-${card.title}-${id}`}
+              className="mt-4 rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white md:mt-0"
+            >
+              Details
+            </motion.button>
           </motion.div>
         ))}
       </ul>

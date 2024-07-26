@@ -13,18 +13,23 @@ export const tokenomicsContent = [
   {
     id: "proof-of-hold",
     title: "Proof of hold",
+    preview: "Simply hold safeguard your capital and make money.",
     paragraph:
       "SCADS introduce the new protocol (Proof of Hold) that was developed to make investments safer, secured, and eliminate risks. The mechanism behind it is fairly straightforward: users buy SCADS and hold it in their wallet. Then the (POH) triggers the minting of TWINE based on the proof that the wallet is holding SCADS. TWINE, a linear token, is minted automatically. Mapping is employed to precisely locate holder addresses, which are subsequently registered systematically on the list of network participants. Designated addresses automatically activate the POH function. This is a great opportunity for investing in much less risk than usual.",
   },
   {
     id: "scads",
     title: "Scads",
+    preview:
+      "A stablecoin that simplifies transactions by referencing the USD but isn’t pegged to it. It’s created using other stablecoins as collateral at the start, later, it can only be minted by TWINE, it’s the only true collateral that is neutral and cannot be politicized. All runs only as a decentralized system.",
     paragraph:
       "SCADS is a stablecoin that references the USD to simplify transactions, though it is not at all pegged to it. The coin can only be created when it is hedged by collateral, achieved through trading other stablecoins for SCADS. This system operates autonomously, ensuring fairness and functioning within a permissionless, fully decentralized framework. It is designed to adapt and sustain itself automatically over time. It is important to note that SCADS guarantees the impossibility of confiscation or freezing of funds held in wallets or even better in a hardware (cold) wallet. (protect your keys)",
   },
   {
     id: "twine",
     title: "Twine",
+    preview:
+      "A speculative token that grows algorithmically based on the number of TWINE minted and gives you exclusive access to mint SCADS which creates a buy demand pressure that also pushes the price of TWINE exponentially.",
     paragraph:
       "TWINE is a speculative token with linear characteristics, designed to support gradual price increases and provide privileged access to mint SCADS exclusively.",
     list: [
@@ -36,17 +41,27 @@ export const tokenomicsContent = [
         list_two:
           "Curved Linear Growth: The value of TWINE is linked to its minting volume. For each new TWINE token minted, its price rises consistently by 0.0000001. This mechanism ensures a steady upward trajectory in the token’s value, aligning with the increase in supply",
       },
+      {
+        list_three: null,
+      },
+      {
+        list_four: null,
+      },
     ],
   },
   {
     id: "market-cap",
     title: "Market cap",
+    preview:
+      "TWINE’s cap is set at 21 million tokens, with each token hitting a calculated price of $2.10. But the actual price could go higher depending on market demand.",
     paragraph:
       "The market cap for TWINE is defined by a lifetime supply of 21 million tokens. When the cap of 21 million tokens is reached, the calculated linear curved price for each TWINE will be $2.10. However, it's important to note that the market demand price range for TWINE is virtually limitless and will be determined by the level of demand in the market. This means that the price of TWINE can potentially exceed the calculated $2.10 per token based on market dynamics and demand levels.",
   },
   {
     id: "minting-speed",
     title: "Minting speed",
+    preview:
+      "TWINE’s minting speed adjusts based on SCADS' market cap and timing, ensuring a fair process. Check the formula for details.",
     paragraph:
       "As a fair algorithm, the minting speed is dynamically adjusted in response to the market capitalization of SCADS and the allocated time frame to reach the 21 million market cap. This adaptive approach ensures a balanced and equitable minting process within the ecosystem.",
     list: [
@@ -73,18 +88,24 @@ This calculates the total time left for minting. It subtracts the time already e
   {
     id: "pulse",
     title: "Pulse",
+    preview:
+      "An automated system that buys SCADS, mints TWINE, and sells TWINE to buy more SCADS. It reinvests 80% of profits and uses 20% to boost the liquidity wallet. This way PULSE  creates an internal network effect.",
     paragraph:
       "PULSE serves as the essential mechanism of the algorithm, functioning automatically on a daily basis. It engages in a cyclical process within the algorithm that involves purchasing SCADS, minting TWINE, and then selling the generated TWINE back into SCADS. This routine is designed to generate profits, which are then distributed strategically. Specifically, 80% of these profits are continuously reinvested back into PULSE, functioning like a sinking fund to boost investment capacity. The remaining 20% is directed to the LIQUIDITY wallet, which is maintained in SCADS and enhances the system's collateral stability. Additionally, this wallet will eventually serve as a liquidity provider and a financial backer for lending operations. The daily activities of buying SCADS, minting TWINE, and selling them are crucial in fostering a network effect that not only maintains active system engagement but also promotes its self-sustainability. This continuous flow of transactions showcases the innovation at the heart of the algorithm, placing it at the cutting edge of advancements in operational efficiency.",
   },
   {
     id: "liquidity-wallet",
     title: "Liquidity wallet",
+    preview:
+      "Holds extra liquidity and invests in external networks , exchanges etc.  that will position SCADS as a liquidity provider and market maker. All the profits that the liquidity wallet gains, will be reinvested in  other projects which help the exposure and utility of SCADS & TWINE.",
     paragraph:
       "The wallet functions as a repository for surplus liquidity within the algorithm. This excess liquidity is strategically invested as a liquidity provider and market maker within the cryptocurrency industry. All assets within the wallet are denominated in SCADS and TWINE and are allocated exclusively as investments in SCADS. The algorithm oversees and manages the wallet, ensuring that liquidity is supplied based on predefined criteria, contributing to the stability and functionality of the SCADS ecosystem.",
   },
   {
     id: "treasury",
     title: "Treasury",
+    preview:
+      "SCADS uses strict reserve and collateral rules for integrity, with Proof of Reserve and Proof of Collateral ensuring transparency and security.",
     paragraph:
       "Fundamental Elements: SCADS prioritizes the principles of reserve and collateral, treating them as fundamental to its operational integrity. Enforcing Transparency with Contracts: SCADS enhances transparency with specific contracts like the Proof of Reserve and Proof of Collateral, providing clear, verifiable mechanisms for for all to see.",
     list: [
@@ -100,17 +121,24 @@ This calculates the total time left for minting. It subtracts the time already e
         list_three:
           "Assurance through Collateralization: By implementing the Proof of Reserve and Proof of Collateral contracts, SCADS commits to a transparent and robust financial model, ensuring every SCADS token is minted with proper collateral, and the minting of TWINE is directly linked to the collateralized SCADS, establishing a truly secure system that distinguishes SCADS from other stablecoins in the digital finance arena.",
       },
+      {
+        list_four: null,
+      },
     ],
   },
   {
     id: "decentralization",
     title: "Decentralization",
+    preview:
+      "The system is fully decentralized with no admin control. Admin keys are purged after 3 months, and only UI/UX updates can be made afterward.",
     paragraph:
       "The algorithm operates in a permissionless, completely decentralized, and independent manner. There are no admin keys or owners, the system functions autonomously through interactions between contracts, without any human intervention. Upon launch, the Algorithm will have admin keys enabled for 3 month, allowing for potential fixes if necessary. However, during this access period, admins will have no access to contracts. Following this initial period, public admin keys will be burned, making them visible to all users. After the burning, developers will only have access to the front end for UI/UX improvements, ensuring that the core functionality remains decentralized and secure. The algorithm is immutable; it cannot be modified, updated, or changed. Any new venture or addition would need to be implemented as an added Layer 2. This emphasizes the unalterable nature of the algorithm's core functionality.",
   },
   {
     id: "protection",
     title: "Protection",
+    preview:
+      "SCADS resists price manipulation with a 25% withdrawal penalty within 24 hours and a daily cap of 50,000 SCADS. ",
     paragraph:
       "With a primary focus on the security and well-being of all users, SCADS, functioning as a stable coin, is inherently resistant to price manipulation. Additionally, the SCADS ecosystem has implemented a limited set of rules designed to ensure the safety of both the system and its participants:",
     list: [
@@ -131,12 +159,16 @@ This calculates the total time left for minting. It subtracts the time already e
   {
     id: "seignorage",
     title: "Seignorage",
+    preview:
+      "The difference between money’s value and production cost. It funds operations and supports decentralized servers for data and security.",
     paragraph:
       "Is the difference between the value of money and the cost to produce and distribute it. Seniorage covers vital operational expenses, supporting decentralized anonymous servers. They perform crucial roles like data nodes, security management, and congestion prevention.",
   },
   {
     id: "transparency",
     title: "Transparency",
+    preview:
+      "All transactions are blockchain-verified and tracked in real-time. Users can easily view this info on the main page, ensuring transparency and trust.",
     paragraph:
       "Every transaction conducted within the system is capable of being verified on the blockchain. In addition, the SCADS algorithm provides real-time tracking of all contract transactions, which are conveniently listed in the contract list. Users have accessible and immediate viewing of this information on the main page, ensuring transparency and ease of access to all participants. This emphasis on transparency enhances trust and confidence within the system.",
   },

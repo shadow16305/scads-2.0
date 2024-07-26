@@ -1,6 +1,5 @@
 "use client";
 
-import { IoEllipse } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -20,7 +19,7 @@ const CustomHero = ({
           duration: 0.5,
         }}
         className={cn(
-          "mb-24 mt-32 bg-gradient-to-br from-white to-neutral-500 bg-clip-text py-4 text-center text-3xl font-medium tracking-tight text-transparent md:text-5xl",
+          "mt-32 bg-gradient-to-br from-white to-neutral-500 bg-clip-text py-4 text-center text-3xl font-medium tracking-tight text-transparent md:text-5xl",
           className,
         )}
       >

@@ -6,7 +6,6 @@ import Taxes from "./taxes";
 import { useWalletModal } from "@/hooks/use-wallet-modal";
 import WalletModal from "../wallet/wallet-modal";
 import { Button } from "../ui/button";
-import { cn } from "@/lib/utils";
 
 const ScadsForm: React.FC<{ panel: string }> = ({ panel }) => {
   const [firstToken, setFirstToken] = useState("USDT");
